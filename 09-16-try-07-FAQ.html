@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07-FAQ</title>
+    <!-- ↓ 匯入boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- ↓ 匯入font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        #nav-logo-img {
+            width: 45%;
+        }
+        .maxwww{
+            min-width: 85px;
+            /* 版面縮減才不會變形 */
+        }
+        #book-border{
+            margin: auto 0;
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+            padding: 2px 0;
+        }
+        .book-side{
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            padding: 0 3px;
+        }
+        #book-text{
+            background-color: black;
+            padding: 1px 8px;
+            color: #C39C61;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #E5E6E7;
+            position: relative;
+            /* ↑ 讓icon跟隨 */
+            padding-top: 30px;
+        }
+
+        footer img {
+            height: 100px;
+        }
+
+        .footer-logo {
+            text-align: center;
+            color: #C39C61;
+        }
+
+        .footer-logo-text {
+            font-size: 22px;
+            letter-spacing: 12px;
+            padding-left: 10px;
+        }
+
+        .footer-information p {
+            text-align: center;
+        }
+
+        .footer-copyright {
+            font-size: 15px;
+            border-top: 1px solid;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 60px;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-icon-group {
+            position: absolute;
+            left: calc(50% - 97.5px);
+            bottom: 25%;
+            background-color: #E5E6E7;
+            text-align: center;
+            z-index: 999;
+            /* ↑ 讓icon群浮上來蓋過線 */
+            /* ↓ 讓線別貼邊 */
+            padding: 0 10px;
+
+        }
+
+        .footer-icon-group i {
+            font-size: 35px;
+            margin: 0 12px;
+        }
+
+        #FAQ-L {
+            text-align: center;
+            font-size: 28px;
+            margin-left: 180px;
+            padding: 40px 0;
+            border: 4px solid black;
+            line-height: 45px;
+            max-height: 336px;
+            /* ↑ 防止左邊跟著縮放 */
+        }
+
+        #FAQ-R {
+            font-size: 18px;          
+        }
+
+        .p-FAQR {
+            padding: 20px 0;
+            border-bottom: 1px solid black;
+            
+        }
+
+        #FAQ {
+            padding: 130px 0;
+        }
+
+        .icon-color {
+            color: black;
+        }
+
+        .FQA-gps {
+            position: absolute;
+            right: 0;
+        }
+
+        .FQA-GPS {
+            position: relative;
+        }
+        .bg-expand-color{
+            background-color: #D8BEA1;
+            width: 105%;
+            margin-left: -15px;
+            /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
+            padding: 10px;
+        }
+        .bg-colorA{
+            background-color: #E5E6E7;
+            width: 80px;
+            height: 240px;
+            z-index: -1;
+            position: absolute;
+            left: -15px;
+            top: 60px;
+        }
+        .bg-colorB{
+            background-color: #E2CFB3;
+            width: 90px;
+            height: 160px;
+            z-index: -2;
+            position: absolute;
+            left: 7px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+            <!-- ↓ 手機版顯示的menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!-- ml-auto讓選單靠右 ↑ -->
+                    <li class="nav-item ml-3">
+                        <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+                        <a class="nav-link maxwww" href="#">關於瓦庫</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link maxwww" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link maxwww" href="#">鮮來開鍋</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link maxwww" href="#">瓦庫好料</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link maxwww" href="#">瓦庫在哪</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link maxwww" href="#">常見問題</a>
+                    </li>
+                    <li id="book-border" class="nav-item ml-5">
+                        <div class="book-side">
+                            <a id="book-text" class="nav-link maxwww" href="#">線上訂位</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-FAQ">
+        <div class="container">
+            <div id="FAQ" class="row">
+                <div id="FAQ-L" class="col-1 font-weight-bold">
+                    瓦<br>庫<br>來<br>解<br>答
+                    <div class="bg-colorA"></div>
+                    <div class="bg-colorB"></div>
+                    <!-- ↑ 兩個可怕的色塊 -->
+                </div>
+                <div class="col-1 p-0"></div>
+                <!-- ↑ 卡白用 -->
+                <div id="FAQ-R" class="col-7">
+                    <!-- 問題11111111111111111111 -->
+                    <div class="row p-FAQR font-weight-bold FQA-GPS">
+                        Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
+                        <a data-toggle="collapse" href="#row-1">
+                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                        </a>
+                    </div>
+                    <!-- 收合bootstrap ↑ ↓ -->
+                    <div class="collapse font-weight-bold bg-expand-color" id="row-1">
+                        A : 不同地方喔 ~
+                    </div>
+                    <!-- 問題22222222222222222222 -->
+                    <div class="row p-FAQR font-weight-bold FQA-GPS">
+                        Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
+                        <a data-toggle="collapse" href="#row-2">
+                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                        </a>
+                    </div>
+                    <div class="collapse font-weight-bold bg-expand-color" id="row-2">
+                        A : 有 ~ 牛油是麻辣鍋好吃的秘訣。不吃牛可選老火燉雞/野椒酸菜/上湯番茄/蟲草菌菇。
+                    </div>
+                    <!-- 問題33333333333333333333 -->
+                    <div class="row p-FAQR font-weight-bold FQA-GPS">
+                        Q : 開鍋費為何酌收 $120 ?
+                        <a data-toggle="collapse" href="#row-3">
+                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                        </a>
+                    </div>
+                    <div class="collapse font-weight-bold bg-expand-color" id="row-3">
+                        A : 開鍋費不單是白飯、醬料 . . . 鍋底完全天然熬煮，麻辣鍋嚴選進口石柱紅乾辣椒、金陽花椒、燈籠椒為底料，老火燉雞更是以老母雞、土雞爪、精華火腿燉煮24小時，因此食材成本較高喔。
+                    </div>
+                    <!-- 問題44444444444444444444 -->
+                    <div class="row p-FAQR font-weight-bold FQA-GPS">
+                        Q : 請問有特約停車場嗎 ?
+                        <a data-toggle="collapse" href="#row-4">
+                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                        </a>
+                    </div>
+                    <div class="collapse font-weight-bold bg-expand-color" id="row-4">
+                        A : 對面有Times收費停車場喔 ~
+                    </div>
+                    <!-- 問題55555555555555555555 -->
+                    <div class="row p-FAQR font-weight-bold FQA-GPS">
+                        Q : 請問有提供鍋底外帶嗎 ?
+                        <a data-toggle="collapse" href="#row-5">
+                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                        </a>
+                    </div>
+                    <div class="collapse font-weight-bold bg-expand-color" id="row-5">
+                        A : 目前尚未開放 ~ 冬天 !?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-box">
+            <div class="footer-logo">
+                <img src="./img/footer-logo.png" alt="">
+                <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
+                <p>WOW COOL HOT POT</p>
+            </div>
+            <div class="footer-information">
+                <p>
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    台中市中區自由路2段33號
+                    <i class="fas fa-phone-alt mr-2 ml-4"></i>
+                    04-2223-1155
+                </p>
+            </div>
+            <div class="footer-icon-group">
+                <i class="fab fa-line"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer-copyright ">
+                <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
+                    Design by 腳麻吃麻辣鍋</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

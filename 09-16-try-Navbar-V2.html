@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- ↓ 匯入boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- ↓ 匯入font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .navbar-brand {
+            padding: 0;
+        }
+
+        #nav-logo-img {
+            width: 45%;
+        }
+
+        .section-about {
+            min-height: 300px;
+            background-color: white;
+        }
+
+        footer {
+            background-color: #E5E6E7;
+            position: relative;
+            /* ↑ 讓icon跟隨 */
+            padding-top: 30px;
+        }
+
+        footer img {
+            height: 100px;
+        }
+
+        .footer-logo{
+            text-align: center;
+            color: #C39C61;
+        }
+
+        .footer-logo-text{
+            font-size: 22px;
+            letter-spacing: 12px;
+            padding-left: 10px;
+        }
+        .footer-information p{
+            text-align: center;
+        }
+        .footer-copyright{
+            border-top: 1px solid;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 60px;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer-icon-group{
+            position: absolute;
+            left: calc(50% - 90px);
+            bottom: 26.5%;
+            background-color: #E5E6E7;
+            text-align: center;
+            z-index: 999;
+            /* ↑ 讓icon群浮上來蓋過線 */
+            /* ↓ 讓線別貼邊 */
+            padding: 0 30px;
+            
+        }
+        .footer-icon-group i{
+            font-size: 30px;
+        }
+        .nav-item button{
+            border-color: rgb(116, 68, 15);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+            <!-- ↓ 手機版顯示的menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!-- ↑ ml-auto讓選單靠右 -->
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">關於瓦庫</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">鮮來開鍋</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">瓦庫好料</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">瓦庫在哪</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link" href="#">常見問題</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <button type="button" class="btn btn-outline-primary p-0">
+                            <!-- 消除button套件預設的padding ↑ -->
+                            <a class="nav-link" href="#">線上訂位</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="section-about"></div>
+    </section>
+
+    <footer>
+        <div class="footer-box">
+            <div class="footer-logo">
+                <img src="./img/footer-logo.png" alt="">
+                <div class="footer-logo-text">瓦庫麻辣鍋</div>
+                <p>WOW COOL HOT POT</p>
+            </div>
+            <div class="footer-information">
+                <p>
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    台中市中區自由路2段33號
+                    <i class="fas fa-phone-alt mr-2 ml-4"></i>
+                    04-2223-1155
+                </p>
+            </div>
+            <div class="footer-icon-group">
+                <i class="fab fa-line"></i>
+                <i class="fab fa-facebook mx-3"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer-copyright ">
+                <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved. Design by 腳麻吃麻辣鍋</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
