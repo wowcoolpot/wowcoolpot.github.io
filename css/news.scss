@@ -11,6 +11,17 @@ body {
 }
 
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
 //匯入nav的css樣式
 @import "nav";
 
@@ -19,7 +30,7 @@ body {
     background-position: center;
     background-size: cover;
     width: 90vw;
-    height: 400px;
+    height: 557px;
     margin-top: $mt-130;
     position: relative;
     z-index: 1;
@@ -49,12 +60,64 @@ body {
     }
 }
 
-#news{
-    .newsbtn_group{
-        .newsbtn{
-            border:5px solid black;
-            padding:10px 20px;
-            margin: 50px 10px;
+#news {
+    .newsbtn_group {
+        .newsbtn {
+            border: 5px solid black;
+            padding: 10px 20px;
+            margin: 50px 30px;
+            letter-spacing: 5px;
+            text-indent: 10px;
+            font-size: $titletext2;
+            cursor: pointer;
+            display: none;
+        }
+
+        .newsbtn.enable {
+            background-color: #C39C61;
+            color: white;
+            border:5px solid #C39C61;
+        }
+    }
+
+    .news_group {
+        img {
+            width: 100%;
+        }
+
+        .card {
+            border: 0;
+        }
+
+        .card-body {
+            border-right: 1px solid gray;
+
+            .news_Type {
+                background-color: $wowred;
+                //分類小圖的大小
+                width: 60px;
+                height: 60px;
+                border-radius: 18px 0;
+
+                .news_Type_Text {
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+
+            .news_Title {
+                font-size: $titletext2;
+                line-height: 30px;
+                letter-spacing: 8px;
+            }
+        }
+
+        .row {
+            display: none;
+        }
+
+        .row.enable {
+            display: flex;
         }
     }
 }
@@ -62,9 +125,47 @@ body {
 //匯入footer的css樣式
 @import "footer";
 
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    #news {
+        .newsbtn_group{
+            .newsbtn{
+                display: flex;
+            }
+        }
+        .news_group {
+            .card-body {
+                .news_Title {
+                    font-size: $titletext2;
+                    line-height: 30px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    #news {
+        .news_group {
+            .card-body {
+                .news_Title {
+                    font-size: $titletext2;
+                    line-height: 30px;
+                    letter-spacing: 8px;
+                }
+            }
+        }
+    }
+}
+
+
 @media (min-width: 1200px) {
     nav .container {
         max-width: 1240px;
         /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
     }
 }
+
+@media (max-width: 576px) {}
