@@ -14,110 +14,9 @@
         integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
     <!-- ↓ 匯入Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
+    <!-- ↓ 匯入css -->
+    <link rel="stylesheet" href="./css/nav+footer.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body{
-            font-family: 'Merriweather','Noto Serif TC', serif;
-            /* 聽老師說的，先中文，再英文，最後通用(補) */
-        }
-
-        @media (min-width: 1200px) {
-            nav .container {
-                max-width: 1240px;
-                /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
-            }
-        }
-
-        .navbar-brand {
-            padding: 0;
-        }
-
-        #nav-logo-img {
-            width: 45%;
-        }
-
-        .maxwww {
-            min-width: 85px;
-            /* 版面縮減才不會變形 */
-        }
-
-        #book-border {
-            margin: auto 0;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding: 2px 0;
-        }
-
-        .book-side {
-            border-left: 2px solid black;
-            border-right: 2px solid black;
-            padding: 0 3px;
-        }
-
-        #book-text {
-            background-color: black;
-            padding: 1px 8px;
-            color: #C39C61;
-            font-size: 16px;
-        }
-
-        footer {
-            background-color: #E5E6E7;
-            position: relative;
-            /* ↑ 讓icon跟隨 */
-            padding-top: 30px;
-        }
-
-        footer img {
-            height: 100px;
-        }
-
-        .footer-logo {
-            text-align: center;
-            color: #C39C61;
-        }
-
-        .footer-logo-text {
-            font-size: 22px;
-            letter-spacing: 12px;
-            padding-left: 10px;
-        }
-
-        .footer-information p {
-            text-align: center;
-        }
-
-        .footer-copyright {
-            font-size: 15px;
-            border-top: 1px solid;
-            max-width: 1220px;
-            /* ↑ 底線對齊上面LOGO與訂位 */
-            margin: 0 auto;
-            margin-top: 60px;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .footer-icon-group {
-            position: absolute;
-            left: calc(50% - 97.5px);
-            bottom: 25%;
-            background-color: #E5E6E7;
-            text-align: center;
-            z-index: 999;
-            /* ↑ 讓icon群浮上來蓋過線 */
-            /* ↓ 讓線別貼邊 */
-            padding: 0 10px;
-
-        }
-
-        .footer-icon-group i {
-            font-size: 35px;
-            margin: 0 12px;
-        }
-
         #FAQ-L {
             text-align: center;
             font-size: 28px;
@@ -184,11 +83,18 @@
             left: 7px;
             top: 200px;
         }
+        .Q5-padding{
+            padding-left: 27px;
+        }
+        .A5-text{
+            letter-spacing: 0.44px;
+        }
     </style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
             <!-- ↓ 手機版顯示的menu -->
@@ -201,26 +107,26 @@
                     <!-- ml-auto讓選單靠右 ↑ -->
                     <li class="nav-item ml-3">
                         <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww font-weight-bold" href="#">關於瓦庫</a>
+                        <a class="nav-link maxwww" href="#">關於瓦庫</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
+                        <a class="nav-link maxwww" href="#">最新消息</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
+                        <a class="nav-link maxwww" href="#">鮮來開鍋</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫好料</a>
+                        <a class="nav-link maxwww" href="09-17-try-05-瓦庫好料.html">瓦庫好料</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫在哪</a>
+                        <a class="nav-link maxwww" href="">瓦庫在哪</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">常見問題</a>
+                        <a class="nav-link maxwww" href="09-18-try-07-FAQ-V3.html">常見問題</a>
                     </li>
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww font-weight-bold" href="#">線上訂位</a>
+                            <a id="book-text" class="nav-link maxwww" href="#">線上訂位</a>
                         </div>
                     </li>
                 </ul>
@@ -289,7 +195,9 @@
                         </a>
                     </div>
                     <div class="collapse font-weight-bold bg-expand-color" id="row-5">
-                        A : 目前尚未開放 ~ 冬天 !?
+                        <p class="p-0 A5-text">A : 小鍋(2-4人)$300湯底選一+ 700自選食材 + 15 包裝</p>
+                        <p class="Q5-padding">大鍋(4人以上)$600湯底選一+ 700自選食材 + 15 包裝</p>
+
                     </div>
                 </div>
             </div>
@@ -324,14 +232,14 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
