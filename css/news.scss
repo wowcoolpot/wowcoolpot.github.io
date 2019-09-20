@@ -58,6 +58,10 @@ body {
             z-index: -100;
         }
     }
+
+    .news_text.mob {
+        display: none;
+    }
 }
 
 #news {
@@ -74,9 +78,9 @@ body {
         }
 
         .newsbtn.enable {
-            background-color: #C39C61;
+            background-color: $mainbg;
             color: white;
-            border:5px solid #C39C61;
+            border: 5px solid $mainbg;
         }
     }
 
@@ -87,28 +91,32 @@ body {
 
         .card {
             border: 0;
-        }
-
-        .card-body {
-            border-right: 1px solid gray;
-
-            .news_Type {
-                background-color: $wowred;
-                //分類小圖的大小
-                width: 60px;
-                height: 60px;
-                border-radius: 18px 0;
-
-                .news_Type_Text {
-                    font-size: 18px;
-                    color: white;
-                }
+            border-radius: 0;
+            .card-img-top{
+                border-radius: 0;
             }
 
-            .news_Title {
-                font-size: $titletext2;
-                line-height: 30px;
-                letter-spacing: 8px;
+            .card-body {
+                border-right: 1px solid gray;
+
+                .news_Type {
+                    background-color: $wowred;
+                    //分類小圖的大小
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 18px 0;
+
+                    .news_Type_Text {
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+
+                .news_Title {
+                    font-size: $titletext2;
+                    line-height: 30px;
+                    letter-spacing: 8px;
+                }
             }
         }
 
@@ -125,21 +133,83 @@ body {
 //匯入footer的css樣式
 @import "footer";
 
-@media (min-width: 576px) {}
+@media (max-width: 768px) {
+
+    .banner {
+        width: 100%;
+        height: 40vh;
+        margin-top: 0;
+
+        .news_text {
+            font-size: $titletext;
+            background-color: white;
+            color: black;
+            writing-mode: unset;
+            border: 5px solid black;
+            letter-spacing: 20px;
+            //消除最後一字的字距
+            text-indent: 20px;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: unset;
+            bottom: -36px;
+            left: calc(50% - 153.25px);
+            display: none;
+        }
+
+        .news_text.mob {
+            display: block;
+        }
+    }
+
+    #news {
+        margin-top: 50px;
+
+        #collapseNews {
+            position: absolute;
+            z-index: 99;
+            width: 100%;
+        }
+
+        .mobile_Type {
+            text-align: center;
+            font-size: $titletext;
+            letter-spacing: 20px;
+            text-indent: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 0;
+            transition: 0.4s;
+        }
+
+        .mobile_Type.enable {
+            background-color: rgba(195, 156, 97, 1);
+        }
+    }
+}
+
 
 @media (min-width: 768px) {
     #news {
-        .newsbtn_group{
-            .newsbtn{
+        #collapseNews {
+            display: none;
+        }
+
+        .newsbtn_group {
+            .newsbtn {
                 display: flex;
             }
         }
+
         .news_group {
-            .card-body {
-                .news_Title {
-                    font-size: $titletext2;
-                    line-height: 30px;
-                    letter-spacing: 0;
+            .card {
+                .card-body {
+                    .news_Title {
+                        font-size: $titletext2;
+                        line-height: 30px;
+                        letter-spacing: 0;
+                    }
                 }
             }
         }
@@ -160,12 +230,9 @@ body {
     }
 }
 
-
 @media (min-width: 1200px) {
     nav .container {
         max-width: 1240px;
         /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
     }
 }
-
-@media (max-width: 576px) {}
