@@ -293,9 +293,9 @@ footer .footer-copyright {
     color: white;
   }
   #news .news_group .card .card-body .news_Title {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 40px;
-    letter-spacing: 8px;
+    letter-spacing: unset;
   }
   #news .news_group .row {
     display: none;
