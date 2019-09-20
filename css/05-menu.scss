@@ -1,0 +1,685 @@
+@import "var";
+@import "nav";
+.swiper-pagination-bullet-active {
+    background-color: #C39C61;
+    // 將pagination導覽點點改色
+}
+.moNey{
+    font-size: 15px;
+    // 讓所有錢字號都縮小
+    font-style: 
+}
+section#menu{
+    // ↑ 絕對不能空格
+    min-height: 2000px;
+    .menu-banner-img{
+        width: 94.8%;
+        height: 670px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        .menu-banner-textR{
+            position: absolute;
+            right: 125px;
+            top: 125px;
+            font-size: 28px;
+            border: 4px solid black;
+            padding: 30px 18px;
+            z-index: 50;
+            line-height: 60px;
+        }
+        .menu-banner-textColorA{
+            width: 69px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            right: 136px;
+            top: 140px;
+            z-index: 49;
+        }
+        .menu-banner-textColorB{
+            width: 50px;
+            height: 140px;
+            clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
+            background-color: #E2CFB3;
+            position: absolute;
+            right: 110px;
+            top: 110px;
+            z-index: 49;
+        }
+    }
+    .menu-bannerBigColor{
+        width: 91%;
+        height: 795px;
+        background-color: #D4B797;
+        position: absolute;
+        z-index: 1;
+        top: -76px;
+    }
+    .menu-bannerLeftText{
+        position: absolute;
+        top: 550px;
+        left: 100px;
+        font-size: 25px;
+        z-index: 50;
+        .menu-slogan1{
+            margin-top: 35px;
+            margin-right: 30px;
+            line-height: 35px;
+        }
+        .menu-slogan2{
+            line-height: 35px;
+        }
+        .menu-sloganLineA{
+            position: absolute;
+            width: 100px;
+            height: 55px;
+            border-right: 1px solid black;
+            left: -30px;
+            top: -65px;
+        }
+        .menu-sloganLineB{
+            position: absolute;
+            width: 100px;
+            height: 130px;
+            border-right: 1px solid black;
+            left: -85px;
+            top: 215px;
+        }
+    }
+
+    .container{
+        .swiper-container {
+            width: 69.5%;
+            padding-top: 350px;
+            padding-bottom: 50px;
+            z-index: 50;
+            clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
+            .swiper-wrapper {
+                .swiper-slide {
+                    background-position: center;
+                    background-size: cover;
+                    width: 300px;
+                    height: 540px;
+                    border-top-left-radius: 150px;
+                    border-top-right-radius: 150px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    background-color: #B4000D;
+                    color: white;
+                    font-weight: bold;
+                }
+                #slideA {
+                    // ↓ 加陰影 右 下
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+                    .menuA-topText1{
+                        .A-1{
+                            margin-left: 10px;
+                            font-size: 50px;
+                            margin-top: -38px;
+                            font-style: italic;
+                            font-weight: bold;
+                            color: #C39C61;
+                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
+                        }
+                    }
+                    .menuA-topText2{
+                        font-size: 25px;
+                        font-weight: normal;
+                        color: white;
+                        margin-top: -10px;
+                        letter-spacing: 2px;
+                        .markA-img{
+                            width: 20px;
+                            position: absolute;
+                            right: 75px;
+                            top: 70px;
+                        }
+                    } 
+                    .menu-A{
+                        width: 380px;
+                        transform: rotate(-6deg);
+                        margin-left: -25px;
+                        // box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+                    }
+                    .menuA-topText3{
+                        margin-top: -35px;
+                        margin-left: 35px;
+                        text-align: center;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        line-height: 2;
+                        border-top: 1px solid #C39C61;
+                        border-bottom: 1px solid #C39C61;
+                        width: 80%;
+                        padding: 20px 0;
+                    }
+                }
+                #slideB {
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+                    .menuB-topText1{
+                        .B-1{
+                            margin-left: 10px;
+                            font-size: 50px;
+                            margin-top: -38px;
+                            font-style: italic;
+                            font-weight: bold;
+                            color: #C39C61;
+                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
+                        }
+                    }
+                    .menuB-topText2{
+                        font-size: 25px;
+                        font-weight: normal;
+                        color: white;
+                        margin-top: -10px;
+                        letter-spacing: 2px;
+                        .markB-img{
+                            width: 20px;
+                            position: absolute;
+                            right: 75px;
+                            top: 70px;
+                        }
+                    } 
+                    .menu-B{
+                        width: 270px;
+                        margin-left: 10px;
+                        margin-top: 10px;
+                    }
+                    .menuB-topText3{
+                        margin-top: -10px;
+                        margin-left: 34px;
+                        text-align: center;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        line-height: 2;
+                        border-top: 1px solid #C39C61;
+                        border-bottom: 1px solid #C39C61;
+                        width: 80%;
+                        padding: 20px 0;
+                    }
+                }
+                #slideC {
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
+                    .menuC-topText1{
+                        .C-1{
+                            margin-left: 10px;
+                            font-size: 50px;
+                            margin-top: -38px;
+                            font-style: italic;
+                            font-weight: bold;
+                            color: #C39C61;
+                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
+                        }
+                    }
+                    .menuC-topText2{
+                        font-size: 25px;
+                        font-weight: normal;
+                        color: white;
+                        margin-top: -10px;
+                        letter-spacing: 2px;
+                        .markC-img{
+                            width: 20px;
+                            position: absolute;
+                            right: 75px;
+                            top: 70px;
+                        }
+                    } 
+                    .menu-C{
+                        width: 450px;
+                        margin-top: -10px;
+                        margin-left: -60px;
+                        transform: rotate(-12deg);
+                    }
+                    .menuC-topText3{
+                        margin-top: -65px;
+                        margin-left: 35px;
+                        text-align: center;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        line-height: 2;
+                        border-top: 1px solid #C39C61;
+                        border-bottom: 1px solid #C39C61;
+                        width: 80%;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+    .menu-bottom{
+        padding: 140px 0; 
+        width: 100%;
+        position: relative;
+        .menu-bottomL-text{
+            // content: "菜\A單";
+            // white-space: pre-line;
+            // ↑ 以上兩個為content的垂直字寫法
+            font-size: 28px;
+            line-height: 60px;
+            position: absolute;
+            left: 90px;
+            border: 4px solid black;
+            padding: 50px 18px;
+            .menu-bottomL-color1{
+                width: 75px;
+                height: 200px;
+                background-color: #E5E6E7;
+                position: absolute;
+                top: -20px;
+                z-index: -1;
+                left: 10px;
+            }
+            .menu-bottomL-color2{
+                width: 60px;
+                height: 75px;
+                background-color: #E2CFB3;
+                position: absolute;
+                top: 165px;
+                left: -15px;
+                clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 78%, 20% 78%, 20% 0%);
+                z-index: -1;
+            }
+        }
+        .container{
+            max-width: 800px;
+            #menu-bottomA{
+                #menu-bottomA1{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        .card-body{
+                            padding-bottom: 0;
+                            // 消除預設讓下面線能與右邊對齊
+                            h5{
+                                padding-left: 10px;
+                                font-weight: bold;
+                                letter-spacing: 5px;
+                                .menuA1-text1{
+                                    font-size: 10px;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            .menuA1-text2{
+                                border-top: 1px solid black;
+                                border-bottom: 1px solid black;
+                                text-align: end;
+                                font-size: 25px;
+                                font-weight: bold;
+                                margin-left: 10px;
+                                // 讓底2線對齊上面標題字
+                            }
+                        }
+                    }
+                }
+                #menu-bottomA2{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 70px;
+                            // 內容往下推對齊左邊
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuA2-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuA2-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                #menu-bottomA3{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        img{
+                            margin-top: 20px;
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuA3-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuA3-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            #menu-bottomB{
+                margin-top: 20px;
+                #menu-bottomB1{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        .card-body{
+                            padding-bottom: 0;
+                            // 消除預設讓下面線能與右邊對齊
+                            h5{
+                                padding-left: 10px;
+                                font-weight: bold;
+                                letter-spacing: 5px;
+                                .menuB1-text1{
+                                    font-size: 10px;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            .menuB1-text2{
+                                border-top: 1px solid black;
+                                border-bottom: 1px solid black;
+                                text-align: end;
+                                font-size: 25px;
+                                font-weight: bold;
+                                margin-left: 10px;
+                                // 讓底2線對齊上面標題字
+                            }
+                        }
+                    }
+                }
+                #menu-bottomB2{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 13px;
+                            // 內容往下推對齊左邊
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuB2-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuB2-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                #menu-bottomB3{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        img{
+                            margin-top: 60px;
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuB3-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuB3-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            #menu-bottomC{
+                margin-top: 20px;
+                #menu-bottomC1{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 63px;
+                        }
+                        .card-body{
+                            padding-bottom: 0;
+                            // 消除預設讓下面線能與右邊對齊
+                            h5{
+                                padding-left: 10px;
+                                font-weight: bold;
+                                letter-spacing: 5px;
+                                .menuC1-text1{
+                                    font-size: 10px;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            .menuC1-text2{
+                                border-top: 1px solid black;
+                                border-bottom: 1px solid black;
+                                text-align: end;
+                                font-size: 25px;
+                                font-weight: bold;
+                                margin-left: 10px;
+                                // 讓底2線對齊上面標題字
+                            }
+                        }
+                    }
+                }
+                #menu-bottomC2{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 29px;
+                            // 內容往下推對齊左邊
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuC2-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuC2-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                #menu-bottomC3{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        img{
+                            margin-top: 0px;
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuC3-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuC3-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            #menu-bottomD{
+                margin-top: 20px;
+                #menu-bottomD1{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 127px;
+                        }
+                        .card-body{
+                            padding-bottom: 0;
+                            // 消除預設讓下面線能與右邊對齊
+                            h5{
+                                padding-left: 10px;
+                                font-weight: bold;
+                                letter-spacing: 5px;
+                                .menuD1-text1{
+                                    font-size: 10px;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            .menuD1-text2{
+                                border-top: 1px solid black;
+                                border-bottom: 1px solid black;
+                                text-align: end;
+                                font-size: 25px;
+                                font-weight: bold;
+                                margin-left: 10px;
+                                // 讓底2線對齊上面標題字
+                            }
+                        }
+                    }
+                }
+                #menu-bottomD2{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        border-right: 1px solid black;
+                        padding-right: 20px;
+                        img{
+                            margin-top: 68px;
+                            // 內容往下推對齊右邊
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuD2-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuD2-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                #menu-bottomD3{
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        // 拿掉預設
+                        img{
+                            margin-top: 0px;
+                        }
+                        .card-body{
+                        padding-bottom: 0;
+                        // 消除預設讓下面線能與右邊對齊
+                        h5{
+                            padding-left: 10px;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            .menuD3-text1{
+                                font-size: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }                            .menuD3-text2{
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            text-align: end;
+                            font-size: 25px;
+                            font-weight: bold;
+                            margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
