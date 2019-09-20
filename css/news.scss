@@ -78,9 +78,9 @@ body {
         }
 
         .newsbtn.enable {
-            background-color: #C39C61;
+            background-color: $mainbg;
             color: white;
-            border: 5px solid #C39C61;
+            border: 5px solid $mainbg;
         }
     }
 
@@ -91,28 +91,32 @@ body {
 
         .card {
             border: 0;
-        }
-
-        .card-body {
-            border-right: 1px solid gray;
-
-            .news_Type {
-                background-color: $wowred;
-                //分類小圖的大小
-                width: 60px;
-                height: 60px;
-                border-radius: 18px 0;
-
-                .news_Type_Text {
-                    font-size: 18px;
-                    color: white;
-                }
+            border-radius: 0;
+            .card-img-top{
+                border-radius: 0;
             }
 
-            .news_Title {
-                font-size: $titletext2;
-                line-height: 30px;
-                letter-spacing: 8px;
+            .card-body {
+                border-right: 1px solid gray;
+
+                .news_Type {
+                    background-color: $wowred;
+                    //分類小圖的大小
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 18px 0;
+
+                    .news_Type_Text {
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+
+                .news_Title {
+                    font-size: $titletext2;
+                    line-height: 30px;
+                    letter-spacing: 8px;
+                }
             }
         }
 
@@ -199,11 +203,13 @@ body {
         }
 
         .news_group {
-            .card-body {
-                .news_Title {
-                    font-size: $titletext2;
-                    line-height: 30px;
-                    letter-spacing: 0;
+            .card {
+                .card-body {
+                    .news_Title {
+                        font-size: $titletext2;
+                        line-height: 30px;
+                        letter-spacing: 0;
+                    }
                 }
             }
         }
