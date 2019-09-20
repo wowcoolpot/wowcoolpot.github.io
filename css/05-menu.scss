@@ -1,5 +1,8 @@
 @import "var";
 @import "nav";
+body{
+    font-family: "Merriweather", "Noto Serif TC", serif;
+}
 .swiper-pagination-bullet-active {
     background-color: #C39C61;
     // 將pagination導覽點點改色
@@ -7,7 +10,6 @@
 .moNey{
     font-size: 15px;
     // 讓所有錢字號都縮小
-    font-style: 
 }
 section#menu{
     // ↑ 絕對不能空格
@@ -99,6 +101,7 @@ section#menu{
             padding-bottom: 50px;
             z-index: 50;
             clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
+            
             .swiper-wrapper {
                 .swiper-slide {
                     background-position: center;
@@ -289,91 +292,107 @@ section#menu{
             max-width: 800px;
             #menu-bottomA{
                 #menu-bottomA1{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
+                        img{
+                            width: 95%;
+                            margin-top: 15px;
+                            margin-left: calc(50% - 126.18px);
+                        }
                         .card-body{
                             padding-bottom: 0;
                             // 消除預設讓下面線能與右邊對齊
                             h5{
+                                margin-top: -1px;
                                 padding-left: 10px;
                                 font-weight: bold;
-                                letter-spacing: 5px;
+                                letter-spacing: 2px;
                                 .menuA1-text1{
                                     font-size: 10px;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 0.5px;
                                 }
                             }
                             .menuA1-text2{
-                                border-top: 1px solid black;
-                                border-bottom: 1px solid black;
+                                border-top: 0.25px solid black;
+                                border-bottom: 0.25px solid black;
                                 text-align: end;
                                 font-size: 25px;
                                 font-weight: bold;
                                 margin-left: 10px;
+                                margin-right: 10px;
                                 // 讓底2線對齊上面標題字
                             }
                         }
                     }
                 }
                 #menu-bottomA2{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 70px;
+                            width: 80%;
+                            margin-top: 25px;
                             // 內容往下推對齊左邊
+                            margin-left: calc(50% - 106.26px);
                         }
                         .card-body{
                         padding-bottom: 0;
                         // 消除預設讓下面線能與右邊對齊
                         h5{
-                            padding-left: 10px;
+                            margin-top: 8px;
+                            margin-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
                             .menuA2-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuA2-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuA2-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
                             margin-left: 10px;
+                            margin-right: 10px;
                             }
                         }
                     }
                 }
                 #menu-bottomA3{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         img{
-                            margin-top: 20px;
+                            margin-top: 15px;
+                            margin-left: calc(50% - 99.99px);
                         }
                         .card-body{
                         padding-bottom: 0;
                         // 消除預設讓下面線能與右邊對齊
                         h5{
-                            padding-left: 10px;
+                            margin-top: -3px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
+                            margin-left: 10px;
                             .menuA3-text1{
                                 font-size: 10px;
                                 letter-spacing: 2px;
                             }
-                        }                            .menuA3-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuA3-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
@@ -386,46 +405,55 @@ section#menu{
             #menu-bottomB{
                 margin-top: 20px;
                 #menu-bottomB1{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
+                        img{
+                            width: 80%;
+                            margin-left: calc(50% - 103px);
+                            margin-top: 21px;
+                        }
                         .card-body{
                             padding-bottom: 0;
                             // 消除預設讓下面線能與右邊對齊
                             h5{
                                 padding-left: 10px;
                                 font-weight: bold;
-                                letter-spacing: 5px;
+                                letter-spacing: 2px;
+                                margin-top: 8px;
                                 .menuB1-text1{
                                     font-size: 10px;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 0.5px;
                                 }
                             }
                             .menuB1-text2{
-                                border-top: 1px solid black;
-                                border-bottom: 1px solid black;
+                                border-top: 0.25px solid black;
+                                border-bottom: 0.25px solid black;
                                 text-align: end;
                                 font-size: 25px;
                                 font-weight: bold;
                                 margin-left: 10px;
+                                margin-right: 10px;
                                 // 讓底2線對齊上面標題字
                             }
                         }
                     }
                 }
                 #menu-bottomB2{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 13px;
+                            width: 80%;
+                            margin-top: 35px;
                             // 內容往下推對齊左邊
+                            margin-left: calc(50% - 106px);
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -433,44 +461,52 @@ section#menu{
                         h5{
                             padding-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
+                            margin-top: 8px;
                             .menuB2-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuB2-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuB2-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
                             margin-left: 10px;
+                            margin-right: 10px;
                             }
                         }
                     }
                 }
                 #menu-bottomB3{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         img{
-                            margin-top: 60px;
+                            margin-top: 50px;
+                            margin-left: calc(50% - 125px);
+                            transform: rotate(10deg);
                         }
                         .card-body{
                         padding-bottom: 0;
                         // 消除預設讓下面線能與右邊對齊
                         h5{
-                            padding-left: 10px;
+                            margin-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
+                            margin-top: 23px;
                             .menuB3-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuB3-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuB3-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
@@ -483,14 +519,16 @@ section#menu{
             #menu-bottomC{
                 margin-top: 20px;
                 #menu-bottomC1{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 63px;
+                            width: 90%;
+                            margin-top: 36px;
+                            margin-left: calc(50% - 119.54px);
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -498,34 +536,37 @@ section#menu{
                             h5{
                                 padding-left: 10px;
                                 font-weight: bold;
-                                letter-spacing: 5px;
+                                letter-spacing: 2px;
                                 .menuC1-text1{
                                     font-size: 10px;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 0.5px;
                                 }
                             }
                             .menuC1-text2{
-                                border-top: 1px solid black;
-                                border-bottom: 1px solid black;
+                                border-top: 0.25px solid black;
+                                border-bottom: 0.25px solid black;
                                 text-align: end;
                                 font-size: 25px;
                                 font-weight: bold;
                                 margin-left: 10px;
+                                margin-right: 10px;
                                 // 讓底2線對齊上面標題字
                             }
                         }
                     }
                 }
                 #menu-bottomC2{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 29px;
+                            width: 70%;
+                            margin-top: 0;
                             // 內容往下推對齊左邊
+                            margin-left: calc(50% - 92.975px);
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -533,29 +574,34 @@ section#menu{
                         h5{
                             padding-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
                             .menuC2-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuC2-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuC2-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
                             margin-left: 10px;
+                            margin-right: 10px;
                             }
                         }
                     }
                 }
                 #menu-bottomC3{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         img{
-                            margin-top: 0px;
+                            width: 85%;
+                            margin-top: 15px;
+                            margin-left: calc(50% - 125px);
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -563,14 +609,16 @@ section#menu{
                         h5{
                             padding-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
+                            margin-top: 4px;
                             .menuC3-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuC3-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuC3-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
@@ -583,14 +631,17 @@ section#menu{
             #menu-bottomD{
                 margin-top: 20px;
                 #menu-bottomD1{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 127px;
+                            width: 90%;
+                            margin-top: 65px;
+                            margin-left: calc(50% - 126.18px);
+                            transform: rotate(12deg);
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -598,34 +649,38 @@ section#menu{
                             h5{
                                 padding-left: 10px;
                                 font-weight: bold;
-                                letter-spacing: 5px;
+                                letter-spacing: 2px;
+                                margin-top: 5px;
                                 .menuD1-text1{
                                     font-size: 10px;
-                                    letter-spacing: 2px;
+                                    letter-spacing: 0.5px;
                                 }
                             }
                             .menuD1-text2{
-                                border-top: 1px solid black;
-                                border-bottom: 1px solid black;
+                                border-top: 0.25px solid black;
+                                border-bottom: 0.25px solid black;
                                 text-align: end;
                                 font-size: 25px;
                                 font-weight: bold;
                                 margin-left: 10px;
+                                margin-right: 10px;
                                 // 讓底2線對齊上面標題字
                             }
                         }
                     }
                 }
                 #menu-bottomD2{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
-                        padding-right: 20px;
                         img{
-                            margin-top: 68px;
+                            width: 80%;
+                            margin-top: 7px;
                             // 內容往下推對齊右邊
+                            margin-left: calc(50% - 106.26px);
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -633,29 +688,35 @@ section#menu{
                         h5{
                             padding-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
+                            margin-top: 3px;
                             .menuD2-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuD2-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuD2-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
                             margin-left: 10px;
+                            margin-right: 10px;
                             }
                         }
                     }
                 }
                 #menu-bottomD3{
+                    padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         img{
-                            margin-top: 0px;
+                            width: 80%;
+                            margin-top: 32px;
+                            margin-left: calc(50% - 106.655px);
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -663,14 +724,15 @@ section#menu{
                         h5{
                             padding-left: 10px;
                             font-weight: bold;
-                            letter-spacing: 5px;
+                            letter-spacing: 2px;
                             .menuD3-text1{
                                 font-size: 10px;
-                                letter-spacing: 2px;
+                                letter-spacing: 0.5px;
                             }
-                        }                            .menuD3-text2{
-                            border-top: 1px solid black;
-                            border-bottom: 1px solid black;
+                        }                            
+                        .menuD3-text2{
+                            border-top: 0.25px solid black;
+                            border-bottom: 0.25px solid black;
                             text-align: end;
                             font-size: 25px;
                             font-weight: bold;
@@ -683,3 +745,4 @@ section#menu{
         }
     }
 }
+@import "footer";
