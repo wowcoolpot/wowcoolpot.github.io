@@ -1,4 +1,3 @@
-@import "color";
 @import "var";
 
 * {
@@ -75,6 +74,7 @@ body {
             font-size: $titletext2;
             cursor: pointer;
             display: none;
+            transition: 0.4s;
         }
 
         .newsbtn.enable {
@@ -92,7 +92,8 @@ body {
         .card {
             border: 0;
             border-radius: 0;
-            .card-img-top{
+
+            .card-img-top {
                 border-radius: 0;
             }
 
@@ -116,6 +117,7 @@ body {
                     font-size: $titletext2;
                     line-height: 30px;
                     letter-spacing: 8px;
+                    font-weight: bold;
                 }
             }
         }
@@ -126,6 +128,14 @@ body {
 
         .row.enable {
             display: flex;
+        }
+    }
+}
+
+#model_group {
+    .modal-body {
+        p {
+            font-size: $titletext2;
         }
     }
 }
@@ -166,6 +176,53 @@ body {
     #news {
         margin-top: 50px;
 
+        .news_group {
+            img {
+                width: 100%;
+            }
+
+            .card {
+                border: 0;
+                border-radius: 0;
+
+                .card-img-top {
+                    border-radius: 0;
+                }
+
+                .card-body {
+                    border-right: 1px solid gray;
+
+                    .news_Type {
+                        background-color: $wowred;
+                        //分類小圖的大小
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 18px 0;
+
+                        .news_Type_Text {
+                            font-size: 18px;
+                            color: white;
+                        }
+                    }
+
+                    .news_Title {
+                        font-size: $titletext;
+                        line-height: 40px;
+                        letter-spacing: 8px;
+
+                    }
+                }
+            }
+
+            .row {
+                display: none;
+            }
+
+            .row.enable {
+                display: flex;
+            }
+        }
+
         #collapseNews {
             position: absolute;
             z-index: 99;
@@ -185,6 +242,17 @@ body {
 
         .mobile_Type.enable {
             background-color: rgba(195, 156, 97, 1);
+        }
+    }
+}
+
+@media (max-width:991px) {
+    #model_group {
+        .modal-body {
+            h2 {
+                padding: 20px 0;
+                margin: 0;
+            }
         }
     }
 }
