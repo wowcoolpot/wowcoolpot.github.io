@@ -85,8 +85,17 @@ body {
     }
 
     .news_group {
+        a {
+            overflow: hidden;
+        }
+
         img {
             width: 100%;
+            transition: 0.4s;
+        }
+
+        img:hover {
+            transform: scale(1.2, 1.2);
         }
 
         .card {
