@@ -26,7 +26,7 @@
       <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
       <!-- ↓ 手機版顯示的menu -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglooe navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -64,14 +64,33 @@
     <div class="container d-flex justify-content-end">
       <div class="news_text">最新消息<div class="titlebox"></div>
       </div>
+      <div class="news_text mob" data-toggle="collapse" data-target="#collapseNews" aria-expanded="false"
+        aria-controls="collapseNews">最新消息<i class="fas fa-chevron-down"></i></div>
     </div>
   </div>
   <section id="news">
+    <div class="collapse" id="collapseNews">
+      <div class="mobile_Type  enable">
+        <p class="m-0 type_text">所有訊息</p>
+      </div>
+      <div class="mobile_Type">
+        <p class="m-0 type_text">活動情報</p>
+      </div>
+      <div class="mobile_Type">
+        <p class="m-0 type_text">新品上市</p>
+      </div>
+    </div>
     <div class="container">
       <div class="newsbtn_group d-flex justify-content-center">
-        <div class="newsbtn enable"><div class="text">所有消息</div></div>
-        <div class="newsbtn"><div class="text">活動情報</div></div>
-        <div class="newsbtn"><div class="text">新品上市</div></div>
+        <div class="newsbtn enable">
+          <div class="text">所有消息</div>
+        </div>
+        <div class="newsbtn">
+          <div class="text">活動情報</div>
+        </div>
+        <div class="newsbtn">
+          <div class="text">新品上市</div>
+        </div>
       </div>
       <div class="news_group">
         <div id="all" class="row enable">
@@ -244,39 +263,39 @@
           </div>
         </div>
         <div id="newfood" class="row">
-            <div class="col-12 col-sm-12 col-md-4 mb-80">
-                <div class="card text-dark">
-                  <a href=""><img src="./img/news1.jpg" class="card-img-top" alt="..."></a>
-                  <div class="card-body p-0 mt-4 d-flex">
-                    <div class="news_Type d-flex justify-content-center align-items-center">
-                      <div class="news_Type_Text">活動<br>情報</div>
-                    </div>
-                    <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
-                  </div>
+          <div class="col-12 col-sm-12 col-md-4 mb-80">
+            <div class="card text-dark">
+              <a href=""><img src="./img/news1.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
                 </div>
+                <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
               </div>
-              <div class="col-12 col-sm-12 col-md-4 mb-80">
-                <div class="card text-dark">
-                  <a href=""><img src="./img/news2.jpg" class="card-img-top" alt="..."></a>
-                  <div class="card-body p-0 mt-4 d-flex">
-                    <div class="news_Type d-flex justify-content-center align-items-center">
-                      <div class="news_Type_Text">活動<br>情報</div>
-                    </div>
-                    <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
-                  </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 mb-80">
+            <div class="card text-dark">
+              <a href=""><img src="./img/news2.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
                 </div>
+                <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
               </div>
-              <div class="col-12 col-sm-12 col-md-4 mb-80">
-                <div class="card text-dark">
-                  <a href=""><img src="./img/news3.jpg" class="card-img-top" alt="..."></a>
-                  <div class="card-body p-0 mt-4 d-flex">
-                    <div class="news_Type d-flex justify-content-center align-items-center">
-                      <div class="news_Type_Text">活動<br>情報</div>
-                    </div>
-                    <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
-                  </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 mb-80">
+            <div class="card text-dark">
+              <a href=""><img src="./img/news3.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
                 </div>
+                <div class="news_Title mx-auto">歡慶母親節~<br>你打卡，我上菜</div>
               </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -330,6 +349,18 @@
       $(`.row:nth-child(${btn_index})`).addClass('enable');
       //add 按鈕的 enable
       $(`.newsbtn:nth-child(${btn_index})`).addClass('enable');
+    })
+    //手機板分類的jQuery
+    $('.mobile_Type').click(function () {
+      var btn_index = $('.mobile_Type').index(this) + 1;
+      console.log(btn_index);
+      //remove all enable
+      $('.row').removeClass('enable');
+      $('.mobile_Type').removeClass('enable');
+      //add 特定物件的 enable
+      $(`.row:nth-child(${btn_index})`).addClass('enable');
+      //add 按鈕的 enable
+      $(`.mobile_Type:nth-child(${btn_index})`).addClass('enable');
     })
   </script>
 </body>
