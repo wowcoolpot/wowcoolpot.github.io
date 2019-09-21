@@ -3,6 +3,57 @@
 body{
     font-family: "Merriweather", "Noto Serif TC", serif;
 }
+.navbar-brand {
+    z-index: 50;
+    /* 在menu可浮出 */
+    @media (max-width: 992px) {
+        background-color: rgba(180, 0, 12, 0.705);
+        border-radius: 6%;
+        margin-top: 3vh;
+        margin-left: 31.5vw;
+        // 手機版Logo改位置
+    }
+}
+.navbar-light .navbar-toggler {
+    border-color: $mainbg;
+    // 改漢堡條邊框顏色
+}
+.navbar-toggler:hover {
+    background-color: $mainbg;
+    // 漢堡條hover顏色
+}
+.navbar-toggler{
+    z-index: 50;
+    @media (max-width: 992px) {
+        left: 5vw;
+        // 手機版漢堡條改位置
+        top: 5vh;
+        position: fixed;
+        box-shadow: 3px 3px 5px rgb(75, 60, 38);
+        // 給了同色調影子
+    }
+}
+#navbarNavDropdown{
+    // ↓ 電腦版選單設定
+    z-index: 51;
+    text-align: center;
+    // ↓ 手機版選單設定
+    @media (max-width: 992px) {
+        position: fixed;
+        left: calc(50% - 63.5px);
+        top: 15vh;
+    }
+    #book-border{
+        // 手機版選單-線上訂位位置調整
+        @media (max-width: 992px) {
+            text-align: center !important;
+            margin-left: 15px !important;
+        }
+    }
+}
+.navbar-nav {
+    z-index: 50;
+}
 .swiper-pagination-bullet-active {
     background-color: #C39C61;
     // 將pagination導覽點點改色
@@ -15,8 +66,9 @@ section#menu{
     // ↑ 絕對不能空格
     min-height: 2000px;
     .menu-banner-img{
-        width: 94.8%;
-        height: 670px;
+        // width: 94.8%;
+        width: calc(100% - 70px);
+        height: 665.59px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -24,22 +76,25 @@ section#menu{
         top: 0;
         right: 0;
         z-index: 2;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
         .menu-banner-textR{
             position: absolute;
-            right: 125px;
+            right: 10.3%;
             top: 125px;
             font-size: 28px;
             border: 4px solid black;
-            padding: 30px 18px;
+            padding: 68px 18px;
             z-index: 50;
-            line-height: 60px;
+            line-height: 40px;
         }
         .menu-banner-textColorA{
             width: 69px;
             height: 300px;
             background-color: white;
             position: absolute;
-            right: 136px;
+            right: 11.2%;
             top: 140px;
             z-index: 49;
         }
@@ -49,18 +104,50 @@ section#menu{
             clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
             background-color: #E2CFB3;
             position: absolute;
-            right: 110px;
+            right: 9.3%;
             top: 110px;
             z-index: 49;
         }
+        // ↓ 手機版""精選餐點""文字設定
+        .menu-banner-textR-mobile{
+            position: absolute;
+            left: calc(50vw - 170px);
+            top: 520px;
+            font-size: 28px;
+            letter-spacing: 10px;
+            border: 4px solid black;
+            padding: 15px 90px;
+            z-index: 50;
+        }
+        .menu-banner-textColorA-mobile{
+            width: 333px;
+            height: 75px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: calc(50vw - 185px);
+            top: 505px;
+            z-index: 49;
+        }
+        .menu-banner-textColorB-mobile{
+            width: 144px;
+            height: 55px;
+            clip-path: polygon(90% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 71%, 90% 71%);
+            background-color: black;
+            position: absolute;
+            left: calc(50vw + 40px);
+            top: 560px;
+            z-index: 49;
+        }
+        // ↑ 手機版""精選餐點""文字設定
     }
     .menu-bannerBigColor{
         width: 91%;
-        height: 795px;
+        height: 788.47px;
         background-color: #D4B797;
         position: absolute;
         z-index: 1;
         top: -76px;
+        right: 9%;
     }
     .menu-bannerLeftText{
         position: absolute;
@@ -93,19 +180,57 @@ section#menu{
             top: 215px;
         }
     }
+    // ↓ 手機版出現(slogan)
+    .menu-bannerLeftText-mobile{
+        position: absolute;
+        top: 655px;
+        left: calc(50vw - 85px);
+        font-size: 20px;
+        z-index: 50;
+        font-weight: bold;
+        letter-spacing: 8px;
+        line-height: 10px;
+        .menu-slogan1-mobile{
+            margin-left: -30px;
+        }
+        .menu-slogan2-mobile{
+            margin-left: 26px;
+        }
+        .menu-sloganLineA-mobile{
+            position: absolute;
+            width: 53px;
+            height: 55px;
+            border-top: 1px solid black;
+            top: 4px;
+            left: -99px;
+        }
+        .menu-sloganLineB-mobile{
+            position: absolute;
+            width: 100px;
+            height: 130px;
+            border-top: 1px solid black;
+            top: 30px;
+            left: 170px;
+        }
+    }
+    // ------------------------
 
     .container{
         .swiper-container {
             width: 69.5%;
+            max-width: 770px;
             padding-top: 350px;
             padding-bottom: 50px;
             z-index: 50;
             clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
-            
+            @media (max-width: 992px) {
+                margin-top: 300px;
+            }
             .swiper-wrapper {
                 .swiper-slide {
                     background-position: center;
                     background-size: cover;
+                    max-width: 300px;
                     width: 300px;
                     height: 540px;
                     border-top-left-radius: 150px;
@@ -259,9 +384,6 @@ section#menu{
         width: 100%;
         position: relative;
         .menu-bottomL-text{
-            // content: "菜\A單";
-            // white-space: pre-line;
-            // ↑ 以上兩個為content的垂直字寫法
             font-size: 28px;
             line-height: 60px;
             position: absolute;
@@ -290,7 +412,7 @@ section#menu{
         }
         .container{
             max-width: 800px;
-            #menu-bottomA{
+            #menu-bottom-group{
                 #menu-bottomA1{
                     padding: 0;
                     .card{
@@ -298,10 +420,23 @@ section#menu{
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 576px) {
+                            border-right: none;
+                        }
                         img{
                             width: 95%;
                             margin-top: 15px;
                             margin-left: calc(50% - 126.18px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 40vw;
+                                margin-left: 4.5vw;
+                                margin-top: 25px;
+                                max-width: 326.39px;
+                            }
+                            @media (max-width: 576px) {
+                                width: 85vw;
+                                margin-left: 5.5vw;
+                            }
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -311,6 +446,9 @@ section#menu{
                                 padding-left: 10px;
                                 font-weight: bold;
                                 letter-spacing: 2px;
+                                @media (max-width: 992px) and (min-width: 576px) {
+                                    margin-top: -11px;
+                                }
                                 .menuA1-text1{
                                     font-size: 10px;
                                     letter-spacing: 0.5px;
@@ -336,11 +474,22 @@ section#menu{
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 992px) {
+                            border-right: none;
+                        }
                         img{
                             width: 80%;
                             margin-top: 25px;
                             // 內容往下推對齊左邊
                             margin-left: calc(50% - 106.26px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 35vw;
+                                margin-left: 7vw;
+                                max-width: 285.59px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 10vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -369,13 +518,27 @@ section#menu{
                 }
                 #menu-bottomA3{
                     padding: 0;
+                    @media (max-width: 992px) and (min-width: 576px) {
+                        margin-top: 20px;
+                    }
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
+                        @media (max-width: 992px) and (min-width: 576px) {
+                            border-right: 1px solid black;
+                        }
                         img{
                             margin-top: 15px;
                             margin-left: calc(50% - 99.99px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                margin-left: 6.5vw;
+                                margin-top: 40px;
+                                max-width: 298.88px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 13vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -385,6 +548,9 @@ section#menu{
                             font-weight: bold;
                             letter-spacing: 2px;
                             margin-left: 10px;
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                margin-top: -9px;
+                            }
                             .menuA3-text1{
                                 font-size: 10px;
                                 letter-spacing: 2px;
@@ -401,20 +567,29 @@ section#menu{
                         }
                     }
                 }
-            }
-            #menu-bottomB{
-                margin-top: 20px;
                 #menu-bottomB1{
+                    margin-top: 20px;
                     padding: 0;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 992px) {
+                            border-right: none;
+                        }
                         img{
                             width: 80%;
                             margin-left: calc(50% - 103px);
                             margin-top: 21px;
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 37vw;
+                                margin-left: 7vw;
+                                max-width: 301.91px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 12vw;
+                            }
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -444,16 +619,28 @@ section#menu{
                 }
                 #menu-bottomB2{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 576px) {
+                            border-right: none;
+                        }
                         img{
                             width: 80%;
                             margin-top: 35px;
                             // 內容往下推對齊左邊
                             margin-left: calc(50% - 106px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                margin-left: 5.3vw;
+                                margin-top: 30px;
+                                max-width: 318.8px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 10vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -482,14 +669,27 @@ section#menu{
                 }
                 #menu-bottomB3{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         img{
+                            width: 100%;
                             margin-top: 50px;
                             margin-left: calc(50% - 125px);
                             transform: rotate(10deg);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 45vw;
+                                margin-left: 4vw;
+                                margin-top: 50px;
+                                margin-bottom: 25px;
+                                max-width: 367px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 5vw;
+                                width: 90vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -515,20 +715,30 @@ section#menu{
                         }
                     }
                 }
-            }
-            #menu-bottomC{
-                margin-top: 20px;
                 #menu-bottomC1{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 576px) {
+                            border-right: none;
+                        }
                         img{
                             width: 90%;
                             margin-top: 36px;
                             margin-left: calc(50% - 119.54px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 40vw;
+                                margin-left: 4.5vw;
+                                margin-top: 57px;
+                                max-width: 326.39px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 5vw;
+                            }
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -557,16 +767,28 @@ section#menu{
                 }
                 #menu-bottomC2{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 992px) {
+                            border-right: none;
+                        }
                         img{
                             width: 70%;
                             margin-top: 0;
                             // 內容往下推對齊左邊
                             margin-left: calc(50% - 92.975px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 32vw;
+                                margin-left: 8vw;
+                                max-width: 261.11px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 16vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -594,14 +816,27 @@ section#menu{
                 }
                 #menu-bottomC3{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
+                        @media (max-width: 992px) and (min-width: 576px) {
+                            border-right: 1px solid black;    
+                        }
                         img{
                             width: 85%;
                             margin-top: 15px;
                             margin-left: calc(50% - 125px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 40vw;
+                                margin-left: 3vw;
+                                margin-top: 10px;
+                                max-width: 326.39px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 4vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -627,21 +862,32 @@ section#menu{
                         }
                     }
                 }
-            }
-            #menu-bottomD{
-                margin-top: 20px;
                 #menu-bottomD1{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 992px) {
+                            border-right: none;
+                        }
                         img{
                             width: 90%;
                             margin-top: 65px;
                             margin-left: calc(50% - 126.18px);
                             transform: rotate(12deg);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 45vw;
+                                margin-left: 2vw;
+                                margin-top: 40px;
+                                margin-bottom: 13px;
+                                max-width: 365px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 5vw;
+                            }
                         }
                         .card-body{
                             padding-bottom: 0;
@@ -671,16 +917,29 @@ section#menu{
                 }
                 #menu-bottomD2{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
                         // 拿掉預設
                         border-right: 1px solid black;
+                        @media (max-width: 576px) {
+                            border-right: none;
+                        }
                         img{
                             width: 80%;
                             margin-top: 7px;
                             // 內容往下推對齊右邊
                             margin-left: calc(50% - 106.26px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 35vw;
+                                margin-left: 7.5vw;
+                                margin-top: 10px;
+                                max-width: 285.59px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 11vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -709,6 +968,7 @@ section#menu{
                 }
                 #menu-bottomD3{
                     padding: 0;
+                    margin-top: 20px;
                     .card{
                         border: none;
                         border-radius: 0;
@@ -717,6 +977,15 @@ section#menu{
                             width: 80%;
                             margin-top: 32px;
                             margin-left: calc(50% - 106.655px);
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                width: 36vw;
+                                margin-left: 7vw;
+                                margin-top: 30px;
+                                max-width: 293.75px;
+                            }
+                            @media (max-width: 576px) {
+                                margin-left: 10vw;
+                            }
                         }
                         .card-body{
                         padding-bottom: 0;
@@ -725,6 +994,9 @@ section#menu{
                             padding-left: 10px;
                             font-weight: bold;
                             letter-spacing: 2px;
+                            @media (max-width: 992px) and (min-width: 576px) {
+                                margin-top: 6px;
+                            }
                             .menuD3-text1{
                                 font-size: 10px;
                                 letter-spacing: 0.5px;

@@ -25,16 +25,6 @@
         * {
             box-sizing: border-box;
         }
-
-        /* ------------------------- */
-        .navbar-brand {
-            z-index: 50;
-            /* 在menu可浮出 */
-        }
-
-        .navbar-nav {
-            z-index: 50;
-        }
     </style>
 </head>
 
@@ -81,16 +71,22 @@
 
     <section id="menu" class="menu">
         <div class="menu-banner-img" style="background-image: url('./img/menu-bannerImg-13.jpg')">
-            <div class="menu-banner-textR">
+            <div class="menu-banner-textR d-none d-lg-block">
                 精<br>選<br>餐<br>點
             </div>
-            <div class="menu-banner-textColorA"></div>
-            <div class="menu-banner-textColorB"></div>
+            <div class="menu-banner-textColorA d-none d-lg-block"></div>
+            <div class="menu-banner-textColorB d-none d-lg-block"></div>
+            <!-- ↓ 手機版出現(精選餐點) -->
+            <div class="menu-banner-textR-mobile d-block d-lg-none">
+                精選餐點
+            </div>
+            <div class="menu-banner-textColorA-mobile d-block d-lg-none"></div>
+            <div class="menu-banner-textColorB-mobile d-block d-lg-none"></div>
         </div>
         <!-- ↓ banner後方的大背景 -->
         <div class="menu-bannerBigColor"></div>
         <!-- ↓ banner左方的slogan -->
-        <div class="menu-bannerLeftText d-flex">
+        <div class="menu-bannerLeftText d-lg-flex d-none">
             <p class="menu-slogan1">
                 完<br>美<br>的<br>邂<br>逅
             </p>
@@ -100,11 +96,22 @@
             <div class="menu-sloganLineA"></div>
             <div class="menu-sloganLineB"></div>
         </div>
-
+        <!-- ↓ 手機版出現(slogan) -->
+        <div class="menu-bannerLeftText-mobile d-lg-none d-block">
+            <p class="menu-slogan1-mobile">
+                麵點與火鍋
+            </p>
+            <p class="menu-slogan2-mobile">
+                完美的邂逅
+            </p>
+            <div class="menu-sloganLineA-mobile"></div>
+            <div class="menu-sloganLineB-mobile"></div>
+        </div>
+        <!-- ↑ 手機版出現(slogan) -->
         <div class="container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div id="slideA" class="swiper-slide" style="width: 300px">
+                    <div id="slideA" class="swiper-slide">
                         <div class="menuA-topText1 d-flex justify-content-center mt-2">
                             No. <p class="A-1">1</p>
                         </div>
@@ -148,10 +155,10 @@
                         </div>
                         <img class="menu-C" src="./img/menu-C.png" alt="">
                         <div class="menuC-topText3">
-                            當日現桿現做的麵皮，<br>
-                            包裹綿密的綠豆沙餡，<br>
-                            吃起來酥中帶軟，<br>
-                            甜而不膩，老少咸宜。
+                            每日現桿包製，<br>
+                            大蝦仁與豬板油搭配，<br>
+                            以香菜帶出蝦仁的鮮甜，<br>
+                            內餡飽滿值得品味。
                         </div>
                     </div>
                 </div>
@@ -162,17 +169,16 @@
 
         <!-- 下半部開始 -->
         <div class="menu-bottom">
-            <div class="menu-bottomL-text">
+            <div class="menu-bottomL-text d-none d-xl-block">
                 菜<br>單
                 <div class="menu-bottomL-color1"></div>
                 <div class="menu-bottomL-color2"></div>
             </div>
             <div class="container">
-                <div id="menu-bottomA" class="row">
-                    <div id="menu-bottomA1" class="col-4">
+                <div id="menu-bottom-group" class="row">
+                    <div id="menu-bottomA1" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-1.png"
-                                class="card-img-top" alt="">
+                            <img src="./img/menuBottom-1.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     澳洲小羔羊
@@ -187,10 +193,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomA2" class="col-4">
+                    <div id="menu-bottomA2" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-2.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     安格斯牛小排
@@ -199,16 +204,15 @@
                                     </p>
                                 </h5>
                                 <p class="card-text menuA2-text2">
-                                    <nobr class="moNey">$</nobr>    
+                                    <nobr class="moNey">$</nobr>
                                     520
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomA3" class="col-4">
+                    <div id="menu-bottomA3" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-3.png"
-                                class="card-img-top w-75" alt="...">
+                            <img src="./img/menuBottom-3.png" class="card-img-top w-75" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     特選牛腹肉
@@ -223,12 +227,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="menu-bottomB" class="row">
-                    <div id="menu-bottomB1" class="col-4">
+
+                    <div id="menu-bottomB1" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-4.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-4.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     櫛瓜
@@ -243,10 +245,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomB2" class="col-4">
+                    <div id="menu-bottomB2" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-5.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-5.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     鮮蝦紅油抄手
@@ -255,16 +256,15 @@
                                     </p>
                                 </h5>
                                 <p class="card-text menuB2-text2">
-                                    <nobr class="moNey">$</nobr>    
+                                    <nobr class="moNey">$</nobr>
                                     120
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomB3" class="col-4">
+                    <div id="menu-bottomB3" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-6.png"
-                                class="card-img-top w-100" alt="...">
+                            <img src="./img/menuBottom-6.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     四川苕粉
@@ -279,12 +279,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="menu-bottomC" class="row">
-                    <div id="menu-bottomC1" class="col-4">
+                
+                    <div id="menu-bottomC1" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-7.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-7.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     麻辣寬粉
@@ -299,10 +297,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomC2" class="col-4">
+                    <div id="menu-bottomC2" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-8.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-8.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     蔬菜拼盤
@@ -317,10 +314,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomC3" class="col-4">
+                    <div id="menu-bottomC3" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-9.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-9.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     櫻花蝦滑
@@ -335,12 +331,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="menu-bottomD" class="row">
-                    <div id="menu-bottomD1" class="col-4">
+                
+                    <div id="menu-bottomD1" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-10.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-10.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     巴蜀酥肉
@@ -355,10 +349,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomD2" class="col-4">
+                    <div id="menu-bottomD2" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-11.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-11.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     菇類三拼
@@ -373,10 +366,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu-bottomD3" class="col-4">
+                    <div id="menu-bottomD3" class="col-lg-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./img/menuBottom-12.png"
-                                class="card-img-top" alt="...">
+                            <img src="./img/menuBottom-12.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     重慶川丸子
@@ -403,16 +395,16 @@
                 <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
                 <p>WOW COOL HOT POT</p>
             </div>
-            
+
             <div class="container">
-                    <div class="footer-information-com">
-                        <p>
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            台中市中區自由路2段33號
-                            <i class="fas fa-phone-alt mr-2 ml-4"></i>
-                            04-2223-1155
-                        </p>
-                    </div>
+                <div class="footer-information-com">
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        台中市中區自由路2段33號
+                        <i class="fas fa-phone-alt mr-2 ml-4"></i>
+                        04-2223-1155
+                    </p>
+                </div>
                 <div class="row footer-information-mobile">
                     <div class="col-12">
                         <i class="fas fa-map-marker-alt mr-2"></i>
@@ -426,12 +418,14 @@
             </div>
             <div class="footer-icon-group">
                 <a href=""><i class="fab fa-line"></i></a>
-                <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr" target="_blank"><i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
+                    target="_blank"><i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i
+                        class="fab fa-instagram"></i>
                 </a>
             </div>
-            
+
             <div class="footer-copyright ">
                 <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
                     Design by 腳麻吃麻辣鍋</p>
