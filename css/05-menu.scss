@@ -141,13 +141,13 @@ section#menu{
         // ↑ 手機版""精選餐點""文字設定
     }
     .menu-bannerBigColor{
-        width: 91%;
+        width: 91.2%;
         height: 788.47px;
         background-color: #D4B797;
         position: absolute;
         z-index: 1;
         top: -76px;
-        right: 9%;
+        right: 8.8%;
     }
     .menu-bannerLeftText{
         position: absolute;
@@ -407,6 +407,35 @@ section#menu{
                 top: 165px;
                 left: -15px;
                 clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 78%, 20% 78%, 20% 0%);
+                z-index: -1;
+            }
+        }
+        // 手機版菜單標題
+        .menu-bottomL-text-mobile{
+            font-size: 28px;
+            position: absolute;
+            left: calc(50% - 125px);
+            top: 20px;
+            border: 2px solid black;
+            padding: 10px 50px 10px 70px;
+            letter-spacing: 35px;
+            .menu-bottomL-color1-mobile{
+                width: 220px;
+                height: 70px;
+                background-color: #E5E6E7;
+                position: absolute;
+                top: 10px;
+                z-index: -1;
+                left: 40px;
+            }
+            .menu-bottomL-color2-mobile{
+                width: 110px;
+                height: 47px;
+                background-color: #E2CFB3;
+                position: absolute;
+                top: -12px;
+                left: -15px;
+                clip-path: polygon(0% 0%, 0% 100%, 12% 100%, 12% 22%, 100% 22%, 100% 0%);
                 z-index: -1;
             }
         }
@@ -1013,6 +1042,26 @@ section#menu{
                         }
                     }
                 }
+            }
+        }
+        .menu-lastColor{
+            bottom: 0;
+            width: 73.2vw;
+            height: 500px;
+            clip-path: polygon(0% 90%, 0% 100%, 100% 100%, 100% 0%, 93% 0%, 93% 90%,);
+            background-color: #CFB292;
+            position: absolute;
+            left: 22vw;
+            z-index: 50;
+            @media (max-width: 992px) {
+                clip-path: none;
+                left: 7.5vw;
+                width: 92.5vw;
+                height: 10vh;
+            }
+            @media (max-width: 576px) {
+                left: 0;
+                width: 100vw;
             }
         }
     }
