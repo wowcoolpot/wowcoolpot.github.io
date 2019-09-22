@@ -40,6 +40,66 @@ body {
   font-family: "Merriweather", "Noto Serif TC", serif;
 }
 
+.navbar-brand {
+  z-index: 50;
+  /* 在menu可浮出 */
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    background-color: rgba(180, 0, 12, 0.705);
+    border-radius: 6%;
+    margin-top: 3vh;
+    margin-left: 31.5vw;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #c39c61;
+}
+
+.navbar-toggler:hover {
+  background-color: #c39c61;
+}
+
+.navbar-toggler {
+  z-index: 50;
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    left: 5vw;
+    top: 5vh;
+    position: fixed;
+    -webkit-box-shadow: 3px 3px 5px #4b3c26;
+            box-shadow: 3px 3px 5px #4b3c26;
+  }
+}
+
+#navbarNavDropdown {
+  z-index: 51;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  #navbarNavDropdown {
+    position: fixed;
+    left: calc(50% - 63.5px);
+    top: 15vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbarNavDropdown #book-border {
+    text-align: center !important;
+    margin-left: 15px !important;
+  }
+}
+
+.navbar-nav {
+  z-index: 50;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #C39C61;
 }
@@ -53,8 +113,8 @@ section#menu {
 }
 
 section#menu .menu-banner-img {
-  width: 94.8%;
-  height: 670px;
+  width: calc(100% - 70px);
+  height: 665.59px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,15 +124,21 @@ section#menu .menu-banner-img {
   z-index: 2;
 }
 
+@media (max-width: 992px) {
+  section#menu .menu-banner-img {
+    width: 100%;
+  }
+}
+
 section#menu .menu-banner-img .menu-banner-textR {
   position: absolute;
-  right: 125px;
+  right: 10.3%;
   top: 125px;
   font-size: 28px;
   border: 4px solid black;
-  padding: 30px 18px;
+  padding: 68px 18px;
   z-index: 50;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 section#menu .menu-banner-img .menu-banner-textColorA {
@@ -80,7 +146,7 @@ section#menu .menu-banner-img .menu-banner-textColorA {
   height: 300px;
   background-color: white;
   position: absolute;
-  right: 136px;
+  right: 11.2%;
   top: 140px;
   z-index: 49;
 }
@@ -92,18 +158,52 @@ section#menu .menu-banner-img .menu-banner-textColorB {
           clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
   background-color: #E2CFB3;
   position: absolute;
-  right: 110px;
+  right: 9.3%;
   top: 110px;
   z-index: 49;
 }
 
+section#menu .menu-banner-img .menu-banner-textR-mobile {
+  position: absolute;
+  left: calc(50vw - 170px);
+  top: 520px;
+  font-size: 28px;
+  letter-spacing: 10px;
+  border: 4px solid black;
+  padding: 15px 90px;
+  z-index: 50;
+}
+
+section#menu .menu-banner-img .menu-banner-textColorA-mobile {
+  width: 333px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: calc(50vw - 185px);
+  top: 505px;
+  z-index: 49;
+}
+
+section#menu .menu-banner-img .menu-banner-textColorB-mobile {
+  width: 144px;
+  height: 55px;
+  -webkit-clip-path: polygon(90% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 71%, 90% 71%);
+          clip-path: polygon(90% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 71%, 90% 71%);
+  background-color: black;
+  position: absolute;
+  left: calc(50vw + 40px);
+  top: 560px;
+  z-index: 49;
+}
+
 section#menu .menu-bannerBigColor {
-  width: 91%;
-  height: 795px;
+  width: 91.2%;
+  height: 788.47px;
   background-color: #D4B797;
   position: absolute;
   z-index: 1;
   top: -76px;
+  right: 8.8%;
 }
 
 section#menu .menu-bannerLeftText {
@@ -142,8 +242,46 @@ section#menu .menu-bannerLeftText .menu-sloganLineB {
   top: 215px;
 }
 
+section#menu .menu-bannerLeftText-mobile {
+  position: absolute;
+  top: 655px;
+  left: calc(50vw - 85px);
+  font-size: 20px;
+  z-index: 50;
+  font-weight: bold;
+  letter-spacing: 8px;
+  line-height: 10px;
+}
+
+section#menu .menu-bannerLeftText-mobile .menu-slogan1-mobile {
+  margin-left: -30px;
+}
+
+section#menu .menu-bannerLeftText-mobile .menu-slogan2-mobile {
+  margin-left: 26px;
+}
+
+section#menu .menu-bannerLeftText-mobile .menu-sloganLineA-mobile {
+  position: absolute;
+  width: 53px;
+  height: 55px;
+  border-top: 1px solid black;
+  top: 4px;
+  left: -99px;
+}
+
+section#menu .menu-bannerLeftText-mobile .menu-sloganLineB-mobile {
+  position: absolute;
+  width: 100px;
+  height: 130px;
+  border-top: 1px solid black;
+  top: 30px;
+  left: 170px;
+}
+
 section#menu .container .swiper-container {
   width: 69.5%;
+  max-width: 770px;
   padding-top: 350px;
   padding-bottom: 50px;
   z-index: 50;
@@ -151,9 +289,16 @@ section#menu .container .swiper-container {
           clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
 }
 
+@media (max-width: 992px) {
+  section#menu .container .swiper-container {
+    margin-top: 300px;
+  }
+}
+
 section#menu .container .swiper-container .swiper-wrapper .swiper-slide {
   background-position: center;
   background-size: cover;
+  max-width: 300px;
   width: 300px;
   height: 540px;
   border-top-left-radius: 150px;
@@ -352,43 +497,103 @@ section#menu .menu-bottom .menu-bottomL-text .menu-bottomL-color2 {
   z-index: -1;
 }
 
+section#menu .menu-bottom .menu-bottomL-text-mobile {
+  font-size: 28px;
+  position: absolute;
+  left: calc(50% - 125px);
+  top: 20px;
+  border: 2px solid black;
+  padding: 10px 50px 10px 70px;
+  letter-spacing: 35px;
+}
+
+section#menu .menu-bottom .menu-bottomL-text-mobile .menu-bottomL-color1-mobile {
+  width: 220px;
+  height: 70px;
+  background-color: #E5E6E7;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  left: 40px;
+}
+
+section#menu .menu-bottom .menu-bottomL-text-mobile .menu-bottomL-color2-mobile {
+  width: 110px;
+  height: 47px;
+  background-color: #E2CFB3;
+  position: absolute;
+  top: -12px;
+  left: -15px;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 12% 100%, 12% 22%, 100% 22%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 12% 100%, 12% 22%, 100% 22%, 100% 0%);
+  z-index: -1;
+}
+
 section#menu .menu-bottom .container {
   max-width: 800px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 {
   padding: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card img {
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card img {
   width: 95%;
   margin-top: 15px;
   margin-left: calc(50% - 126.18px);
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card img {
+    width: 40vw;
+    margin-left: 4.5vw;
+    margin-top: 25px;
+    max-width: 326.39px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card img {
+    width: 85vw;
+    margin-left: 5.5vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card .card-body h5 {
   margin-top: -1px;
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card .card-body h5 .menuA1-text1 {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card .card-body h5 {
+    margin-top: -11px;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card .card-body h5 .menuA1-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card .card-body .menuA1-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 .card .card-body .menuA1-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -398,39 +603,59 @@ section#menu .menu-bottom .container #menu-bottomA #menu-bottomA1 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 {
   padding: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card img {
+@media (max-width: 992px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card img {
   width: 80%;
   margin-top: 25px;
   margin-left: calc(50% - 106.26px);
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card img {
+    width: 35vw;
+    margin-left: 7vw;
+    max-width: 285.59px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card img {
+    margin-left: 10vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card .card-body h5 {
   margin-top: 8px;
   margin-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card .card-body h5 .menuA2-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card .card-body h5 .menuA2-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card .card-body .menuA2-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA2 .card .card-body .menuA2-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -440,37 +665,69 @@ section#menu .menu-bottom .container #menu-bottomA #menu-bottomA2 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 {
   padding: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 {
+    margin-top: 20px;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card {
   border: none;
   border-radius: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card img {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card {
+    border-right: 1px solid black;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card img {
   margin-top: 15px;
   margin-left: calc(50% - 99.99px);
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card img {
+    margin-left: 6.5vw;
+    margin-top: 40px;
+    max-width: 298.88px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card img {
+    margin-left: 13vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card .card-body h5 {
   margin-top: -3px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-left: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card .card-body h5 .menuA3-text1 {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card .card-body h5 {
+    margin-top: -9px;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card .card-body h5 .menuA3-text1 {
   font-size: 10px;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card .card-body .menuA3-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA3 .card .card-body .menuA3-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -479,43 +736,60 @@ section#menu .menu-bottom .container #menu-bottomA #menu-bottomA3 .card .card-bo
   margin-left: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 {
   margin-top: 20px;
-}
-
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 {
   padding: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card img {
+@media (max-width: 992px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card img {
   width: 80%;
   margin-left: calc(50% - 103px);
   margin-top: 21px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card img {
+    width: 37vw;
+    margin-left: 7vw;
+    max-width: 301.91px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card img {
+    margin-left: 12vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 8px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card .card-body h5 .menuB1-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card .card-body h5 .menuB1-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card .card-body .menuB1-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB1 .card .card-body .menuB1-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -525,39 +799,60 @@ section#menu .menu-bottom .container #menu-bottomB #menu-bottomB1 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card img {
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card img {
   width: 80%;
   margin-top: 35px;
   margin-left: calc(50% - 106px);
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card img {
+    margin-left: 5.3vw;
+    margin-top: 30px;
+    max-width: 318.8px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card img {
+    margin-left: 10vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 8px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card .card-body h5 .menuB2-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card .card-body h5 .menuB2-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card .card-body .menuB2-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB2 .card .card-body .menuB2-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -567,39 +862,58 @@ section#menu .menu-bottom .container #menu-bottomB #menu-bottomB2 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card {
   border: none;
   border-radius: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card img {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card img {
+  width: 100%;
   margin-top: 50px;
   margin-left: calc(50% - 125px);
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card img {
+    width: 45vw;
+    margin-left: 4vw;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    max-width: 367px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card img {
+    margin-left: 5vw;
+    width: 90vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card .card-body h5 {
   margin-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 23px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card .card-body h5 .menuB3-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card .card-body h5 .menuB3-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card .card-body .menuB3-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomB3 .card .card-body .menuB3-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -608,42 +922,60 @@ section#menu .menu-bottom .container #menu-bottomB #menu-bottomB3 .card .card-bo
   margin-left: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 {
+  padding: 0;
   margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 {
-  padding: 0;
-}
-
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card img {
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card img {
   width: 90%;
   margin-top: 36px;
   margin-left: calc(50% - 119.54px);
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card img {
+    width: 40vw;
+    margin-left: 4.5vw;
+    margin-top: 57px;
+    max-width: 326.39px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card img {
+    margin-left: 5vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card .card-body h5 .menuC1-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card .card-body h5 .menuC1-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card .card-body .menuC1-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC1 .card .card-body .menuC1-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -653,38 +985,59 @@ section#menu .menu-bottom .container #menu-bottomC #menu-bottomC1 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card img {
+@media (max-width: 992px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card img {
   width: 70%;
   margin-top: 0;
   margin-left: calc(50% - 92.975px);
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card img {
+    width: 32vw;
+    margin-left: 8vw;
+    max-width: 261.11px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card img {
+    margin-left: 16vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card .card-body h5 .menuC2-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card .card-body h5 .menuC2-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card .card-body .menuC2-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC2 .card .card-body .menuC2-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -694,38 +1047,60 @@ section#menu .menu-bottom .container #menu-bottomC #menu-bottomC2 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card {
   border: none;
   border-radius: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card img {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card {
+    border-right: 1px solid black;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card img {
   width: 85%;
   margin-top: 15px;
   margin-left: calc(50% - 125px);
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card img {
+    width: 40vw;
+    margin-left: 3vw;
+    margin-top: 10px;
+    max-width: 326.39px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card img {
+    margin-left: 4vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 4px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card .card-body h5 .menuC3-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card .card-body h5 .menuC3-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card .card-body .menuC3-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomC3 .card .card-body .menuC3-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -734,21 +1109,24 @@ section#menu .menu-bottom .container #menu-bottomC #menu-bottomC3 .card .card-bo
   margin-left: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 {
+  padding: 0;
   margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 {
-  padding: 0;
-}
-
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card img {
+@media (max-width: 992px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card img {
   width: 90%;
   margin-top: 65px;
   margin-left: calc(50% - 126.18px);
@@ -756,23 +1134,39 @@ section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card img {
           transform: rotate(12deg);
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card img {
+    width: 45vw;
+    margin-left: 2vw;
+    margin-top: 40px;
+    margin-bottom: 13px;
+    max-width: 365px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card img {
+    margin-left: 5vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card .card-body h5 .menuD1-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card .card-body h5 .menuD1-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card .card-body .menuD1-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD1 .card .card-body .menuD1-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -782,39 +1176,61 @@ section#menu .menu-bottom .container #menu-bottomD #menu-bottomD1 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card {
   border: none;
   border-radius: 0;
   border-right: 1px solid black;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card img {
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card {
+    border-right: none;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card img {
   width: 80%;
   margin-top: 7px;
   margin-left: calc(50% - 106.26px);
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card img {
+    width: 35vw;
+    margin-left: 7.5vw;
+    margin-top: 10px;
+    max-width: 285.59px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card img {
+    margin-left: 11vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 3px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card .card-body h5 .menuD2-text1 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card .card-body h5 .menuD2-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card .card-body .menuD2-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD2 .card .card-body .menuD2-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
@@ -824,43 +1240,94 @@ section#menu .menu-bottom .container #menu-bottomD #menu-bottomD2 .card .card-bo
   margin-right: 10px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 {
   padding: 0;
+  margin-top: 20px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card {
   border: none;
   border-radius: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card img {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card img {
   width: 80%;
   margin-top: 32px;
   margin-left: calc(50% - 106.655px);
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card .card-body {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card img {
+    width: 36vw;
+    margin-left: 7vw;
+    margin-top: 30px;
+    max-width: 293.75px;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card img {
+    margin-left: 10vw;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card .card-body {
   padding-bottom: 0;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card .card-body h5 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card .card-body h5 {
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card .card-body h5 .menuD3-text1 {
+@media (max-width: 992px) and (min-width: 576px) {
+  section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card .card-body h5 {
+    margin-top: 6px;
+  }
+}
+
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card .card-body h5 .menuD3-text1 {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
 
-section#menu .menu-bottom .container #menu-bottomD #menu-bottomD3 .card .card-body .menuD3-text2 {
+section#menu .menu-bottom .container #menu-bottom-group #menu-bottomD3 .card .card-body .menuD3-text2 {
   border-top: 0.25px solid black;
   border-bottom: 0.25px solid black;
   text-align: end;
   font-size: 25px;
   font-weight: bold;
   margin-left: 10px;
+}
+
+section#menu .menu-bottom .menu-lastColor {
+  bottom: 0;
+  width: 73.2vw;
+  height: 500px;
+  -webkit-clip-path: polygon(0% 90%, 0% 100%, 100% 100%, 100% 0%, 93% 0%, 93% 90%);
+          clip-path: polygon(0% 90%, 0% 100%, 100% 100%, 100% 0%, 93% 0%, 93% 90%);
+  background-color: #CFB292;
+  position: absolute;
+  left: 22vw;
+  z-index: 50;
+}
+
+@media (max-width: 992px) {
+  section#menu .menu-bottom .menu-lastColor {
+    -webkit-clip-path: none;
+            clip-path: none;
+    left: 7.5vw;
+    width: 92.5vw;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 576px) {
+  section#menu .menu-bottom .menu-lastColor {
+    left: 0;
+    width: 100vw;
+  }
 }
 
 footer {
