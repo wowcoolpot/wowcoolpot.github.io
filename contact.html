@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>06-CONTACT</title>
+  <!-- ↓ 匯入boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- ↓ 匯入font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+  <!-- ↓ 匯入Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
+  <!-- ↓ 日期小工具 -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+  <!-- ↓ 匯入css -->
+  <link rel="stylesheet" href="./css/contact.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+      <!-- ↓ 手機版顯示的menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglooe navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <!-- ml-auto讓選單靠右 ↑ -->
+          <li class="nav-item ml-3">
+            <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+            <a class="nav-link maxwww" href="#">關於瓦庫</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a class="nav-link maxwww" href="#">最新消息</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a class="nav-link maxwww" href="#">鮮來開鍋</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a class="nav-link maxwww" href="#">瓦庫好料</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a class="nav-link maxwww" href="#">瓦庫在哪</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a class="nav-link maxwww" href="#">常見問題</a>
+          </li>
+          <li id="book-border" class="nav-item ml-5">
+            <div class="book-side">
+              <a id="book-text" class="nav-link maxwww" href="#">線上訂位</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="banner mx-auto">
+  </div>
+  <section id="form">
+    <div class="container">
+      <div class="row">
+        <div id="form_title" class="col-12 col-md-2">
+          <div class="form_text">與我訂位<div class="titlebox"></div>
+            <div class="titlebox2"></div>
+          </div>
+        </div>
+        <!-- 手機板標題 -->
+        <div class="form_text mob mx-auto mb-5">與我訂位<div class="titlebox"></div>
+          <div class="titlebox2"></div>
+        </div>
+        <div id="form_body" class="col-12 col-md-10 pl-md-5">
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <input type="name" class="form-control" placeholder="姓名">
+            </div>
+            <div class="form-group col-md-5">
+              <input type="tel" class="form-control" placeholder="電話">
+            </div>
+            <div class="form-group col-md-2">
+              <select id="inputState" class="form-control">
+                <option selected>人數</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="form-group col-md-6">
+              <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"
+                  placeholder="日期" />
+                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <select id="inputState" class="form-control">
+                <option selected>預約時段</option>
+                <option>平日17:30~24:00</option>
+                <option>假日11:30~16:00</option>
+                <option>假日17:30~24:00</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="form_btn ml-md-auto">
+            <div class="form_btn_text">送出</div>
+          </button>
+          <div class="row">
+            <div id="inf" class="col-12">
+              <h3 class="">訂位須知</h3>
+            </div>
+            <div class="inf_text d-flex col-12">
+              <p><i class="fas fa-circle"></i></p>
+              <p>線上訂位開放14天的訂位。</p>
+            </div>
+            <div class="inf_text d-flex col-12">
+              <p><i class="fas fa-circle"></i></p>
+              <p>訂位人數10位以上請向餐廳電話訂位。</p>
+            </div>
+            <div class="inf_text d-flex col-12">
+              <p><i class="fas fa-circle"></i></p>
+              <p>每餐期訂位保留10分鐘（增減人數請事先通知)。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="location" class="mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="map"></div>
+        </div>
+        <div class="loc_text mob mx-auto mt-5">聯絡資訊<div class="titlebox"></div>
+        </div>
+        <div class="mt-5 col-12">
+          <div class="row">
+            <div id="loc_inf" class="col-12 col-md-10 d-flex">
+              <div class="d-flex align-items-end">
+                <div class="loc_inf row">
+                  <div id="address" class="col-12 d-flex">
+                    <p class="title"><i class="icon fas fa-map-marker-alt"></i>
+                      <div class="text">台中市中區自由路二段33號</div>
+                    </p>
+                  </div>
+                  <div id="tel" class="col-12 d-flex">
+                    <p class="title"><i class="icon fas fa-phone-alt"></i>
+                      <div class="text">04-2223-1155</div>
+                    </p>
+                  </div>
+                  <div id="time" class="col-12">
+                    <div class="row">
+                      <div class="col-4 col-md-5 col-lg-4">
+                        <div class="time_area1 d-flex">
+                          <p><i class="icon far fa-clock"></i></p>
+                          <div class="time_area1-1">
+                            <h4>平日</h4>
+                            <div class="time_text">17:30~24:00<br>(最後點餐23:00)</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-5 col-md-5 col-lg-5">
+                        <div class="time_area2 d-flex">
+                          <div class="time_area1-1 mx-auto">
+                            <h4>假日</h4>
+                            <div class="time_text">11:30~16:00 / 17:30~24:00<br>(最後點餐14:30 / 23:00)</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-auto col-3 col-md-2 col-lg-3">
+                        <div class="time_area3">
+                          <div class="icon_s d-flex justify-content-around"><i class="fab fa-line"></i><i
+                              class="fab fa-facebook  mx-1"></i><i class="fab fa-instagram"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="loctitle" class="col-2">
+              <div class="loc_text ml-auto">聯絡資訊
+                <div class="titlebox"></div>
+              </div>
+            </div>
+          </div>
+          <div class="loc_inf mob">
+            <div id="address" class="d-flex">
+              <p class="title"><i class="icon fas fa-map-marker-alt"></i>
+                <div class="text">台中市中區自由路二段33號</div>
+              </p>
+            </div>
+            <div id="tel" class="d-flex">
+              <p class="title"><i class="icon fas fa-phone-alt"></i>
+                <div class="text">04-2223-1155</div>
+              </p>
+            </div>
+            <div id="time">
+              <div class="title d-flex"><i class="icon far fa-clock"></i>
+                <div>
+                  <div class="text">平日<br>17:30~24:00(最後點餐23:00)</div>
+                  <div class="text">假日<br>11:30～16:00 (最後點餐14:30)<br>17:30～24:00 (最後點餐23:00) </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-box">
+      <div class="footer-logo">
+        <img src="./img/footer-logo.png" alt="">
+        <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
+        <p>WOW COOL HOT POT</p>
+      </div>
+
+      <div class="container">
+        <div class="footer-information-com">
+          <p>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            台中市中區自由路2段33號
+            <i class="fas fa-phone-alt mr-2 ml-4"></i>
+            04-2223-1155
+          </p>
+        </div>
+        <div class="row footer-information-mobile">
+          <div class="col-12">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            台中市中區自由路2段33號
+          </div>
+          <div class="col-12">
+            <i class="fas fa-phone-alt mr-2"></i>
+            04-2223-1155
+          </div>
+        </div>
+      </div>
+      <div class="footer-icon-group">
+        <a href=""><i class="fab fa-line"></i></a>
+        <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
+          target="_blank"><i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i
+            class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="footer-copyright ">
+        <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
+          Design by 腳麻吃麻辣鍋</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js">
+  </script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js">
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCookeqQruWcv1UjVtrKct6_QbC4krpLHU&callback=initMap"
+    async defer></script>
+  <script>
+    $(function () {
+      $('#datetimepicker4').datetimepicker({
+        format: 'L'
+      });
+    });
+    var map;
+
+    function initMap() {
+      var wowcool = {
+        lat: 24.139139,
+        lng: 120.681119
+      };
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: wowcool,
+        zoom: 18,
+        styles: [{
+            elementType: 'geometry',
+            stylers: [{
+              color: '#ebe3cd'
+            }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#523735'
+            }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#f5f1e6'
+            }]
+          },
+          {
+            featureType: 'administrative',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#c9b2a6'
+            }]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#dcd2be'
+            }]
+          },
+          {
+            featureType: 'administrative.land_parcel',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#ae9e90'
+            }]
+          },
+          {
+            featureType: 'landscape.natural',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#dfd2ae'
+            }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#dfd2ae'
+            }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#93817c'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry.fill',
+            stylers: [{
+              color: '#a5b076'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#447530'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#f5f1e6'
+            }]
+          },
+          {
+            featureType: 'road.arterial',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#fdfcf8'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#f8c967'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#e9bc62'
+            }]
+          },
+          {
+            featureType: 'road.highway.controlled_access',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#e98d58'
+            }]
+          },
+          {
+            featureType: 'road.highway.controlled_access',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#db8555'
+            }]
+          },
+          {
+            featureType: 'road.local',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#806b63'
+            }]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#dfd2ae'
+            }]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#8f7d77'
+            }]
+          },
+          {
+            featureType: 'transit.line',
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#ebe3cd'
+            }]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#dfd2ae'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry.fill',
+            stylers: [{
+              color: '#b9d3c2'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#92998d'
+            }]
+          }
+        ]
+      });
+      var marker = new google.maps.Marker({
+        position: wowcool,
+        map: map,
+        title: '瓦庫麻辣鍋'
+      });
+    }
+  </script>
+
+</body>
+
+</html>

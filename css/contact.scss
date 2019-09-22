@@ -1,0 +1,306 @@
+@import "var";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", "Noto Serif TC", serif;
+    /* 聽老師說的，先中文，再英文，最後通用(補) */
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+//匯入nav的css樣式
+@import "nav";
+
+.banner {
+    background-image: url("../img/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 90vw;
+    height: 557px;
+    margin-top: $mt-130;
+    position: relative;
+    z-index: 1;
+}
+
+#form {
+    margin-top: $mt-130;
+
+    #form_title {
+        .form_text {
+            font-size: $titletext;
+            color: black;
+            writing-mode: vertical-lr;
+            border: 5px solid black;
+            letter-spacing: 40px;
+            //消除最後一字的字距
+            text-indent: 40px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+
+            .titlebox {
+                background-color: $footerbg;
+                width: 90px;
+                height: 230px;
+                position: absolute;
+                z-index: -100;
+                left: 20px;
+            }
+
+            .titlebox2 {
+                background-color: $titlebg;
+                width: 90px;
+                height: 230px;
+                position: absolute;
+                z-index: -101;
+                left: -20px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    .form_text.mob {
+        display: none;
+    }
+
+    #form_body {
+        .form_btn {
+            background-color: $mainbg;
+            color: white;
+            border: 0;
+            padding: 2px;
+            display: block;
+
+            .form_btn_text {
+                border: 2px solid white;
+                font-size: $titletext2;
+                letter-spacing: 10px;
+                text-indent: 10px;
+                padding: 0 10px;
+            }
+        }
+
+        #inf {
+            margin: 15px 0;
+        }
+
+        .inf_text {
+            p {
+                font-size: 18px;
+                margin: 13px 0 0 0;
+
+                i {
+                    font-size: 10px;
+                    color: $mainbg;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+#location {
+    margin-top: 50px;
+
+    #map {
+        height: 45vh;
+    }
+
+    .loc_text.mob{
+        display: none;
+    }
+
+    #loctitle {
+        .loc_text {
+            font-size: $titletext;
+            color: black;
+            writing-mode: vertical-lr;
+            border: 5px solid black;
+            letter-spacing: 40px;
+            //消除最後一字的字距
+            text-indent: 40px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .titlebox {
+            background-color: $footerbg;
+            width: 80px;
+            height: 340px;
+            position: absolute;
+            z-index: -100;
+            left: -15px;
+            top: -20px;
+        }
+    }
+
+    .loc_inf {
+
+        #address,
+        #tel,
+        #time {
+            .icon {
+                font-size: 20px;
+                margin-right: 20px;
+                line-height: 30px;
+            }
+
+            .text {
+                font-size: $titletext2;
+            }
+        }
+
+        #time {
+            .time_area1 {
+                border-right: 2px solid black;
+            }
+
+            .time_area2 {
+                border-right: 2px solid black;
+            }
+
+            .time_area3 {
+                .icon_s {
+                    i {
+                        font-size: 22px;
+
+                    }
+                }
+            }
+        }
+    }
+    .loc_inf.mob{
+        display: none;
+    }
+}
+
+//匯入footer的css樣式
+@import "footer";
+
+@media (max-width: 768px) {
+
+    .banner {
+        display: none;
+    }
+
+    #form {
+        margin-top: 30px;
+
+        #form_title {
+            .form_text {
+                display: none;
+            }
+        }
+
+        #form_body {
+            .form_btn {
+                margin: 0 auto;
+            }
+
+            h3 {
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+
+        .form_text {
+            font-size: $titletext;
+            color: black;
+            border: 5px solid black;
+            letter-spacing: 20px;
+            //消除最後一字的字距
+            text-indent: 20px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+
+            .titlebox {
+                background-color: $footerbg;
+                width: 230px;
+                height: 80px;
+                position: absolute;
+                z-index: -100;
+                bottom: -15px;
+                right: -15px;
+            }
+
+            .titlebox2 {
+                background-color: $titlebg;
+                width: 250px;
+                height: 75px;
+                position: absolute;
+                z-index: -101;
+                top: -15px;
+                left: -15px;
+            }
+        }
+
+        .form_text.mob {
+            display: block;
+        }
+    }
+
+    #location {
+        .loc_text{
+            font-size: $titletext;
+            color: black;
+            border: 5px solid black;
+            letter-spacing: 20px;
+            //消除最後一字的字距
+            text-indent: 20px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            .titlebox {
+                background-color: $footerbg;
+                width: 230px;
+                height: 80px;
+                position: absolute;
+                z-index: -100;
+                bottom: -15px;
+                left: -15px;
+            }
+        }
+        .loc_text.mob{
+            display: block;
+        }
+        #loctitle {
+            .loc_text {
+                display: none;
+            }
+        }
+        .loc_inf{
+            display: none;
+        }
+        .loc_inf.mob{
+            display: block;
+        }
+    }
+}
+
+@media (max-width:991px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 991px) {}
+
+@media (min-width: 1200px) {
+    nav .container {
+        max-width: 1240px;
+        /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
+    }
+}
