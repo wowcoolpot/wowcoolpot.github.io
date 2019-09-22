@@ -1,0 +1,392 @@
+@import "var";
+@import "nav";
+body{
+    font-family: "Merriweather", "Noto Serif TC", serif;
+}
+* {
+    box-sizing: border-box;
+}
+nav{
+    .navbar-brand {
+        z-index: 50;
+    }
+    .navbar-toggler{
+        z-index: 50;
+    }
+    .nav-item{
+        z-index: 50;
+    }
+    #book-border{
+        margin-right: -30px;
+    }
+}
+
+section#about{
+    width: 100%;
+    .about-grain1{
+        width: 100%;
+        z-index: 49;
+        img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 931px;
+        }
+        .container{
+            img{
+                width: 100%;
+                max-width: 1140px;
+                height: 388.605px;
+                margin-top: 130px;
+                z-index: 50;
+            }
+            .about-banner{
+                z-index: 50;
+                position: relative;
+                .about-banner-color1{
+                    width: 70px;
+                    height: 280px;
+                    background-color: rgba(255,255,255,0.9);
+                    position: absolute;
+                    right: 140px;
+                    top: -570px;
+                    .about-banner-text1{
+                        font-size: 34px;
+                        font-weight: normal;
+                        line-height: 38px;
+                        position: absolute;
+                        top: 20px;
+                        left: -10px;
+                        border: 3.5px solid black;
+                        padding: 67px 17px;
+                    }
+                }
+                #about-text2{
+                    margin-top: 572px;
+                    .col-gold-left {
+                        width: 61.8%;
+                        z-index: 50;
+                        font-size: 20px;
+                        text-align: end;
+                        line-height: 25px;
+                        position: relative;
+                        .aboutText2G{
+                            position: absolute;
+                            right: 305px;
+                            .aboutText2GColor{
+                                width: 25px;
+                                height: 177px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: 36px;
+                                z-index: -1;
+                            }
+                        }
+                        .aboutText2F{
+                            position: absolute;
+                            right: 255px;
+                            .aboutText2FColor{
+                                width: 22px;
+                                height: 196px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: -25px;
+                                z-index: -1;
+                            }
+                        }
+                        .aboutText2E{
+                            position: absolute;
+                            right: 205px;
+                            .aboutText2EColor{
+                                width: 25px;
+                                height: 72px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: 144px;
+                                z-index: -1;
+                            }
+                            .aboutText2ELine{
+                                width: 100px;
+                                height: 68px;
+                                position: absolute;
+                                left: 17px;
+                                top: 155px;
+                                border-left: 1px solid #AF000D;
+                            }
+                        }
+                        .aboutText2D{
+                            position: absolute;
+                            right: 155px;
+                            .aboutText2DColor{
+                                width: 25px;
+                                height: 180px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: 75px;
+                                z-index: -1;
+                            }
+                            .aboutText2DLine{
+                                width: 100px;
+                                height: 92px;
+                                position: absolute;
+                                left: 17px;
+                                top: 130px;
+                                border-left: 1px solid #AF000D;
+                            }
+                        }
+                        .aboutText2C{
+                            position: absolute;
+                            right: 105px;
+                            .aboutText2CColor{
+                                width: 25px;
+                                height: 260px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: 25px;
+                                z-index: -1;
+                            }
+                        }
+                        .aboutText2B{
+                            position: absolute;
+                            right: 55px;
+                            .aboutText2BColor{
+                                width: 25px;
+                                height: 150px;
+                                background-color: rgba(255,255,255,0.9);
+                                position: absolute;
+                                left: 10px;
+                                top: 60px;
+                                z-index: -1;
+                            }
+                        }
+                        .aboutText2A{
+                            position: absolute;
+                            right: -10px;
+                            // ↑ 文字的黃金比例對齊太嚴謹
+                            top: 24px;
+                            font-weight: bolder;
+                            .aboutText2ALine{
+                                width: 100px;
+                                height: 115px;
+                                position: absolute;
+                                left: -10px;
+                                top: 5px;
+                                border-left: 1px solid #AF000D;
+                            }
+                        }
+                    }
+                    .col-gold-right {
+                        width: 38.2%;
+                    }
+                }
+            }
+        }
+    }
+    .about-second{
+        margin-top: 540px; 
+        width: 100%;
+        .row{
+            width: 100%;
+            .col-gold-left{
+                width: 61.8%;
+                z-index: 50;
+                background-color: #DCBFA8;
+                padding-bottom: 80px;
+                // 左黃金比例色塊生長(與右邊互補互調
+                img{
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+            .col-gold-right {
+                width: 38.2%;
+                position: relative;
+                .about-secondA{
+                    width: 295px;
+                    height: 357px;
+                    background-color: rgba(255,255,255,0.9);
+                    position: absolute;
+                    top: -153px;
+                    left: -30px;
+                    padding: 30px 14px;
+                    z-index: 50;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .about-secondB{
+                    width: 501px;
+                    height: 207px;
+                    background-color: #DCBFA8;
+                    position: absolute;
+                    bottom: 25px;
+                    left: -63px;
+                    padding: 10.5px 12px;
+                    z-index: 50;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .about-grain2{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                position: absolute;
+                top: -33px;
+                // 調最右邊色塊高度
+                z-index: -2;
+                max-height: 1356px;
+            }
+            .container{
+                .about-text3-colorA{
+                    width: 70px;
+                    height: 255px;
+                    background-color: rgba(255,255,255,0.9);
+                    position: relative;
+                    margin-top: -92px;
+                    margin-left: 133px;
+                    z-index: 50;
+                    .about-text3{
+                        font-size: 34px;
+                        font-weight: normal;
+                        line-height: 40px;
+                        position: absolute;
+                        top: -20px;
+                        left: 10px;
+                        border: 3.5px solid black;
+                        padding: 60px 17px 65px 17px;
+                    }
+                    .about-text3-colorB{
+                        width: 58px;
+                        height: 86.5px;
+                        background-color: #DDCAAE;
+                        position: absolute;
+                        bottom: -38px;
+                        left: 46px;
+                        z-index: -1;
+                        clip-path: polygon(0% 76%, 0% 100%, 100% 100%, 100% 0%, 68% 0%, 68% 76%)
+                    }
+                }
+                .about-text4{
+                    width: auto;
+                    margin-top: -50px;
+                    margin-left: 260px;
+                    font-size: 19px;
+                    font-weight: normal;
+                    line-height: 19px;
+                    letter-spacing: 4px;
+                    position: relative;
+                    z-index: 1;
+                    .about-text4-color{
+                        width: 360px;
+                        height: 72px;
+                        background-color: rgba(255,255,255,0.9);
+                        position: absolute;
+                        top: 44px;
+                        left: 28px;
+                        z-index: -1;
+                        clip-path: polygon(0% 0%, 0% 30%, 14.5% 30%, 14.5% 100%, 100% 100%, 100% 30%, 81% 30%, 81% 0%);
+                    }
+                }
+            }
+        }
+    }
+    .about-third{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 190px;
+        position: relative;
+        z-index: -1;
+        .container{
+            .about-third-text{
+                position: absolute;
+                width: auto;
+                left: 50%;
+                top: -95px;
+                z-index: 50;
+                font-size: 19px;
+                font-weight: normal;
+                line-height: 19px;
+                letter-spacing: 4px;
+                .about-thirdText-color{
+                    width: 470px;
+                    height: 175px;
+                    position: absolute;
+                    background-color: rgba(255,255,255,0.9);
+                    z-index: -1;
+                    top: 42px;
+                    left: -30px;
+                }
+            }
+            
+        }
+    }
+    .about-forth{
+        width: 100%;
+        .about-forthText-colorA{
+            width: 70px;
+            height: 255px;
+            background-color: rgba(255,255,255,0.9);
+            position: relative;
+            margin-top: -75px;
+            margin-left: 47.8%;
+            z-index: 50;
+            .about-forth-textA{
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 40px;
+                position: absolute;
+                top: -20px;
+                left: -13px;
+                border: 3.5px solid black;
+                padding: 60px 17px 60px 17px;
+            }
+        }
+        img{
+            width: 50vw;
+            margin-top: 200px;
+            margin-bottom: 87px;
+            z-index: -2;
+        }
+        .about-forth-textB{
+            position: relative;
+            width: auto;
+            display: inline-block;
+            // ↑ 不然會有捲軸
+            left: 47.8%;
+            top: -615px;
+            z-index: 50;
+            font-size: 19px;
+            font-weight: normal;
+            line-height: 19px;
+            letter-spacing: 4px;
+            .about-forthText-colorB{
+                width: 470px;
+                height: 320px;
+                position: absolute;
+                background-color: rgba(255,255,255,0.9);
+                z-index: -1;
+                top: 50px;
+                left: -30px;
+            }
+        }
+        .grain3{
+            width: 100%;
+            height: 175px;
+            margin-top: -540px;
+        }
+    }
+}
+
+@import "footer";
