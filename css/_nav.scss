@@ -1,36 +1,43 @@
 // navbar
 nav {
     background-color: rgba(255, 255, 255, 0.5);
-
-    .navbar-brand {
-        padding: 0;
-
-        #nav-logo-img {
-            width: 200px;
+    
+    .container{
+        max-width: 90vw;
+        @media (min-width: 1800px) {
+            max-width: 1800px;
         }
-    }
 
-    .maxwww {
-        min-width: 85px;
-        /* 版面縮減才不會變形 */
-    }
-
-    #book-border {
-        margin: auto 0;
-        border-top: 4px solid black;
-        border-bottom: 4px solid black;
-        padding: 2px 0;
-
-        .book-side {
-            border-left: 2px solid black;
-            border-right: 2px solid black;
-            padding: 0 3px;
-
-            #book-text {
-                background-color: black;
-                padding: 1px 8px;
-                color: $mainbg;
-                font-size: 16px;
+        .navbar-brand {
+            padding: 0;
+    
+            #nav-logo-img {
+                width: 200px;
+            }
+        }
+    
+        .maxwww {
+            min-width: 85px;
+            /* 版面縮減才不會變形 */
+        }
+    
+        #book-border {
+            margin: auto 0;
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+            padding: 2px 0;
+    
+            .book-side {
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                padding: 0 3px;
+    
+                #book-text {
+                    background-color: black;
+                    padding: 1px 8px;
+                    color: $mainbg;
+                    font-size: 16px;
+                }
             }
         }
     }
