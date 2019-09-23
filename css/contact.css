@@ -391,6 +391,11 @@ footer .footer-copyright {
   #location .loc_inf.mob {
     display: block;
   }
+  #location .loc_inf.mob #address .icon,
+  #location .loc_inf.mob #tel .icon,
+  #location .loc_inf.mob #time .icon {
+    line-height: 30px;
+  }
   #location .loc_inf.mob #address p,
   #location .loc_inf.mob #tel p,
   #location .loc_inf.mob #time p {
