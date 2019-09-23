@@ -25,8 +25,22 @@ body {
   margin-bottom: 80px;
 }
 
+@media (max-width: 992px) {
+  .navbar {
+    width: 100vw;
+    position: fixed !important;
+    z-index: 51;
+  }
+}
+
 nav {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+  nav {
+    background-color: rgba(35, 31, 32, 0.7);
+  }
 }
 
 nav .container {
@@ -44,8 +58,30 @@ nav .container .navbar-brand {
   padding: 0;
 }
 
+@media (max-width: 992px) {
+  nav .container .navbar-brand {
+    margin-left: calc(45vw - 100px);
+  }
+}
+
 nav .container .navbar-brand #nav-logo-img {
   width: 200px;
+}
+
+@media (max-width: 992px) {
+  nav .container .navbar-toggler {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    border: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon i {
+    font-size: 30px;
+    color: white;
+  }
 }
 
 nav .container .maxwww {
@@ -71,6 +107,17 @@ nav .container #book-border .book-side #book-text {
   padding: 1px 8px;
   color: #c39c61;
   font-size: 16px;
+}
+
+nav .booking-icon {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+nav .booking-icon a {
+  color: white;
 }
 
 .banner {
@@ -267,11 +314,25 @@ footer .footer-copyright {
   color: #414042;
 }
 
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 0;
+  }
+  .banner .news_text {
+    top: calc(50% - 146.5px);
+  }
+  #model_group .modal-body h2 {
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     max-width: 100%;
     height: 40vh;
     margin-top: 0;
+    background-image: url("/img/03-mobile-banner.jpg");
   }
   .banner .news_text {
     font-size: 28px;
@@ -360,13 +421,6 @@ footer .footer-copyright {
   }
 }
 
-@media (max-width: 991px) {
-  #model_group .modal-body h2 {
-    padding: 20px 0;
-    margin: 0;
-  }
-}
-
 @media (min-width: 768px) {
   #news #collapseNews {
     display: none;
@@ -383,7 +437,7 @@ footer .footer-copyright {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   #news .news_group .card-body .news_Title {
     font-size: 20px;
     line-height: 30px;

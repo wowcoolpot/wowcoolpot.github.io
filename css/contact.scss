@@ -202,12 +202,19 @@ body {
 //匯入footer的css樣式
 @import "footer";
 
+@media (max-width:992px) {
+    .banner{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 768px) {
 
     .banner {
         margin-top: 0;
         max-width: 100%;
         height: 40vh;
+        background-image: url("/img/06-mobile-banner.jpg")
     }
 
     #form {
@@ -304,19 +311,21 @@ body {
 
         .loc_inf.mob {
             display: block;
+
             #address,
             #tel,
             #time {
-                .icon{
+                .icon {
                     line-height: 30px;
                 }
-                
+
                 p {
-                    margin: 0;                
+                    margin: 0;
                 }
-                .text{
+
+                .text {
                     font-size: 20px;
-                    }
+                }
             }
 
             .hr_s {
@@ -330,7 +339,7 @@ body {
     }
 }
 
-@media (max-width:991px) {}
+
 
 @media (min-width: 768px) {}
 

@@ -28,7 +28,7 @@ body {
     background-image: url("../img/03banner_news.jpg");
     background-position: center;
     background-size: cover;
-    max-width:90vw;
+    max-width: 90vw;
     height: 557px;
     margin-top: $mt-130;
     position: relative;
@@ -148,12 +148,33 @@ body {
 //匯入footer的css樣式
 @import "footer";
 
+@media (max-width:992px) {
+    .banner {
+        margin-top: 0;
+        .news_text {
+            top: calc(50% - 146.5px);
+
+        }
+    }
+
+    #model_group {
+        .modal-body {
+            h2 {
+                padding: 20px 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     .banner {
         max-width: 100%;
         height: 40vh;
         margin-top: 0;
+        background-image: url("/img/03-mobile-banner.jpg");
+
         .news_text {
             font-size: $titletext;
             background-color: white;
@@ -250,21 +271,12 @@ body {
 }
 
 @media (min-width:1920px) {
-    .banner{
+    .banner {
         max-width: 1800px;
     }
 }
 
-@media (max-width:991px) {
-    #model_group {
-        .modal-body {
-            h2 {
-                padding: 20px 0;
-                margin: 0;
-            }
-        }
-    }
-}
+
 
 
 @media (min-width: 768px) {
@@ -293,7 +305,7 @@ body {
     }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     #news {
         .news_group {
             .card-body {
@@ -308,7 +320,7 @@ body {
 }
 
 @media (min-width:1800px) {
-    .banner{
+    .banner {
         max-width: 1800px;
     }
 }
