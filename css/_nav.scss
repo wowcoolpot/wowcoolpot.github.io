@@ -11,7 +11,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.5);
     @media (max-width: 992px) {
         background-color: rgba(35, 31, 32, 0.7);
-        
     }
     .container{
         max-width: 90vw;
@@ -28,6 +27,10 @@ nav {
             }
             #nav-logo-img {
                 width: 200px;
+                @media (max-width: 450px) {
+                    width: 55.559%;
+                    margin-left: 5vw;
+                }
             }
         }
 
@@ -52,24 +55,43 @@ nav {
             min-width: 85px;
             /* 版面縮減才不會變形 */
         }
-    
-        #book-border {
-            margin: auto 0;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding: 2px 0;
-    
-            .book-side {
-                border-left: 2px solid black;
-                border-right: 2px solid black;
-                padding: 0 3px;
-    
-                #book-text {
-                    background-color: black;
-                    padding: 1px 8px;
-                    color: $mainbg;
-                    font-size: 16px;
+
+        #navbarNavDropdown{
+            @media (max-width: 992px) {
+                
+                a{
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
                 }
+            }
+            #book-border {
+                margin: auto 0;
+                border-top: 4px solid black;
+                border-bottom: 4px solid black;
+                padding: 2px 0;
+                @media (max-width: 992px) {
+                    display: none;
+                }
+        
+                .book-side {
+                    border-left: 2px solid black;
+                    border-right: 2px solid black;
+                    padding: 0 3px;
+        
+                    #book-text {
+                        background-color: black;
+                        padding: 1px 8px;
+                        color: $mainbg;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        #navbarNavDropdown li:active{
+            @media (max-width: 992px) {
+                background-color: $mainbg;
+                // 調手機版選單點擊顏色
             }
         }
     }
