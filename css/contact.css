@@ -29,33 +29,44 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-nav .navbar-brand {
+nav .container {
+  max-width: 90vw;
   padding: 0;
 }
 
-nav .navbar-brand #nav-logo-img {
+@media (min-width: 1800px) {
+  nav .container {
+    max-width: 1800px;
+  }
+}
+
+nav .container .navbar-brand {
+  padding: 0;
+}
+
+nav .container .navbar-brand #nav-logo-img {
   width: 200px;
 }
 
-nav .maxwww {
+nav .container .maxwww {
   min-width: 85px;
   /* 版面縮減才不會變形 */
 }
 
-nav #book-border {
+nav .container #book-border {
   margin: auto 0;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   padding: 2px 0;
 }
 
-nav #book-border .book-side {
+nav .container #book-border .book-side {
   border-left: 2px solid black;
   border-right: 2px solid black;
   padding: 0 3px;
 }
 
-nav #book-border .book-side #book-text {
+nav .container #book-border .book-side #book-text {
   background-color: black;
   padding: 1px 8px;
   color: #c39c61;
@@ -63,10 +74,10 @@ nav #book-border .book-side #book-text {
 }
 
 .banner {
-  background-image: url("../img/contact.jpg");
+  background-image: url("../img/06banner_contact.jpg");
   background-position: center;
   background-size: cover;
-  width: 90vw;
+  max-width: 90vw;
   height: 557px;
   margin-top: 130px;
   position: relative;
@@ -78,36 +89,37 @@ nav #book-border .book-side #book-text {
 }
 
 #form #form_title .form_text {
-  font-size: 28px;
+  font-size: 34px;
   color: black;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  border: 5px solid black;
-  letter-spacing: 40px;
-  text-indent: 40px;
+  border: 3.5px solid black;
+  letter-spacing: 10px;
+  text-indent: 10px;
   text-align: center;
-  padding: 20px;
+  padding: 73px 20px;
   position: relative;
 }
 
 #form #form_title .form_text .titlebox {
   background-color: #e5e6e7;
   width: 90px;
-  height: 230px;
+  height: 210px;
   position: absolute;
   z-index: -100;
-  left: 20px;
+  left: 10px;
+  top: 20px;
 }
 
 #form #form_title .form_text .titlebox2 {
   background-color: #D7C4A8;
   width: 90px;
-  height: 230px;
+  height: 180px;
   position: absolute;
   z-index: -101;
   left: -20px;
-  bottom: 30px;
+  bottom: 50px;
 }
 
 #form .form_text.mob {
@@ -158,23 +170,23 @@ nav #book-border .book-side #book-text {
 }
 
 #location #loctitle .loc_text {
-  font-size: 28px;
+  font-size: 34px;
   color: black;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  border: 5px solid black;
-  letter-spacing: 40px;
-  text-indent: 40px;
+  border: 3.5px solid black;
+  letter-spacing: 10px;
+  text-indent: 10px;
   text-align: center;
-  padding: 20px;
+  padding: 73px 20px;
   position: relative;
 }
 
 #location #loctitle .titlebox {
   background-color: #e5e6e7;
-  width: 80px;
-  height: 340px;
+  width: 90px;
+  height: 320px;
   position: absolute;
   z-index: -100;
   left: -15px;
@@ -186,25 +198,33 @@ nav #book-border .book-side #book-text {
 #location .loc_inf #time .icon {
   font-size: 20px;
   margin-right: 20px;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 #location .loc_inf #address .text,
 #location .loc_inf #tel .text,
 #location .loc_inf #time .text {
-  font-size: 20px;
+  font-size: 28px;
+}
+
+#location .loc_inf #time .time_text {
+  font-size: 26px;
 }
 
 #location .loc_inf #time .time_area1 {
   border-right: 2px solid black;
 }
 
-#location .loc_inf #time .time_area2 {
-  border-right: 2px solid black;
+#location .loc_inf #time .icon_s i {
+  font-size: 40px;
 }
 
-#location .loc_inf #time .time_area3 .icon_s i {
-  font-size: 40px;
+#location .loc_inf #time .icon_s a {
+  color: #414042;
+}
+
+#location .loc_inf #time .icon_s i:hover {
+  color: #c39c61;
 }
 
 #location .loc_inf.mob {
@@ -292,12 +312,13 @@ footer .footer-copyright {
 
 @media (max-width: 768px) {
   .banner {
-    display: none;
+    margin-top: 0;
+    max-width: 100%;
   }
   #form {
     margin-top: 30px;
   }
-  #form #form_title .form_text {
+  #form #form_title {
     display: none;
   }
   #form #form_body .form_btn {
@@ -308,13 +329,13 @@ footer .footer-copyright {
     margin-top: 50px;
   }
   #form .form_text {
-    font-size: 28px;
+    font-size: 34px;
     color: black;
-    border: 5px solid black;
-    letter-spacing: 20px;
-    text-indent: 20px;
+    border: 3.5px solid black;
+    letter-spacing: 10px;
+    text-indent: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 10px 60px;
     position: relative;
   }
   #form .form_text .titlebox {
@@ -339,23 +360,23 @@ footer .footer-copyright {
     display: block;
   }
   #location .loc_text {
-    font-size: 28px;
+    font-size: 34px;
     color: black;
-    border: 5px solid black;
-    letter-spacing: 20px;
-    text-indent: 20px;
+    border: 3.5px solid black;
+    letter-spacing: 10px;
+    text-indent: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 10px 60px;
     position: relative;
   }
   #location .loc_text .titlebox {
     background-color: #e5e6e7;
-    width: 230px;
+    width: 330px;
     height: 80px;
     position: absolute;
     z-index: -100;
-    bottom: -15px;
-    left: -15px;
+    bottom: -20px;
+    left: -25px;
   }
   #location .loc_text.mob {
     display: block;
@@ -369,12 +390,21 @@ footer .footer-copyright {
   #location .loc_inf.mob {
     display: block;
   }
-}
-
-@media (min-width: 1200px) {
-  nav .container {
-    max-width: 1240px;
-    /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
+  #location .loc_inf.mob #address p,
+  #location .loc_inf.mob #tel p,
+  #location .loc_inf.mob #time p {
+    margin: 0;
+  }
+  #location .loc_inf.mob #address .text,
+  #location .loc_inf.mob #tel .text,
+  #location .loc_inf.mob #time .text {
+    font-size: 20px;
+  }
+  #location .loc_inf.mob .hr_s {
+    border: 0;
+    height: 1px;
+    background: black;
+    width: 150px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

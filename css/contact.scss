@@ -25,10 +25,10 @@ body {
 @import "nav";
 
 .banner {
-    background-image: url("../img/contact.jpg");
+    background-image: url("../img/06banner_contact.jpg");
     background-position: center;
     background-size: cover;
-    width: 90vw;
+    max-width: 90vw;
     height: 557px;
     margin-top: $mt-130;
     position: relative;
@@ -40,34 +40,35 @@ body {
 
     #form_title {
         .form_text {
-            font-size: $titletext;
+            font-size: 34px;
             color: black;
             writing-mode: vertical-lr;
-            border: 5px solid black;
-            letter-spacing: 40px;
+            border: 3.5px solid black;
+            letter-spacing: 10px;
             //消除最後一字的字距
-            text-indent: 40px;
+            text-indent: 10px;
             text-align: center;
-            padding: 20px;
+            padding: 73px 20px;
             position: relative;
 
             .titlebox {
                 background-color: $footerbg;
                 width: 90px;
-                height: 230px;
+                height: 210px;
                 position: absolute;
                 z-index: -100;
-                left: 20px;
+                left: 10px;
+                top: 20px;
             }
 
             .titlebox2 {
                 background-color: $titlebg;
                 width: 90px;
-                height: 230px;
+                height: 180px;
                 position: absolute;
                 z-index: -101;
                 left: -20px;
-                bottom: 30px;
+                bottom: 50px;
             }
         }
     }
@@ -119,28 +120,28 @@ body {
         height: 45vh;
     }
 
-    .loc_text.mob{
+    .loc_text.mob {
         display: none;
     }
 
     #loctitle {
         .loc_text {
-            font-size: $titletext;
+            font-size: 34px;
             color: black;
             writing-mode: vertical-lr;
-            border: 5px solid black;
-            letter-spacing: 40px;
+            border: 3.5px solid black;
+            letter-spacing: 10px;
             //消除最後一字的字距
-            text-indent: 40px;
+            text-indent: 10px;
             text-align: center;
-            padding: 20px;
+            padding: 73px 20px;
             position: relative;
         }
 
         .titlebox {
             background-color: $footerbg;
-            width: 80px;
-            height: 340px;
+            width: 90px;
+            height: 320px;
             position: absolute;
             z-index: -100;
             left: -15px;
@@ -156,33 +157,44 @@ body {
             .icon {
                 font-size: 20px;
                 margin-right: 20px;
-                line-height: 30px;
+                line-height: 40px;
             }
 
             .text {
-                font-size: $titletext2;
+                font-size: $titletext;
             }
+
         }
 
         #time {
+            .time_text {
+                font-size: 26px;
+            }
+
             .time_area1 {
                 border-right: 2px solid black;
             }
 
-            .time_area2 {
-                border-right: 2px solid black;
-            }
-
-            .time_area3 {
-                .icon_s {
-                    i {
-                        font-size: 40px;
-                    }
+            .icon_s {
+                i {
+                    font-size: 40px;
                 }
             }
+
+            .icon_s {
+                a {
+                    color: $footerIcon;
+                }
+
+                i:hover {
+                    color: $mainbg;
+                }
+            }
+
         }
     }
-    .loc_inf.mob{
+
+    .loc_inf.mob {
         display: none;
     }
 }
@@ -193,16 +205,15 @@ body {
 @media (max-width: 768px) {
 
     .banner {
-        display: none;
+        margin-top: 0;
+        max-width: 100%;
     }
 
     #form {
         margin-top: 30px;
 
         #form_title {
-            .form_text {
-                display: none;
-            }
+            display: none;
         }
 
         #form_body {
@@ -217,14 +228,14 @@ body {
         }
 
         .form_text {
-            font-size: $titletext;
+            font-size: 34px;
             color: black;
-            border: 5px solid black;
-            letter-spacing: 20px;
+            border: 3.5px solid black;
+            letter-spacing: 10px;
             //消除最後一字的字距
-            text-indent: 20px;
+            text-indent: 10px;
             text-align: center;
-            padding: 20px;
+            padding: 10px 60px;
             position: relative;
 
             .titlebox {
@@ -254,39 +265,63 @@ body {
     }
 
     #location {
-        .loc_text{
-            font-size: $titletext;
+        .loc_text {
+            font-size: 34px;
             color: black;
-            border: 5px solid black;
-            letter-spacing: 20px;
+            border: 3.5px solid black;
+            letter-spacing: 10px;
             //消除最後一字的字距
-            text-indent: 20px;
+            text-indent: 10px;
             text-align: center;
-            padding: 20px;
+            padding: 10px 60px;
             position: relative;
+
             .titlebox {
                 background-color: $footerbg;
-                width: 230px;
+                width: 330px;
                 height: 80px;
                 position: absolute;
                 z-index: -100;
-                bottom: -15px;
-                left: -15px;
+                bottom: -20px;
+                left: -25px;
             }
         }
-        .loc_text.mob{
+
+        .loc_text.mob {
             display: block;
         }
+
         #loctitle {
             .loc_text {
                 display: none;
             }
         }
-        .loc_inf{
+
+        .loc_inf {
             display: none;
         }
-        .loc_inf.mob{
+
+        .loc_inf.mob {
             display: block;
+            #address,
+            #tel,
+            #time {
+                
+                p {
+                    margin: 0;                
+                }
+                .text{
+                    font-size: 20px;
+                    }
+            }
+
+            .hr_s {
+                border: 0;
+                height: 1px;
+                background: black;
+                width: 150px;
+
+            }
         }
     }
 }
@@ -296,10 +331,3 @@ body {
 @media (min-width: 768px) {}
 
 @media (min-width: 991px) {}
-
-@media (min-width: 1200px) {
-    nav .container {
-        max-width: 1240px;
-        /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
-    }
-}
