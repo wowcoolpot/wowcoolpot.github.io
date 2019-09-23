@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>07-FAQ</title>
+    <title>FAQ</title>
     <!-- ↓ 匯入boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -14,195 +14,20 @@
         integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
     <!-- ↓ 匯入Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body{
-            font-family: 'Merriweather','Noto Serif TC', serif;
-            /* 聽老師說的，先中文，再英文，最後通用(補) */
-        }
-
-        @media (min-width: 1200px) {
-            nav .container {
-                max-width: 1240px;
-                /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
-            }
-        }
-
-        .navbar-brand {
-            padding: 0;
-        }
-
-        #nav-logo-img {
-            width: 45%;
-        }
-
-        .maxwww {
-            min-width: 85px;
-            /* 版面縮減才不會變形 */
-        }
-
-        #book-border {
-            margin: auto 0;
-            border-top: 4px solid black;
-            border-bottom: 4px solid black;
-            padding: 2px 0;
-        }
-
-        .book-side {
-            border-left: 2px solid black;
-            border-right: 2px solid black;
-            padding: 0 3px;
-        }
-
-        #book-text {
-            background-color: black;
-            padding: 1px 8px;
-            color: #C39C61;
-            font-size: 16px;
-        }
-
-        footer {
-            background-color: #E5E6E7;
-            position: relative;
-            /* ↑ 讓icon跟隨 */
-            padding-top: 30px;
-        }
-
-        footer img {
-            height: 100px;
-        }
-
-        .footer-logo {
-            text-align: center;
-            color: #C39C61;
-        }
-
-        .footer-logo-text {
-            font-size: 22px;
-            letter-spacing: 12px;
-            padding-left: 10px;
-        }
-
-        .footer-information p {
-            text-align: center;
-        }
-
-        .footer-copyright {
-            font-size: 15px;
-            border-top: 1px solid;
-            max-width: 1220px;
-            /* ↑ 底線對齊上面LOGO與訂位 */
-            margin: 0 auto;
-            margin-top: 60px;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .footer-icon-group {
-            position: absolute;
-            left: calc(50% - 97.5px);
-            bottom: 25%;
-            background-color: #E5E6E7;
-            text-align: center;
-            z-index: 999;
-            /* ↑ 讓icon群浮上來蓋過線 */
-            /* ↓ 讓線別貼邊 */
-            padding: 0 10px;
-
-        }
-
-        .footer-icon-group i {
-            font-size: 35px;
-            margin: 0 12px;
-        }
-
-        #FAQ-L {
-            text-align: center;
-            font-size: 32px;
-            margin-left: 180px;
-            padding: 50px 0;
-            border: 4px solid black;
-            line-height: 47px;
-            max-height: 340px;
-            max-width: 80px;
-            /* ↑ 防止左邊跟著縮放 */
-            
-        }
-
-        #FAQ-R {
-            font-size: 18px;
-        }
-
-        .p-FAQR {
-            padding: 20px 0;
-            border-bottom: 1px solid black;
-
-        }
-
-        #FAQ {
-            padding: 130px 0;
-        }
-
-        .icon-color {
-            color: black;
-        }
-
-        .FQA-gps {
-            position: absolute;
-            right: 0;
-        }
-
-        .FQA-GPS {
-            position: relative;
-        }
-
-        .bg-expand-color {
-            background-color: #D8BEA1;
-            width: 105%;
-            margin-left: -15px;
-            /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
-            padding: 10px;
-            margin-top: 8px;
-        }
-
-        .bg-colorA {
-            background-color: #E5E6E7;
-            width: 75px;
-            height: 240px;
-            z-index: -1;
-            position: absolute;
-            left: -15px;
-            top: 66px;
-        }
-
-        .bg-colorB {
-            background-color: #E2CFB3;
-            width: 77px;
-            height: 137px;
-            z-index: -2;
-            position: absolute;
-            left: 7px;
-            top: 220px;
-        }
-        .Q5-padding{
-            padding-left: 27px;
-        }
-        .A5-text{
-            letter-spacing: 0.44px;
-        }
+    <link rel="stylesheet" href="css/FAQ.css">
+    <style>        
+        
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
             <!-- ↓ 手機版顯示的menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars d-block d-lg-none"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
@@ -228,15 +53,16 @@
                     </li>
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww font-weight-bold" href="#">線上訂位</a>
+                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
     </nav>
 
-    <section class="section-FAQ">
+    <section id="FAQQ">
         <div class="container">
             <div id="FAQ" class="row">
                 <div id="FAQ-L" class="col-1 font-weight-bold">
@@ -316,20 +142,38 @@
                 <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
                 <p>WOW COOL HOT POT</p>
             </div>
-            <div class="footer-information">
-                <p>
-                    <i class="fas fa-map-marker-alt mr-2"></i>
-                    台中市中區自由路2段33號
-                    <i class="fas fa-phone-alt mr-2 ml-4"></i>
-                    04-2223-1155
-                </p>
+
+            <div class="container">
+                <div class="footer-information-com">
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        台中市中區自由路2段33號
+                        <i class="fas fa-phone-alt mr-2 ml-4"></i>
+                        04-2223-1155
+                    </p>
+                </div>
+                <div class="row footer-information-mobile">
+                    <div class="col-12">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        台中市中區自由路2段33號
+                    </div>
+                    <div class="col-12">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        04-2223-1155
+                    </div>
+                </div>
             </div>
             <div class="footer-icon-group">
-                <i class="fab fa-line"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
+                <a href=""><i class="fab fa-line"></i></a>
+                <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
+                    target="_blank"><i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i
+                        class="fab fa-instagram"></i>
+                </a>
             </div>
-            <div class="footer-copyright ">
+
+            <div class="footer-copyright">
                 <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
                     Design by 腳麻吃麻辣鍋</p>
             </div>
