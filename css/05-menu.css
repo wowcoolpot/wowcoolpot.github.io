@@ -3,33 +3,44 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-nav .navbar-brand {
+nav .container {
+  max-width: 90vw;
   padding: 0;
 }
 
-nav .navbar-brand #nav-logo-img {
+@media (min-width: 1800px) {
+  nav .container {
+    max-width: 1800px;
+  }
+}
+
+nav .container .navbar-brand {
+  padding: 0;
+}
+
+nav .container .navbar-brand #nav-logo-img {
   width: 200px;
 }
 
-nav .maxwww {
+nav .container .maxwww {
   min-width: 85px;
   /* 版面縮減才不會變形 */
 }
 
-nav #book-border {
+nav .container #book-border {
   margin: auto 0;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   padding: 2px 0;
 }
 
-nav #book-border .book-side {
+nav .container #book-border .book-side {
   border-left: 2px solid black;
   border-right: 2px solid black;
   padding: 0 3px;
 }
 
-nav #book-border .book-side #book-text {
+nav .container #book-border .book-side #book-text {
   background-color: black;
   padding: 1px 8px;
   color: #c39c61;

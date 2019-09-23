@@ -29,33 +29,44 @@ nav {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-nav .navbar-brand {
+nav .container {
+  max-width: 90vw;
   padding: 0;
 }
 
-nav .navbar-brand #nav-logo-img {
+@media (min-width: 1800px) {
+  nav .container {
+    max-width: 1800px;
+  }
+}
+
+nav .container .navbar-brand {
+  padding: 0;
+}
+
+nav .container .navbar-brand #nav-logo-img {
   width: 200px;
 }
 
-nav .maxwww {
+nav .container .maxwww {
   min-width: 85px;
   /* 版面縮減才不會變形 */
 }
 
-nav #book-border {
+nav .container #book-border {
   margin: auto 0;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   padding: 2px 0;
 }
 
-nav #book-border .book-side {
+nav .container #book-border .book-side {
   border-left: 2px solid black;
   border-right: 2px solid black;
   padding: 0 3px;
 }
 
-nav #book-border .book-side #book-text {
+nav .container #book-border .book-side #book-text {
   background-color: black;
   padding: 1px 8px;
   color: #c39c61;
@@ -63,10 +74,10 @@ nav #book-border .book-side #book-text {
 }
 
 .banner {
-  background-image: url("../img/news.jpg");
+  background-image: url("../img/03banner_news.jpg");
   background-position: center;
   background-size: cover;
-  width: 90vw;
+  max-width: 90vw;
   height: 557px;
   margin-top: 130px;
   position: relative;
@@ -74,27 +85,22 @@ nav #book-border .book-side #book-text {
 }
 
 .banner .news_text {
-  font-size: 28px;
+  font-size: 34px;
   color: black;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  border: 5px solid black;
-  letter-spacing: 40px;
-  text-indent: 40px;
-  text-align: center;
-  padding: 20px;
+  border: 3.5px solid black;
+  line-height: 38px;
+  padding: 67px 20px;
   position: absolute;
   top: -60px;
 }
 
 .banner .news_text .titlebox {
-  background-color: #e5e6e7;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 80px;
-  height: 350px;
+  height: 300px;
   position: absolute;
   bottom: -15px;
-  left: 20px;
+  right: -15px;
   z-index: -100;
 }
 
@@ -263,7 +269,7 @@ footer .footer-copyright {
 
 @media (max-width: 768px) {
   .banner {
-    width: 100%;
+    max-width: 100%;
     height: 40vh;
     margin-top: 0;
   }
@@ -348,6 +354,12 @@ footer .footer-copyright {
   }
 }
 
+@media (min-width: 1920px) {
+  .banner {
+    max-width: 1800px;
+  }
+}
+
 @media (max-width: 991px) {
   #model_group .modal-body h2 {
     padding: 20px 0;
@@ -379,10 +391,9 @@ footer .footer-copyright {
   }
 }
 
-@media (min-width: 1200px) {
-  nav .container {
-    max-width: 1240px;
-    /* ↑ 設計師要求NAV要再貼邊些，因此不能用預設 */
+@media (min-width: 1800px) {
+  .banner {
+    max-width: 1800px;
   }
 }
 /*# sourceMappingURL=news.css.map */
