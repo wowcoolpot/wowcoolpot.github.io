@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>05-瓦庫好料</title>
+    <title>瓦庫好料</title>
     <!-- ↓ 匯入boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,7 +18,7 @@
     <!-- ↓ 匯入 Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <!-- ↓ 匯入05-瓦庫好料css(sass)) -->
-    <link rel="stylesheet" href="css/05-menu.css">
+    <link rel="stylesheet" href="css/menu.css">
 
 
     <style>
@@ -29,44 +29,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
             <!-- ↓ 手機版顯示的menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars d-block d-lg-none"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <!-- ml-auto讓選單靠右 ↑ -->
                     <li class="nav-item ml-3">
                         <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww" href="#">關於瓦庫</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">關於瓦庫</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">最新消息</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">鮮來開鍋</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">瓦庫好料</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫好料</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">瓦庫在哪</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫在哪</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">常見問題</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">常見問題</a>
                     </li>
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww" href="#">線上訂位</a>
+                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
     </nav>
 
     <section id="menu" class="menu">
@@ -165,13 +166,19 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
         </div>
 
         <!-- 下半部開始 -->
         <div class="menu-bottom">
             <div class="menu-bottomL-text d-none d-xl-block">
                 菜<br>單
-                <div class="menu-bottomL-color1"></div>
                 <div class="menu-bottomL-color2"></div>
             </div>
             <!-- ↓ 手機版"菜單"標題 -->
@@ -391,7 +398,6 @@
                     </div>
                 </div>
             </div>
-            <div class="menu-lastColor"></div>
         </div>
     </section>
 
@@ -466,6 +472,10 @@
             pagination: {
                 el: '.swiper-pagination',
 
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
             },
         });
 

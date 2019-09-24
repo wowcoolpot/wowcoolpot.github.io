@@ -3,59 +3,23 @@
 body{
     font-family: "Merriweather", "Noto Serif TC", serif;
 }
-.navbar-brand {
-    z-index: 50;
-    /* 在menu可浮出 */
-    @media (max-width: 992px) {
-        background-color: rgba(180, 0, 12, 0.705);
-        border-radius: 6%;
-        margin-top: 3vh;
-        margin-left: 31.5vw;
-        // 手機版Logo改位置
+nav{
+    top: 0;
+    .navbar-brand {
+        z-index: 50;
+        /* 在menu可浮出 */
     }
-}
-.navbar-light .navbar-toggler {
-    border-color: $mainbg;
-    // 改漢堡條邊框顏色
-}
-.navbar-toggler:hover {
-    background-color: $mainbg;
-    // 漢堡條hover顏色
-}
-.navbar-toggler{
-    z-index: 50;
-    @media (max-width: 992px) {
-        left: 5vw;
-        // 手機版漢堡條改位置
-        top: 5vh;
-        position: fixed;
-        box-shadow: 3px 3px 5px rgb(75, 60, 38);
-        // 給了同色調影子
+    
+    .navbar-toggler{
+        z-index: 50;
     }
-}
-#navbarNavDropdown{
-    // ↓ 電腦版選單設定
-    z-index: 51;
-    text-align: center;
-    // ↓ 手機版選單設定
-    @media (max-width: 992px) {
-        position: fixed;
-        left: calc(50% - 63.5px);
-        top: 15vh;
+    
+    .navbar-nav {
+        z-index: 50;
     }
-    #book-border{
-        // 手機版選單-線上訂位位置調整
-        @media (max-width: 992px) {
-            text-align: center !important;
-            margin-left: 15px !important;
-        }
-    }
-}
-.navbar-nav {
-    z-index: 50;
 }
 .swiper-pagination-bullet-active {
-    background-color: #C39C61;
+    background-color: #A9000D;
     // 將pagination導覽點點改色
 }
 .moNey{
@@ -66,8 +30,7 @@ section#menu{
     // ↑ 絕對不能空格
     min-height: 2000px;
     .menu-banner-img{
-        // width: 94.8%;
-        width: calc(100% - 70px);
+        width: calc(100% - 64px);
         height: 665.59px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -77,11 +40,12 @@ section#menu{
         right: 0;
         z-index: 2;
         @media (max-width: 992px) {
-            width: 100%;
+            width: 100vw;
+            height: 102vh;
         }
         .menu-banner-textR{
             position: absolute;
-            right: 10.3%;
+            right: calc(50vw - 526px);
             top: 125px;
             font-size: 28px;
             border: 4px solid black;
@@ -94,7 +58,7 @@ section#menu{
             height: 300px;
             background-color: white;
             position: absolute;
-            right: 11.2%;
+            right: calc(50vw - 514px);
             top: 140px;
             z-index: 49;
         }
@@ -104,7 +68,7 @@ section#menu{
             clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
             background-color: #E2CFB3;
             position: absolute;
-            right: 9.3%;
+            right: calc(50vw - 540px);
             top: 110px;
             z-index: 49;
         }
@@ -112,7 +76,7 @@ section#menu{
         .menu-banner-textR-mobile{
             position: absolute;
             left: calc(50vw - 170px);
-            top: 520px;
+            top: 630px;
             font-size: 28px;
             letter-spacing: 10px;
             border: 4px solid black;
@@ -125,7 +89,7 @@ section#menu{
             background-color: rgba(255, 255, 255, 0.8);
             position: absolute;
             left: calc(50vw - 185px);
-            top: 505px;
+            top: 615px;
             z-index: 49;
         }
         .menu-banner-textColorB-mobile{
@@ -135,7 +99,7 @@ section#menu{
             background-color: black;
             position: absolute;
             left: calc(50vw + 40px);
-            top: 560px;
+            top: 670px;
             z-index: 49;
         }
         // ↑ 手機版""精選餐點""文字設定
@@ -148,12 +112,16 @@ section#menu{
         z-index: 1;
         top: -76px;
         right: 8.8%;
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
     .menu-bannerLeftText{
         position: absolute;
-        top: 550px;
-        left: 100px;
+        top: 350px;
+        left: 12vw;
         font-size: 25px;
+        font-weight: bold;
         z-index: 50;
         .menu-slogan1{
             margin-top: 35px;
@@ -183,7 +151,7 @@ section#menu{
     // ↓ 手機版出現(slogan)
     .menu-bannerLeftText-mobile{
         position: absolute;
-        top: 655px;
+        top: 750px;
         left: calc(50vw - 85px);
         font-size: 20px;
         z-index: 50;
@@ -224,7 +192,12 @@ section#menu{
             z-index: 50;
             clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
             @media (max-width: 992px) {
-                margin-top: 300px;
+                margin-top: 490px;
+                width: 43.4%;
+                clip-path: inset(344px 0 0 0 round 23% 21.6% 0 0);
+            }
+            @media (max-width: 768px) {
+                width: 300px;
             }
             .swiper-wrapper {
                 .swiper-slide {
@@ -251,8 +224,7 @@ section#menu{
                             margin-top: -38px;
                             font-style: italic;
                             font-weight: bold;
-                            color: #C39C61;
-                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
+                            color: #C09B7F;
                         }
                     }
                     .menuA-topText2{
@@ -296,8 +268,7 @@ section#menu{
                             margin-top: -38px;
                             font-style: italic;
                             font-weight: bold;
-                            color: #C39C61;
-                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
+                            color: #C09B7F;
                         }
                     }
                     .menuB-topText2{
@@ -341,7 +312,6 @@ section#menu{
                             font-style: italic;
                             font-weight: bold;
                             color: #C39C61;
-                            text-shadow: 2px 2px 2px rgb(37, 30, 19);
                         }
                     }
                     .menuC-topText2{
@@ -378,6 +348,38 @@ section#menu{
                 }
             }
         }
+        .swiper-button-next{
+            right: calc(50vw - 470px);
+            top: 88.3%;
+            background-image: none;
+            @media (max-width: 992px) {
+                top: 175%;
+                right: 10vw;
+            }
+            @media (max-width: 768px) {
+                right: 10px;
+            }
+            i{
+                font-size: 40px;
+                color: #A9000D;
+            }
+        }
+        .swiper-button-prev{
+            left: calc(50vw - 470px);
+            top: 88.3%;
+            background-image: none;
+            @media (max-width: 992px) {
+                top: 175%;
+                left: 10vw;
+            }
+            @media (max-width: 768px) {
+                left: 10px;
+            }
+            i{
+                font-size: 40px;
+                color: #A9000D;
+            }
+        }
     }
     .menu-bottom{
         padding: 140px 0; 
@@ -387,18 +389,9 @@ section#menu{
             font-size: 28px;
             line-height: 60px;
             position: absolute;
-            left: 90px;
+            left: 101px;
             border: 4px solid black;
             padding: 50px 18px;
-            .menu-bottomL-color1{
-                width: 75px;
-                height: 200px;
-                background-color: #E5E6E7;
-                position: absolute;
-                top: -20px;
-                z-index: -1;
-                left: 10px;
-            }
             .menu-bottomL-color2{
                 width: 60px;
                 height: 75px;
@@ -1042,26 +1035,6 @@ section#menu{
                         }
                     }
                 }
-            }
-        }
-        .menu-lastColor{
-            bottom: 0;
-            width: 73.2vw;
-            height: 500px;
-            clip-path: polygon(0% 90%, 0% 100%, 100% 100%, 100% 0%, 93% 0%, 93% 90%,);
-            background-color: #CFB292;
-            position: absolute;
-            left: 22vw;
-            z-index: 50;
-            @media (max-width: 992px) {
-                clip-path: none;
-                left: 7.5vw;
-                width: 92.5vw;
-                height: 10vh;
-            }
-            @media (max-width: 576px) {
-                left: 0;
-                width: 100vw;
             }
         }
     }
