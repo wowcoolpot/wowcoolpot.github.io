@@ -5,6 +5,7 @@ body{
 }
 nav{
     top: 0;
+    z-index: 50;
     .navbar-brand {
         z-index: 50;
         /* 在menu可浮出 */
@@ -45,7 +46,7 @@ section#menu{
         }
         .menu-banner-textR{
             position: absolute;
-            right: calc(50vw - 526px);
+            right: calc(50vw - 522px);
             top: 125px;
             font-size: 28px;
             border: 4px solid black;
@@ -58,7 +59,7 @@ section#menu{
             height: 300px;
             background-color: white;
             position: absolute;
-            right: calc(50vw - 514px);
+            right: calc(50vw - 510px);
             top: 140px;
             z-index: 49;
         }
@@ -68,7 +69,7 @@ section#menu{
             clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
             background-color: #E2CFB3;
             position: absolute;
-            right: calc(50vw - 540px);
+            right: calc(50vw - 536px);
             top: 110px;
             z-index: 49;
         }
@@ -106,11 +107,11 @@ section#menu{
     }
     .menu-bannerBigColor{
         width: 91.2%;
-        height: 788.47px;
+        height: 602.5px;
         background-color: #D4B797;
         position: absolute;
         z-index: 1;
-        top: -76px;
+        top: 110px;
         right: 8.8%;
         @media (max-width: 992px) {
             display: none;
@@ -353,7 +354,7 @@ section#menu{
             top: 88.3%;
             background-image: none;
             @media (max-width: 992px) {
-                top: 175%;
+                top: 160%;
                 right: 10vw;
             }
             @media (max-width: 768px) {
@@ -369,7 +370,7 @@ section#menu{
             top: 88.3%;
             background-image: none;
             @media (max-width: 992px) {
-                top: 175%;
+                top: 160%;
                 left: 10vw;
             }
             @media (max-width: 768px) {

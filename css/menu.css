@@ -28,6 +28,12 @@ nav .container {
   }
 }
 
+@media (max-width: 992px) {
+  nav .container {
+    max-width: unset;
+  }
+}
+
 nav .container .navbar-brand {
   padding: 0;
 }
@@ -75,6 +81,7 @@ nav .container .maxwww {
     color: white;
     font-size: 20px;
     text-align: center;
+    width: 100vw;
   }
 }
 
@@ -127,6 +134,7 @@ body {
 
 nav {
   top: 0;
+  z-index: 50;
 }
 
 nav .navbar-brand {
@@ -175,7 +183,7 @@ section#menu .menu-banner-img {
 
 section#menu .menu-banner-img .menu-banner-textR {
   position: absolute;
-  right: calc(50vw - 526px);
+  right: calc(50vw - 522px);
   top: 125px;
   font-size: 28px;
   border: 4px solid black;
@@ -189,7 +197,7 @@ section#menu .menu-banner-img .menu-banner-textColorA {
   height: 300px;
   background-color: white;
   position: absolute;
-  right: calc(50vw - 514px);
+  right: calc(50vw - 510px);
   top: 140px;
   z-index: 49;
 }
@@ -201,7 +209,7 @@ section#menu .menu-banner-img .menu-banner-textColorB {
           clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
   background-color: #E2CFB3;
   position: absolute;
-  right: calc(50vw - 540px);
+  right: calc(50vw - 536px);
   top: 110px;
   z-index: 49;
 }
@@ -241,11 +249,11 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
 
 section#menu .menu-bannerBigColor {
   width: 91.2%;
-  height: 788.47px;
+  height: 602.5px;
   background-color: #D4B797;
   position: absolute;
   z-index: 1;
-  top: -76px;
+  top: 110px;
   right: 8.8%;
 }
 
@@ -524,7 +532,7 @@ section#menu .container .swiper-button-next {
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-next {
-    top: 175%;
+    top: 160%;
     right: 10vw;
   }
 }
@@ -548,7 +556,7 @@ section#menu .container .swiper-button-prev {
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-prev {
-    top: 175%;
+    top: 160%;
     left: 10vw;
   }
 }
