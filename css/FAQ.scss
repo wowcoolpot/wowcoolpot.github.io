@@ -1,0 +1,79 @@
+@import "var";
+@import "nav";
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather','Noto Serif TC', serif;
+    /* 聽老師說的，先中文，再英文，最後通用(補) */
+}
+section#FAQQ{
+    .container{
+        #FAQ{
+            padding: 130px 0;
+            #FAQ-L{
+                text-align: center;
+                font-size: 32px;
+                margin-left: 180px;
+                padding: 50px 0;
+                border: 4px solid black;
+                line-height: 47px;
+                max-height: 340px;
+                max-width: 80px;
+                /* ↑ 防止左邊跟著縮放 */
+                .bg-colorA {
+                    background-color: #E5E6E7;
+                    width: 75px;
+                    height: 240px;
+                    z-index: -1;
+                    position: absolute;
+                    left: -15px;
+                    top: 66px;
+                }
+                .bg-colorB {
+                    background-color: #E2CFB3;
+                    width: 77px;
+                    height: 137px;
+                    z-index: -2;
+                    position: absolute;
+                    left: 7px;
+                    top: 220px;
+                }
+            }
+            #FAQ-R {
+                font-size: 18px;
+                .p-FAQR {
+                    padding: 20px 0;
+                    border-bottom: 1px solid black;
+                }
+                .FQA-GPS {
+                    position: relative;
+                    .FQA-gps {
+                        position: absolute;
+                        right: 0;
+                    }
+                    .icon-color {
+                        color: black;
+                    }
+                }
+                .bg-expand-color {
+                    background-color: #D8BEA1;
+                    width: 105%;
+                    margin-left: -15px;
+                    /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
+                    padding: 10px;
+                    margin-top: 8px;
+                    .Q5-padding{
+                        padding-left: 27px;
+                    }
+                    .A5-text{
+                        letter-spacing: 0.44px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "footer";

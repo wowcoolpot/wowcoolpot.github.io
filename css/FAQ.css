@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@media (max-width: 992px) {
+  .navbar {
+    width: 100vw;
+    position: fixed !important;
+    z-index: 51;
+  }
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+  nav {
+    background-color: rgba(35, 31, 32, 0.7);
+  }
+}
+
+nav .container {
+  max-width: 90vw;
+  padding: 0;
+}
+
+@media (min-width: 1800px) {
+  nav .container {
+    max-width: 1800px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .container {
+    max-width: unset;
+  }
+}
+
+nav .container .navbar-brand {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  nav .container .navbar-brand {
+    margin-left: calc(45vw - 100px);
+  }
+}
+
+nav .container .navbar-brand #nav-logo-img {
+  width: 200px;
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand #nav-logo-img {
+    width: 55.559%;
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .container .navbar-toggler {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    border: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon i {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+nav .container .maxwww {
+  min-width: 85px;
+  /* 版面縮減才不會變形 */
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border {
+  margin: auto 0;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 2px 0;
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown #book-border {
+    display: none;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border .book-side {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 3px;
+}
+
+nav .container #navbarNavDropdown #book-border .book-side #book-text {
+  background-color: black;
+  padding: 1px 8px;
+  color: #c39c61;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown li:active {
+    background-color: #c39c61;
+  }
+}
+
+nav .booking-icon {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+nav .booking-icon a {
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather','Noto Serif TC', serif;
+  /* 聽老師說的，先中文，再英文，最後通用(補) */
+}
+
+section#FAQQ .container #FAQ {
+  padding: 130px 0;
+}
+
+section#FAQQ .container #FAQ #FAQ-L {
+  text-align: center;
+  font-size: 32px;
+  margin-left: 180px;
+  padding: 50px 0;
+  border: 4px solid black;
+  line-height: 47px;
+  max-height: 340px;
+  max-width: 80px;
+  /* ↑ 防止左邊跟著縮放 */
+}
+
+section#FAQQ .container #FAQ #FAQ-L .bg-colorA {
+  background-color: #E5E6E7;
+  width: 75px;
+  height: 240px;
+  z-index: -1;
+  position: absolute;
+  left: -15px;
+  top: 66px;
+}
+
+section#FAQQ .container #FAQ #FAQ-L .bg-colorB {
+  background-color: #E2CFB3;
+  width: 77px;
+  height: 137px;
+  z-index: -2;
+  position: absolute;
+  left: 7px;
+  top: 220px;
+}
+
+section#FAQQ .container #FAQ #FAQ-R {
+  font-size: 18px;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .p-FAQR {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .FQA-GPS {
+  position: relative;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .FQA-GPS .FQA-gps {
+  position: absolute;
+  right: 0;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .FQA-GPS .icon-color {
+  color: black;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .bg-expand-color {
+  background-color: #D8BEA1;
+  width: 105%;
+  margin-left: -15px;
+  /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
+  padding: 10px;
+  margin-top: 8px;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .bg-expand-color .Q5-padding {
+  padding-left: 27px;
+}
+
+section#FAQQ .container #FAQ #FAQ-R .bg-expand-color .A5-text {
+  letter-spacing: 0.44px;
+}
+
+footer {
+  background-color: #e5e6e7;
+  position: relative;
+  /* ↑ 讓icon跟隨 */
+  padding-top: 30px;
+}
+
+footer .footer-logo {
+  text-align: center;
+  color: #c39c61;
+}
+
+footer .footer-logo img {
+  height: 100px;
+}
+
+footer .footer-logo .footer-logo-text {
+  font-size: 22px;
+  letter-spacing: 12px;
+  padding-left: 10px;
+}
+
+footer .container .footer-information-com {
+  display: none;
+}
+
+footer .container .footer-information-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #414042;
+}
+
+@media (min-width: 410px) {
+  footer .container .footer-information-com {
+    display: block;
+    text-align: center;
+    color: #414042;
+  }
+  footer .container .footer-information-mobile {
+    display: none;
+  }
+}
+
+footer .footer-icon-group {
+  position: absolute;
+  left: calc(50% - 97.5px);
+  bottom: 25%;
+  background-color: #e5e6e7;
+  text-align: center;
+  z-index: 999;
+  /* ↑ 讓icon群浮上來蓋過線 */
+  /* ↓ 讓線別貼邊 */
+  padding: 0 10px;
+}
+
+footer .footer-icon-group i {
+  font-size: 35px;
+  margin: 0 12px;
+  color: #414042;
+}
+
+footer .footer-icon-group i:hover {
+  color: #c39c61;
+}
+
+footer .footer-copyright {
+  font-size: 15px;
+  border-top: 1px solid;
+  max-width: 1220px;
+  /* ↑ 底線對齊上面LOGO與訂位 */
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 0;
+  text-align: center;
+  color: #414042;
+}
+/*# sourceMappingURL=FAQ.css.map */
