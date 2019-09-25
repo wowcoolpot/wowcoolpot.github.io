@@ -18,6 +18,9 @@ nav {
         @media (min-width: 1800px) {
             max-width: 1800px;
         }
+        @media (max-width: 992px) {
+            max-width: unset;
+        }
     
         .navbar-brand {
             padding: 0;
@@ -58,11 +61,12 @@ nav {
 
         #navbarNavDropdown{
             @media (max-width: 992px) {
-                
+                margin-left: -31px;
                 a{
                     color: white;
                     font-size: 20px;
                     text-align: center;
+                    width: 100vw;
                 }
             }
             #book-border {
@@ -95,6 +99,7 @@ nav {
             }
         }
     }
+    
     .booking-icon{
         font-size: 30px;
         position: absolute;
