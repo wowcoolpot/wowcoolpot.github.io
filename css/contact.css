@@ -54,18 +54,39 @@ nav .container {
   }
 }
 
+@media (max-width: 992px) {
+  nav .container {
+    max-width: unset;
+  }
+}
+
 nav .container .navbar-brand {
   padding: 0;
+  height: 60px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 992px) {
   nav .container .navbar-brand {
-    margin-left: calc(45vw - 100px);
+    margin-left: calc(50% - 120px);
+  }
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand {
+    margin-left: calc(50% - 90px);
   }
 }
 
 nav .container .navbar-brand #nav-logo-img {
   width: 200px;
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand #nav-logo-img {
+    width: 150px;
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -89,24 +110,45 @@ nav .container .maxwww {
   /* 版面縮減才不會變形 */
 }
 
-nav .container #book-border {
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border {
   margin: auto 0;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   padding: 2px 0;
 }
 
-nav .container #book-border .book-side {
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown #book-border {
+    display: none;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border .book-side {
   border-left: 2px solid black;
   border-right: 2px solid black;
   padding: 0 3px;
 }
 
-nav .container #book-border .book-side #book-text {
+nav .container #navbarNavDropdown #book-border .book-side #book-text {
   background-color: black;
   padding: 1px 8px;
   color: #c39c61;
   font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown li:active {
+    background-color: #c39c61;
+  }
 }
 
 nav .booking-icon {
@@ -368,7 +410,7 @@ footer .footer-copyright {
     margin-top: 0;
     max-width: 100%;
     height: 40vh;
-    background-image: url("/img/06-mobile-banner.jpg");
+    background-image: url("../img/06-mobile-banner.jpg");
   }
   #form {
     margin-top: 30px;
@@ -444,6 +486,7 @@ footer .footer-copyright {
   }
   #location .loc_inf.mob {
     display: block;
+    padding: 0 2%;
   }
   #location .loc_inf.mob #address .icon,
   #location .loc_inf.mob #tel .icon,
