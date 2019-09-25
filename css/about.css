@@ -36,11 +36,19 @@ nav .container {
 
 nav .container .navbar-brand {
   padding: 0;
+  height: 60px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 992px) {
   nav .container .navbar-brand {
-    margin-left: calc(45vw - 100px);
+    margin-left: calc(50% - 120px);
+  }
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand {
+    margin-left: calc(50% - 90px);
   }
 }
 
@@ -50,8 +58,8 @@ nav .container .navbar-brand #nav-logo-img {
 
 @media (max-width: 450px) {
   nav .container .navbar-brand #nav-logo-img {
-    width: 55.559%;
-    margin-left: 5vw;
+    width: 150px;
+    padding-top: 5px;
   }
 }
 
@@ -168,7 +176,7 @@ section#about .about-grain1 img {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 1038px;
+  height: 1150px;
 }
 
 @media (max-width: 768px) {
@@ -194,8 +202,8 @@ section#about .about-grain1 .container {
 }
 
 section#about .about-grain1 .container img {
-  max-width: 90vw;
-  height: 385px;
+  width: 90vw;
+  height: 40vw;
   margin: 200px auto 0 auto;
   margin-left: -15px;
   z-index: 50;
@@ -232,17 +240,18 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   right: 140px;
-  top: -610px;
+  top: -750px;
 }
 
 @media (max-width: 768px) {
   section#about .about-grain1 .container .about-banner .about-banner-color1 {
+    background-color: rgba(255, 255, 255, 0.8);
     width: 50vw;
     max-width: 300px;
     height: 70px;
     margin-left: 28vw;
     right: unset;
-    margin-top: 290px;
+    margin-top: 270px;
   }
 }
 
@@ -269,7 +278,7 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 .about
 }
 
 section#about .about-grain1 .container .about-banner #about-text2 {
-  margin-top: 679px;
+  margin-top: 779px;
 }
 
 section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
@@ -285,7 +294,7 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
     position: absolute;
     right: calc(50vw - 175px);
-    top: -28vh;
+    top: -350px;
   }
 }
 
@@ -527,7 +536,7 @@ section#about .about-second {
 
 @media (max-width: 768px) {
   section#about .about-second {
-    margin-top: 240px;
+    margin-top: 140px;
   }
 }
 
@@ -537,9 +546,9 @@ section#about .about-second .row {
 
 section#about .about-second .row .col-gold-left {
   width: 61.8%;
-  z-index: 50;
   background-color: #DCBFA8;
   padding-bottom: 80px;
+  z-index: -1;
 }
 
 section#about .about-second .row .col-gold-left img {
@@ -581,7 +590,7 @@ section#about .about-second .row .col-gold-right .about-secondB {
 }
 
 section#about .about-second .row .col-gold-right .about-secondB img {
-  width: 100%;
+  width: 102%;
 }
 
 section#about .about-second .about-grain2 {
@@ -590,10 +599,10 @@ section#about .about-second .about-grain2 {
 }
 
 section#about .about-second .about-grain2 img {
+  z-index: -2;
   width: 100%;
   position: absolute;
   top: -33px;
-  z-index: -2;
   max-height: 1456px;
 }
 
@@ -640,7 +649,7 @@ section#about .about-second .about-grain2 .container .about-text3-colorA {
   position: relative;
   margin-top: -92px;
   margin-left: 133px;
-  z-index: 50;
+  z-index: 51;
 }
 
 section#about .about-second .about-grain2 .container .about-text3-colorA .about-text3 {
@@ -710,13 +719,9 @@ section#about .about-second .about-grain2 .container .about-text4 .about-text4-c
 }
 
 section#about .about-third {
+  margin-top: 190px;
   width: 100%;
   height: 100vh;
-  background-image: url("/img/about-Img6.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 190px;
   position: relative;
   z-index: -1;
 }
@@ -724,8 +729,7 @@ section#about .about-third {
 @media (max-width: 768px) {
   section#about .about-third {
     width: 100vw;
-    background-size: contain;
-    margin-top: 160px;
+    margin-top: 300px;
   }
 }
 
@@ -743,9 +747,9 @@ section#about .about-third .container .about-third-text {
 
 @media (max-width: 768px) {
   section#about .about-third .container .about-third-text {
-    position: unset;
-    margin-left: 10.5vw;
-    margin-top: -100px;
+    position: absolute;
+    margin-left: -175px;
+    margin-top: -165px;
     text-align: left;
     max-width: 100vw;
     display: inline-block;
@@ -797,9 +801,9 @@ section#about .about-forth .about-forthText-colorA .about-forth-textA {
 section#about .about-forth .about-forthText-colorA-mobile {
   width: 290px;
   height: 630px;
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
-  margin-top: -25px;
+  margin-top: -170px;
   margin-left: 18vw;
   z-index: 50;
   letter-spacing: 5px;

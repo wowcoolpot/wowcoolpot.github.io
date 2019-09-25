@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light px-0">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
             <!-- ↓ 手機版顯示的menu -->
@@ -32,24 +32,24 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <!-- ml-auto讓選單靠右 ↑ -->
-                    <li class="nav-item ml-3">
+                    <li class="nav-item ml-lg-3 ml-0">
                         <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww font-weight-bold" href="#">關於瓦庫</a>
+                        <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫好料</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫在哪</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww font-weight-bold" href="#">常見問題</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
                     </li>
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
@@ -59,26 +59,35 @@
                 </ul>
             </div>
         </div>
+        
         <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
     </nav>
 
     <section id="FAQQ">
+        <div class="row">
+            <div class="col-12 FAQ-banner">
+                <img src="./img/FAQ-bannerImg.jpg" alt="">
+            </div>
+        </div>
         <div class="container">
+            <div id="FAQ-L-mobile" class="d-block d-md-none">
+                瓦庫來解答
+                <div class="FAQ-L-mobileColor"></div>
+            </div>
             <div id="FAQ" class="row">
-                <div id="FAQ-L" class="col-1 font-weight-bold">
+                <div id="FAQ-L" class="col-1 font-weight-bold d-none d-md-block">
                     瓦<br>庫<br>來<br>解<br>答
                     <div class="bg-colorA"></div>
                     <div class="bg-colorB"></div>
-                    <!-- ↑ 兩個可怕的色塊 -->
                 </div>
                 <div class="col-1 p-0"></div>
                 <!-- ↑ 卡白用 -->
-                <div id="FAQ-R" class="col-7">
+                <div id="FAQ-R" class="col-md-7 col-12">
                     <!-- 問題11111111111111111111 -->
                     <div class="row p-FAQR font-weight-bold FQA-GPS">
                         Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
                         <a data-toggle="collapse" href="#row-1">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                            <i class="fas fa-plus icon-color FQA-gps d-none d-md-block"></i>
                         </a>
                     </div>
                     <!-- 收合bootstrap ↑ ↓ -->
@@ -89,7 +98,7 @@
                     <div class="row p-FAQR font-weight-bold FQA-GPS">
                         Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
                         <a data-toggle="collapse" href="#row-2">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                            <i class="fas fa-plus icon-color FQA-gps d-none d-md-block"></i>
                         </a>
                     </div>
                     <div class="collapse bg-expand-color" id="row-2">
@@ -99,7 +108,7 @@
                     <div class="row p-FAQR font-weight-bold FQA-GPS">
                         Q : 開鍋費為何酌收 $120 ?
                         <a data-toggle="collapse" href="#row-3">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                            <i class="fas fa-plus icon-color FQA-gps d-none d-md-block"></i>
                         </a>
                     </div>
                     <div class="collapse bg-expand-color" id="row-3">
@@ -109,7 +118,7 @@
                     <div class="row p-FAQR font-weight-bold FQA-GPS">
                         Q : 請問有特約停車場嗎 ?
                         <a data-toggle="collapse" href="#row-4">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                            <i class="fas fa-plus icon-color FQA-gps d-none d-md-block"></i>
                         </a>
                     </div>
                     <div class="collapse bg-expand-color" id="row-4">
@@ -119,7 +128,7 @@
                     <div class="row p-FAQR font-weight-bold FQA-GPS">
                         Q : 請問有提供鍋底外帶嗎 ?
                         <a data-toggle="collapse" href="#row-5">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
+                            <i class="fas fa-plus icon-color FQA-gps d-none d-md-block"></i>
                         </a>
                     </div>
                     <div class="collapse bg-expand-color" id="row-5">
