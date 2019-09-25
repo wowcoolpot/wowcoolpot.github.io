@@ -16,12 +16,23 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
   <!-- ↓ 匯入css -->
   <link rel="stylesheet" href="./css/news.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148747994-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148747994-1');
+  </script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
     <div class="container">
       <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
       <!-- ↓ 手機版顯示的menu -->
@@ -32,24 +43,24 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <!-- ml-auto讓選單靠右 ↑ -->
-          <li class="nav-item ml-3">
+          <li class="nav-item ml-lg-3 ml-0">
             <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-            <a class="nav-link maxwww font-weight-bold" href="/about.html">關於瓦庫</a>
+            <a class="nav-link maxwww font-weight-bold" href="#">關於瓦庫</a>
           </li>
-          <li class="nav-item ml-3">
+          <li class="nav-item ml-lg-3 ml-0">
             <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
           </li>
-          <li class="nav-item ml-3">
+          <li class="nav-item ml-lg-3 ml-0">
             <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
           </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link maxwww font-weight-bold" href="/09-21-try-05-瓦庫好料-V2.html">瓦庫好料</a>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="#">瓦庫好料</a>
           </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link maxwww font-weight-bold" href="/contact.html">瓦庫在哪</a>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="#">瓦庫在哪</a>
           </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link maxwww font-weight-bold" href="/FAQ.html">常見問題</a>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="#">常見問題</a>
           </li>
           <li id="book-border" class="nav-item ml-5">
             <div class="book-side">
@@ -59,6 +70,7 @@
         </ul>
       </div>
     </div>
+
     <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
   </nav>
   <div class="banner mx-auto">
