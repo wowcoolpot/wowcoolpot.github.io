@@ -65,8 +65,9 @@ body {
         max-width: 90vw;
         height: 700px;
         background-position: center;
-        @media (max-width:992px){
-            height:630px;
+
+        @media (max-width:992px) {
+            height: 630px;
         }
 
         .soup_inf_texts {
@@ -105,8 +106,9 @@ body {
             text-align: center;
             font-size: 20px;
             z-index: 3;
-            @media (max-width:992px){
-                top:520px;
+
+            @media (max-width:992px) {
+                top: 520px;
             }
 
             .soup_text {
@@ -134,9 +136,10 @@ body {
                 position: absolute;
                 right: -200px;
                 top: calc(50% - 12px);
-                @media (max-width:992px){
-                    width:80px;
-                    right:-80px;
+
+                @media (max-width:992px) {
+                    width: 80px;
+                    right: -80px;
                 }
             }
 
@@ -194,8 +197,9 @@ body {
 
 #flow {
     margin-top: 340px;
-    @media (max-width:992px){
-        margin-top:220px;
+
+    @media (max-width:992px) {
+        margin-top: 220px;
     }
 
     .flow {
@@ -254,7 +258,85 @@ body {
             top: -40px;
         }
 
+        .de1 {
+            position: absolute;
+            width: 200px;
+            top: 150px;
+            left: 180px;
+            z-index: 5;
+
+            @media (max-width: 1400px) {
+                left: 0;
+            }
+        }
     }
+}
+
+#notice {
+    margin: $mt-130 0;
+    list-style: none;
+    position: relative;
+
+    .notice {
+        .notice_text {
+            font-size: 34px;
+            color: black;
+            border: 3.5px solid black;
+            line-height: 38px;
+            padding: 67px 20px;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        li:before {
+            content: "\2022";
+            color: #b89161;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            ;
+        }
+
+        .cost ul:last-child {
+            margin-left: 60px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                display: block;
+                height: 95%;
+                border-left: 1.5px solid black;
+                margin-left: -30px;
+            }
+        }
+
+        .act li:last-child::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid black;
+            margin-top: 23px;
+            width: 520px;
+        }
+    }
+
+    .de2 {
+        position: absolute;
+        width: 300px;
+        right: 200px;
+        top: 10px;
+        z-index: 5;
+
+        @media (max-width: 1400px) {
+            right: 0;
+        }
+    }
+
 }
 
 
@@ -264,6 +346,7 @@ body {
 @media (max-width:992px) {
     .banner {
         margin-top: 0;
+
         .hotpot_text {
             top: calc(50% - 146.5px);
         }

@@ -406,6 +406,85 @@ nav .booking-icon a {
   top: -40px;
 }
 
+#flow .flow .de1 {
+  position: absolute;
+  width: 200px;
+  top: 150px;
+  left: 180px;
+  z-index: 5;
+}
+
+@media (max-width: 1400px) {
+  #flow .flow .de1 {
+    left: 0;
+  }
+}
+
+#notice {
+  margin: 130px 0;
+  list-style: none;
+  position: relative;
+}
+
+#notice .notice .notice_text {
+  font-size: 34px;
+  color: black;
+  border: 3.5px solid black;
+  line-height: 38px;
+  padding: 67px 20px;
+}
+
+#notice .notice ul,
+#notice .notice li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+#notice .notice li:before {
+  content: "\2022";
+  color: #b89161;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+#notice .notice .cost ul:last-child {
+  margin-left: 60px;
+}
+
+#notice .notice .cost ul:last-child:before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 95%;
+  border-left: 1.5px solid black;
+  margin-left: -30px;
+}
+
+#notice .notice .act li:last-child::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+  margin-top: 23px;
+  width: 520px;
+}
+
+#notice .de2 {
+  position: absolute;
+  width: 300px;
+  right: 200px;
+  top: 10px;
+  z-index: 5;
+}
+
+@media (max-width: 1400px) {
+  #notice .de2 {
+    right: 0;
+  }
+}
+
 footer {
   background-color: #e5e6e7;
   position: relative;
