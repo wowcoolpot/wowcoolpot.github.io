@@ -1,0 +1,583 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", "Noto Serif TC", serif;
+  /* 聽老師說的，先中文，再英文，最後通用(補) */
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    width: 100vw;
+    position: fixed !important;
+    z-index: 51;
+  }
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+  nav {
+    background-color: rgba(35, 31, 32, 0.7);
+  }
+}
+
+nav .container {
+  max-width: 90vw;
+  padding: 0;
+}
+
+@media (min-width: 1800px) {
+  nav .container {
+    max-width: 1800px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .container {
+    max-width: unset;
+  }
+}
+
+nav .container .navbar-brand {
+  padding: 0;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  nav .container .navbar-brand {
+    margin-left: calc(50% - 120px);
+  }
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand {
+    margin-left: calc(50% - 90px);
+  }
+}
+
+nav .container .navbar-brand #nav-logo-img {
+  width: 200px;
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand #nav-logo-img {
+    width: 150px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .container .navbar-toggler {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    border: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+  }
+  nav .container .navbar-toggler .navbar-toggler-icon i {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+nav .container .maxwww {
+  min-width: 85px;
+  /* 版面縮減才不會變形 */
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border {
+  margin: auto 0;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 2px 0;
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown #book-border {
+    display: none;
+  }
+}
+
+nav .container #navbarNavDropdown #book-border .book-side {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 3px;
+}
+
+nav .container #navbarNavDropdown #book-border .book-side #book-text {
+  background-color: black;
+  padding: 1px 8px;
+  color: #c39c61;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  nav .container #navbarNavDropdown li:active {
+    background-color: #c39c61;
+  }
+}
+
+nav .booking-icon {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+nav .booking-icon a {
+  color: white;
+}
+
+.banner {
+  background-image: url("../img/04banner_hotpot.jpg");
+  background-position: center;
+  background-size: cover;
+  max-width: 90vw;
+  height: 557px;
+  margin-top: 130px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner .hotpot_text {
+  font-size: 34px;
+  color: black;
+  border: 3.5px solid black;
+  line-height: 38px;
+  padding: 67px 20px;
+  position: absolute;
+  top: -60px;
+}
+
+.banner .hotpot_text .titlebox {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80px;
+  height: 300px;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  z-index: -100;
+}
+
+.banner .news_text.mob {
+  display: none;
+}
+
+#soup .soup_bg {
+  background-image: url("../img/soup_bg.jpg");
+  max-width: 90vw;
+  height: 700px;
+  background-position: center;
+}
+
+@media (max-width: 992px) {
+  #soup .soup_bg {
+    height: 630px;
+  }
+}
+
+#soup .soup_bg .soup_inf_texts {
+  position: absolute;
+  top: -70px;
+  z-index: 1;
+}
+
+#soup .soup_bg .soup_inf_texts .soup_inf_text {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  line-height: 28px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 50px;
+}
+
+#soup .soup_bg .soup_inf_texts .soup_inf_text .soup_inf_text_b {
+  font-weight: bold;
+  padding-right: 10px;
+  position: relative;
+}
+
+#soup .soup_bg .soup_inf_texts .soup_inf_text .soup_inf_text_b .line {
+  border: 1px solid black;
+  height: 160px;
+  position: absolute;
+  left: 14px;
+  bottom: 8px;
+}
+
+#soup .soup_bg .soup_texts {
+  position: absolute;
+  top: 600px;
+  left: 30px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  #soup .soup_bg .soup_texts {
+    top: 520px;
+  }
+}
+
+#soup .soup_bg .soup_texts .soup_text {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 30px;
+}
+
+#soup .soup_bg .soup_texts .hr_L {
+  border: 0;
+  height: 2px;
+  background: black;
+  width: 20px;
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 12px);
+}
+
+#soup .soup_bg .soup_texts .hr_R {
+  border: 0;
+  height: 2.5px;
+  background: black;
+  width: 200px;
+  position: absolute;
+  right: -200px;
+  top: calc(50% - 12px);
+}
+
+@media (max-width: 992px) {
+  #soup .soup_bg .soup_texts .hr_R {
+    width: 80px;
+    right: -80px;
+  }
+}
+
+#soup .soup_bg .soup_texts .soup_circle {
+  font-size: 10px;
+  position: absolute;
+  left: -30px;
+  top: 49%;
+}
+
+#soup .soup_bg .soup_ps .soup_de_bg {
+  width: 100%;
+  position: absolute;
+  top: 470px;
+  z-index: 4;
+}
+
+#soup .soup_bg .soup_ps .soup_p {
+  position: absolute;
+  top: 500px;
+  left: 80px;
+  z-index: 5;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+}
+
+#soup .soup_bg .soup_ps .soup_p img {
+  width: 95%;
+}
+
+#soup .soups {
+  width: 80px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#soup .soups.soup1,
+#soup .soup3,
+#soup .soup5 {
+  top: 80px;
+}
+
+#soup .soups.soup2 {
+  top: 100px;
+}
+
+#soup .soups.soup4 {
+  top: 60px;
+}
+
+#flow {
+  margin-top: 340px;
+}
+
+@media (max-width: 992px) {
+  #flow {
+    margin-top: 220px;
+  }
+}
+
+#flow .flow {
+  background-image: url("../img/soup_bg.jpg");
+  max-width: 90vw;
+  height: 300px;
+  position: relative;
+}
+
+#flow .flow .box {
+  width: 70%;
+  height: 180px;
+  background-color: #D6B9A2;
+  position: absolute;
+  top: -120px;
+  left: 80px;
+}
+
+@media (max-width: 1400px) {
+  #flow .flow .box {
+    left: 0;
+    width: 80%;
+  }
+}
+
+#flow .flow .flow_text {
+  font-size: 34px;
+  color: black;
+  border: 3.5px solid black;
+  line-height: 38px;
+  padding: 67px 20px;
+  position: absolute;
+  top: -60px;
+  z-index: 2;
+}
+
+#flow .flow .titleboxA {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80px;
+  height: 280px;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  z-index: 1;
+}
+
+#flow .flow .flow_p {
+  width: 80%;
+  position: absolute;
+}
+
+#flow .flow .flow1,
+#flow .flow .flow3 {
+  top: -80px;
+}
+
+#flow .flow .flow2 {
+  top: -40px;
+}
+
+footer {
+  background-color: #e5e6e7;
+  position: relative;
+  /* ↑ 讓icon跟隨 */
+  padding-top: 30px;
+}
+
+footer .footer-logo {
+  text-align: center;
+  color: #c39c61;
+}
+
+footer .footer-logo img {
+  height: 100px;
+}
+
+footer .footer-logo .footer-logo-text {
+  font-size: 22px;
+  letter-spacing: 12px;
+  padding-left: 10px;
+}
+
+footer .container .footer-information-com {
+  display: none;
+}
+
+footer .container .footer-information-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #414042;
+}
+
+@media (min-width: 410px) {
+  footer .container .footer-information-com {
+    display: block;
+    text-align: center;
+    color: #414042;
+  }
+  footer .container .footer-information-mobile {
+    display: none;
+  }
+}
+
+footer .footer-icon-group {
+  position: absolute;
+  left: calc(50% - 97.5px);
+  bottom: 25%;
+  background-color: #e5e6e7;
+  text-align: center;
+  z-index: 999;
+  /* ↑ 讓icon群浮上來蓋過線 */
+  /* ↓ 讓線別貼邊 */
+  padding: 0 10px;
+}
+
+footer .footer-icon-group i {
+  font-size: 35px;
+  margin: 0 12px;
+  color: #414042;
+}
+
+footer .footer-icon-group i:hover {
+  color: #c39c61;
+}
+
+footer .footer-copyright {
+  font-size: 15px;
+  border-top: 1px solid;
+  max-width: 1220px;
+  /* ↑ 底線對齊上面LOGO與訂位 */
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px 0;
+  text-align: center;
+  color: #414042;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 0;
+  }
+  .banner .hotpot_text {
+    top: calc(50% - 146.5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-width: 100%;
+    height: 40vh;
+    margin-top: 0;
+  }
+  #soup .soup_bg {
+    max-width: 100%;
+  }
+  #flow {
+    margin-top: 300px;
+  }
+  #flow .flow {
+    background-image: url("../img/soup_bg.jpg");
+    max-width: 100%;
+  }
+  #flow .flow .box {
+    width: 70%;
+    height: 160px;
+    background-color: #D6B9A2;
+    position: absolute;
+    top: -100px;
+    left: 80px;
+  }
+  #flow .flow .flow_text {
+    font-size: 34px;
+    color: black;
+    border: 3.5px solid black;
+    line-height: 38px;
+    padding: 67px 20px;
+    position: absolute;
+    top: -60px;
+    z-index: 2;
+  }
+  #flow .flow .titleboxA {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80px;
+    height: 280px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1800px) {
+  .banner {
+    max-width: 1800px;
+  }
+  #soup .soup_bg {
+    max-width: 1800px;
+  }
+  #flow .flow {
+    background-image: url("../img/soup_bg.jpg");
+    max-width: 1800px;
+    position: relative;
+  }
+  #flow .flow .flow_text {
+    font-size: 34px;
+    color: black;
+    border: 3.5px solid black;
+    line-height: 38px;
+    padding: 67px 20px;
+    position: absolute;
+    top: -60px;
+    z-index: 2;
+  }
+  #flow .flow .titleboxA {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80px;
+    height: 280px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner {
+    max-width: 1800px;
+  }
+  #soup .soup_bg {
+    max-width: 1800px;
+  }
+}
+/*# sourceMappingURL=hotpot.css.map */

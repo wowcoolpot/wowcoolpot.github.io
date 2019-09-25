@@ -1,0 +1,391 @@
+@import "var";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", "Noto Serif TC", serif;
+    /* 聽老師說的，先中文，再英文，最後通用(補) */
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+//匯入nav的css樣式
+@import "nav";
+
+.banner {
+    background-image: url("../img/04banner_hotpot.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 90vw;
+    height: 557px;
+    margin-top: $mt-130;
+    position: relative;
+    z-index: 1;
+
+    .hotpot_text {
+        font-size: 34px;
+        color: black;
+        border: 3.5px solid black;
+        line-height: 38px;
+        padding: 67px 20px;
+        position: absolute;
+        top: -60px;
+
+        .titlebox {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 80px;
+            height: 300px;
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            z-index: -100;
+        }
+    }
+
+    .news_text.mob {
+        display: none;
+    }
+}
+
+#soup {
+    .soup_bg {
+        background-image: url("../img/soup_bg.jpg");
+        max-width: 90vw;
+        height: 700px;
+        background-position: center;
+        @media (max-width:992px){
+            height:630px;
+        }
+
+        .soup_inf_texts {
+            position: absolute;
+            top: -70px;
+            z-index: 1;
+
+            .soup_inf_text {
+                writing-mode: vertical-rl;
+                letter-spacing: 4px;
+                line-height: 28px;
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 30px 50px;
+
+                .soup_inf_text_b {
+                    font-weight: bold;
+                    padding-right: 10px;
+                    position: relative;
+
+                    .line {
+                        border: 1px solid black;
+                        height: 160px;
+                        position: absolute;
+                        left: 14px;
+                        bottom: 8px;
+                    }
+                }
+            }
+        }
+
+        .soup_texts {
+            position: absolute;
+            top: 600px;
+            left: 30px;
+            text-align: center;
+            font-size: 20px;
+            z-index: 3;
+            @media (max-width:992px){
+                top:520px;
+            }
+
+            .soup_text {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding: 0 30px;
+
+            }
+
+            .hr_L {
+                border: 0;
+                height: 2px;
+                background: black;
+                width: 20px;
+                position: absolute;
+                left: -20px;
+                top: calc(50% - 12px)
+            }
+
+            .hr_R {
+                border: 0;
+                height: 2.5px;
+                background: black;
+                width: 200px;
+                position: absolute;
+                right: -200px;
+                top: calc(50% - 12px);
+                @media (max-width:992px){
+                    width:80px;
+                    right:-80px;
+                }
+            }
+
+            .soup_circle {
+                font-size: 10px;
+                position: absolute;
+                left: -30px;
+                top: 49%;
+            }
+        }
+
+        .soup_ps {
+            .soup_de_bg {
+                width: 100%;
+                position: absolute;
+                top: 470px;
+                z-index: 4;
+            }
+
+            .soup_p {
+                position: absolute;
+                top: 500px;
+                left: 80px;
+                z-index: 5;
+                transform: rotate(-5deg);
+                filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+
+                img {
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    .soups {
+        width: 80px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .soups.soup1,
+    .soup3,
+    .soup5 {
+        top: 80px;
+    }
+
+    .soups.soup2 {
+        top: 100px;
+    }
+
+    .soups.soup4 {
+        top: 60px;
+    }
+}
+
+#flow {
+    margin-top: 340px;
+    @media (max-width:992px){
+        margin-top:220px;
+    }
+
+    .flow {
+        background-image: url("../img/soup_bg.jpg");
+        max-width: 90vw;
+        height: 300px;
+        position: relative;
+
+        .box {
+            width: 70%;
+            height: 180px;
+            background-color: #D6B9A2;
+            position: absolute;
+            top: -120px;
+            left: 80px;
+
+            @media (max-width:1400px) {
+                left: 0;
+                width: 80%;
+            }
+        }
+
+
+        .flow_text {
+            font-size: 34px;
+            color: black;
+            border: 3.5px solid black;
+            line-height: 38px;
+            padding: 67px 20px;
+            position: absolute;
+            top: -60px;
+            z-index: 2;
+        }
+
+        .titleboxA {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 80px;
+            height: 280px;
+            position: absolute;
+            top: -70px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .flow_p {
+            width: 80%;
+            position: absolute;
+        }
+
+        .flow1,
+        .flow3 {
+            top: -80px;
+        }
+
+        .flow2 {
+            top: -40px;
+        }
+
+    }
+}
+
+
+//匯入footer的css樣式
+@import "footer";
+
+@media (max-width:992px) {
+    .banner {
+        margin-top: 0;
+        .hotpot_text {
+            top: calc(50% - 146.5px);
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        max-width: 100%;
+        height: 40vh;
+        margin-top: 0;
+    }
+
+    #soup {
+        .soup_bg {
+            max-width: 100%;
+        }
+    }
+
+    #flow {
+        margin-top: 300px;
+
+        .flow {
+            background-image: url("../img/soup_bg.jpg");
+            max-width: 100%;
+
+
+            .box {
+                width: 70%;
+                height: 160px;
+                background-color: #D6B9A2;
+                position: absolute;
+                top: -100px;
+                left: 80px;
+            }
+
+            .flow_text {
+                font-size: 34px;
+                color: black;
+                border: 3.5px solid black;
+                line-height: 38px;
+                padding: 67px 20px;
+                position: absolute;
+                top: -60px;
+                z-index: 2;
+            }
+
+            .titleboxA {
+                background-color: rgba(255, 255, 255, 0.9);
+                width: 80px;
+                height: 280px;
+                position: absolute;
+                top: -70px;
+                left: 0;
+                z-index: 1;
+            }
+
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width:1800px) {
+    .banner {
+        max-width: 1800px;
+    }
+
+    #soup {
+        .soup_bg {
+            max-width: 1800px;
+        }
+    }
+
+    #flow {
+
+
+        .flow {
+            background-image: url("../img/soup_bg.jpg");
+            max-width: 1800px;
+            position: relative;
+
+
+            .flow_text {
+                font-size: 34px;
+                color: black;
+                border: 3.5px solid black;
+                line-height: 38px;
+                padding: 67px 20px;
+                position: absolute;
+                top: -60px;
+                z-index: 2;
+            }
+
+            .titleboxA {
+                background-color: rgba(255, 255, 255, 0.9);
+                width: 80px;
+                height: 280px;
+                position: absolute;
+                top: -70px;
+                left: 0;
+                z-index: 1;
+            }
+
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .banner {
+        max-width: 1800px;
+    }
+
+    #soup {
+        .soup_bg {
+            max-width: 1800px;
+        }
+    }
+}

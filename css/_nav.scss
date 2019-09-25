@@ -1,6 +1,6 @@
 // navbar
 @media (max-width: 992px) {
-    .navbar{
+    .navbar {
         width: 100vw;
         position: fixed !important;
         z-index: 51;
@@ -9,44 +9,58 @@
 
 nav {
     background-color: rgba(255, 255, 255, 0.5);
+
     @media (max-width: 992px) {
         background-color: rgba(35, 31, 32, 0.7);
     }
-    .container{
+
+    .container {
         max-width: 90vw;
         padding: 0;
+
         @media (min-width: 1800px) {
             max-width: 1800px;
         }
+
         @media (max-width: 992px) {
             max-width: unset;
         }
-    
+
         .navbar-brand {
             padding: 0;
+            height: 60px;
+            margin-bottom: 8px;
             @media (max-width: 992px) {
-                margin-left: calc(45vw - 100px);
+                margin-left: calc(50% - 120px);
                 // 因為原本container就奪走了10vw
             }
+
+            @media (max-width:450px) {
+                margin-left: calc(50% - 90px);
+            }
+
             #nav-logo-img {
                 width: 200px;
+
                 @media (max-width: 450px) {
-                    width: 55.559%;
-                    margin-left: 5vw;
+                    width: 150px;
+                    padding-top: 5px;
                 }
             }
         }
 
-        .navbar-toggler{
+        .navbar-toggler {
             @media (max-width: 992px) {
                 position: fixed;
                 left: 15px;
                 top: 20px;
                 // 手機版漢堡條改位置
                 border: none;
-                .navbar-toggler-icon{
+
+                .navbar-toggler-icon {
                     background-image: none;
-                    i{
+
+                    i {
                         font-size: 30px;
                         color: white;
                     }
@@ -59,29 +73,31 @@ nav {
             /* 版面縮減才不會變形 */
         }
 
-        #navbarNavDropdown{
+        #navbarNavDropdown {
             @media (max-width: 992px) {
-                a{
+                a {
                     color: white;
                     font-size: 20px;
                     text-align: center;
                     width: 100vw;
                 }
             }
+
             #book-border {
                 margin: auto 0;
                 border-top: 4px solid black;
                 border-bottom: 4px solid black;
                 padding: 2px 0;
+
                 @media (max-width: 992px) {
                     display: none;
                 }
-        
+
                 .book-side {
                     border-left: 2px solid black;
                     border-right: 2px solid black;
                     padding: 0 3px;
-        
+
                     #book-text {
                         background-color: black;
                         padding: 1px 8px;
@@ -91,20 +107,22 @@ nav {
                 }
             }
         }
-        #navbarNavDropdown li:active{
+
+        #navbarNavDropdown li:active {
             @media (max-width: 992px) {
                 background-color: $mainbg;
                 // 調手機版選單點擊顏色
             }
         }
     }
-    
-    .booking-icon{
+
+    .booking-icon {
         font-size: 30px;
         position: absolute;
         right: 40px;
         top: 15px;
-        a{
+
+        a {
             color: white;
         }
     }
