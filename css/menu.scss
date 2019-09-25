@@ -5,6 +5,7 @@ body{
 }
 nav{
     top: 0;
+    z-index: 50;
     .navbar-brand {
         z-index: 50;
         /* 在menu可浮出 */
@@ -43,9 +44,13 @@ section#menu{
             width: 100vw;
             height: 102vh;
         }
+        @media (max-width: 768px) {
+            width: 100vw;
+            height: 56.25vw;
+        }
         .menu-banner-textR{
             position: absolute;
-            right: calc(50vw - 526px);
+            right: 196px;
             top: 125px;
             font-size: 28px;
             border: 4px solid black;
@@ -58,7 +63,7 @@ section#menu{
             height: 300px;
             background-color: white;
             position: absolute;
-            right: calc(50vw - 514px);
+            right: 210px;
             top: 140px;
             z-index: 49;
         }
@@ -68,7 +73,7 @@ section#menu{
             clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
             background-color: #E2CFB3;
             position: absolute;
-            right: calc(50vw - 540px);
+            right: 182px;
             top: 110px;
             z-index: 49;
         }
@@ -76,12 +81,15 @@ section#menu{
         .menu-banner-textR-mobile{
             position: absolute;
             left: calc(50vw - 170px);
-            top: 630px;
+            top: 700px;
             font-size: 28px;
             letter-spacing: 10px;
             border: 4px solid black;
             padding: 15px 90px;
             z-index: 50;
+            @media (max-width: 768px) {
+                top: 51vw;
+            }
         }
         .menu-banner-textColorA-mobile{
             width: 333px;
@@ -91,6 +99,12 @@ section#menu{
             left: calc(50vw - 185px);
             top: 615px;
             z-index: 49;
+            @media (max-width: 992px) {
+                top: 685px;
+            }
+            @media (max-width: 768px) {
+                top: 49vw;
+            }
         }
         .menu-banner-textColorB-mobile{
             width: 144px;
@@ -101,16 +115,22 @@ section#menu{
             left: calc(50vw + 40px);
             top: 670px;
             z-index: 49;
+            @media (max-width: 992px) {
+                top: 740px;
+            }
+            @media (max-width: 768px) {
+                top: 56.2vw;
+            }
         }
         // ↑ 手機版""精選餐點""文字設定
     }
     .menu-bannerBigColor{
         width: 91.2%;
-        height: 788.47px;
+        height: 602.5px;
         background-color: #D4B797;
         position: absolute;
         z-index: 1;
-        top: -76px;
+        top: 110px;
         right: 8.8%;
         @media (max-width: 992px) {
             display: none;
@@ -151,13 +171,16 @@ section#menu{
     // ↓ 手機版出現(slogan)
     .menu-bannerLeftText-mobile{
         position: absolute;
-        top: 750px;
+        top: 820px;
         left: calc(50vw - 85px);
         font-size: 20px;
         z-index: 50;
         font-weight: bold;
         letter-spacing: 8px;
         line-height: 10px;
+        @media (max-width: 768px) {
+            top: 70vw;
+        }
         .menu-slogan1-mobile{
             margin-left: -30px;
         }
@@ -192,12 +215,13 @@ section#menu{
             z-index: 50;
             clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
             @media (max-width: 992px) {
-                margin-top: 490px;
+                margin-top: 550px;
                 width: 43.4%;
                 clip-path: inset(344px 0 0 0 round 23% 21.6% 0 0);
             }
             @media (max-width: 768px) {
                 width: 300px;
+                margin-top: 35vw;
             }
             .swiper-wrapper {
                 .swiper-slide {
@@ -353,11 +377,12 @@ section#menu{
             top: 88.3%;
             background-image: none;
             @media (max-width: 992px) {
-                top: 175%;
+                top: 160%;
                 right: 10vw;
             }
             @media (max-width: 768px) {
                 right: 10px;
+                top: 130%;
             }
             i{
                 font-size: 40px;
@@ -369,11 +394,12 @@ section#menu{
             top: 88.3%;
             background-image: none;
             @media (max-width: 992px) {
-                top: 175%;
+                top: 160%;
                 left: 10vw;
             }
             @media (max-width: 768px) {
                 left: 10px;
+                top: 130%;
             }
             i{
                 font-size: 40px;
@@ -403,12 +429,12 @@ section#menu{
                 z-index: -1;
             }
         }
-        // 手機版菜單標題
+        // 手機版菜單標題 1200以下
         .menu-bottomL-text-mobile{
             font-size: 28px;
             position: absolute;
             left: calc(50% - 125px);
-            top: 20px;
+            top: 120px;
             border: 2px solid black;
             padding: 10px 50px 10px 70px;
             letter-spacing: 35px;
@@ -435,6 +461,9 @@ section#menu{
         .container{
             max-width: 800px;
             #menu-bottom-group{
+                @media (max-width: 1200px) {
+                    margin-top: 100px;
+                }
                 #menu-bottomA1{
                     padding: 0;
                     .card{

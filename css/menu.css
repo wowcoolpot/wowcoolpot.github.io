@@ -28,13 +28,27 @@ nav .container {
   }
 }
 
+@media (max-width: 992px) {
+  nav .container {
+    max-width: unset;
+  }
+}
+
 nav .container .navbar-brand {
   padding: 0;
+  height: 60px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 992px) {
   nav .container .navbar-brand {
-    margin-left: calc(45vw - 100px);
+    margin-left: calc(50% - 120px);
+  }
+}
+
+@media (max-width: 450px) {
+  nav .container .navbar-brand {
+    margin-left: calc(50% - 90px);
   }
 }
 
@@ -44,8 +58,8 @@ nav .container .navbar-brand #nav-logo-img {
 
 @media (max-width: 450px) {
   nav .container .navbar-brand #nav-logo-img {
-    width: 55.559%;
-    margin-left: 5vw;
+    width: 150px;
+    padding-top: 5px;
   }
 }
 
@@ -75,6 +89,7 @@ nav .container .maxwww {
     color: white;
     font-size: 20px;
     text-align: center;
+    width: 100vw;
   }
 }
 
@@ -127,6 +142,7 @@ body {
 
 nav {
   top: 0;
+  z-index: 50;
 }
 
 nav .navbar-brand {
@@ -173,9 +189,16 @@ section#menu .menu-banner-img {
   }
 }
 
+@media (max-width: 768px) {
+  section#menu .menu-banner-img {
+    width: 100vw;
+    height: 56.25vw;
+  }
+}
+
 section#menu .menu-banner-img .menu-banner-textR {
   position: absolute;
-  right: calc(50vw - 526px);
+  right: 196px;
   top: 125px;
   font-size: 28px;
   border: 4px solid black;
@@ -189,7 +212,7 @@ section#menu .menu-banner-img .menu-banner-textColorA {
   height: 300px;
   background-color: white;
   position: absolute;
-  right: calc(50vw - 514px);
+  right: 210px;
   top: 140px;
   z-index: 49;
 }
@@ -201,7 +224,7 @@ section#menu .menu-banner-img .menu-banner-textColorB {
           clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
   background-color: #E2CFB3;
   position: absolute;
-  right: calc(50vw - 540px);
+  right: 182px;
   top: 110px;
   z-index: 49;
 }
@@ -209,12 +232,18 @@ section#menu .menu-banner-img .menu-banner-textColorB {
 section#menu .menu-banner-img .menu-banner-textR-mobile {
   position: absolute;
   left: calc(50vw - 170px);
-  top: 630px;
+  top: 700px;
   font-size: 28px;
   letter-spacing: 10px;
   border: 4px solid black;
   padding: 15px 90px;
   z-index: 50;
+}
+
+@media (max-width: 768px) {
+  section#menu .menu-banner-img .menu-banner-textR-mobile {
+    top: 51vw;
+  }
 }
 
 section#menu .menu-banner-img .menu-banner-textColorA-mobile {
@@ -225,6 +254,18 @@ section#menu .menu-banner-img .menu-banner-textColorA-mobile {
   left: calc(50vw - 185px);
   top: 615px;
   z-index: 49;
+}
+
+@media (max-width: 992px) {
+  section#menu .menu-banner-img .menu-banner-textColorA-mobile {
+    top: 685px;
+  }
+}
+
+@media (max-width: 768px) {
+  section#menu .menu-banner-img .menu-banner-textColorA-mobile {
+    top: 49vw;
+  }
 }
 
 section#menu .menu-banner-img .menu-banner-textColorB-mobile {
@@ -239,13 +280,25 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
   z-index: 49;
 }
 
+@media (max-width: 992px) {
+  section#menu .menu-banner-img .menu-banner-textColorB-mobile {
+    top: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  section#menu .menu-banner-img .menu-banner-textColorB-mobile {
+    top: 56.2vw;
+  }
+}
+
 section#menu .menu-bannerBigColor {
   width: 91.2%;
-  height: 788.47px;
+  height: 602.5px;
   background-color: #D4B797;
   position: absolute;
   z-index: 1;
-  top: -76px;
+  top: 110px;
   right: 8.8%;
 }
 
@@ -294,13 +347,19 @@ section#menu .menu-bannerLeftText .menu-sloganLineB {
 
 section#menu .menu-bannerLeftText-mobile {
   position: absolute;
-  top: 750px;
+  top: 820px;
   left: calc(50vw - 85px);
   font-size: 20px;
   z-index: 50;
   font-weight: bold;
   letter-spacing: 8px;
   line-height: 10px;
+}
+
+@media (max-width: 768px) {
+  section#menu .menu-bannerLeftText-mobile {
+    top: 70vw;
+  }
 }
 
 section#menu .menu-bannerLeftText-mobile .menu-slogan1-mobile {
@@ -341,7 +400,7 @@ section#menu .container .swiper-container {
 
 @media (max-width: 992px) {
   section#menu .container .swiper-container {
-    margin-top: 490px;
+    margin-top: 550px;
     width: 43.4%;
     -webkit-clip-path: inset(344px 0 0 0 round 23% 21.6% 0 0);
             clip-path: inset(344px 0 0 0 round 23% 21.6% 0 0);
@@ -351,6 +410,7 @@ section#menu .container .swiper-container {
 @media (max-width: 768px) {
   section#menu .container .swiper-container {
     width: 300px;
+    margin-top: 35vw;
   }
 }
 
@@ -524,7 +584,7 @@ section#menu .container .swiper-button-next {
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-next {
-    top: 175%;
+    top: 160%;
     right: 10vw;
   }
 }
@@ -532,6 +592,7 @@ section#menu .container .swiper-button-next {
 @media (max-width: 768px) {
   section#menu .container .swiper-button-next {
     right: 10px;
+    top: 130%;
   }
 }
 
@@ -548,7 +609,7 @@ section#menu .container .swiper-button-prev {
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-prev {
-    top: 175%;
+    top: 160%;
     left: 10vw;
   }
 }
@@ -556,6 +617,7 @@ section#menu .container .swiper-button-prev {
 @media (max-width: 768px) {
   section#menu .container .swiper-button-prev {
     left: 10px;
+    top: 130%;
   }
 }
 
@@ -595,7 +657,7 @@ section#menu .menu-bottom .menu-bottomL-text-mobile {
   font-size: 28px;
   position: absolute;
   left: calc(50% - 125px);
-  top: 20px;
+  top: 120px;
   border: 2px solid black;
   padding: 10px 50px 10px 70px;
   letter-spacing: 35px;
@@ -625,6 +687,12 @@ section#menu .menu-bottom .menu-bottomL-text-mobile .menu-bottomL-color2-mobile 
 
 section#menu .menu-bottom .container {
   max-width: 800px;
+}
+
+@media (max-width: 1200px) {
+  section#menu .menu-bottom .container #menu-bottom-group {
+    margin-top: 100px;
+  }
 }
 
 section#menu .menu-bottom .container #menu-bottom-group #menu-bottomA1 {
