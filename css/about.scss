@@ -2,11 +2,15 @@
 @import "nav";
 body{
     font-family: "Merriweather", "Noto Serif TC", serif;
+    width: 100%;
+    overflow-x: hidden;
+    // ↑ 關鍵關鍵關鍵
 }
 * {
     box-sizing: border-box;
 }
 nav{
+    top: 0;
     .navbar-brand {
         z-index: 50;
     }
@@ -15,9 +19,6 @@ nav{
     }
     .nav-item{
         z-index: 50;
-    }
-    #book-border{
-        margin-right: -30px;
     }
 }
 
@@ -30,15 +31,37 @@ section#about{
             position: absolute;
             top: 0;
             width: 100%;
-            height: 931px;
+            height: 1038px;
+            @media (max-width: 768px) {
+                height: 920px;
+            }
         }
         .container{
+            max-width: 90vw;
+            @media (min-width: 1800px) {
+                max-width: 1800px;
+            }
+            @media (max-width: 768px) {
+                max-width: unset;
+            }
             img{
-                width: 100%;
-                max-width: 1140px;
-                height: 388.605px;
-                margin-top: 130px;
+                max-width: 90vw;
+                height: 385px;
+                margin: 200px auto 0 auto;
+                margin-left: -15px;
+                // 不知為何對不到只好自己推
                 z-index: 50;
+                @media (min-width: 1800px) {
+                    max-width: 1800px;
+                }
+                @media (max-width: 992px) {
+                    margin-top: 0;
+                }
+                @media (max-width: 768px) {
+                    width: 100vw;
+                    height: 52vh;
+                    max-width: unset;
+                }
             }
             .about-banner{
                 z-index: 50;
@@ -49,7 +72,15 @@ section#about{
                     background-color: rgba(255,255,255,0.9);
                     position: absolute;
                     right: 140px;
-                    top: -570px;
+                    top: -610px;
+                    @media (max-width: 768px) {
+                        width: 50vw;
+                        max-width: 300px;
+                        height: 70px;
+                        margin-left: 28vw;
+                        right: unset;
+                        margin-top: 290px;
+                    }
                     .about-banner-text1{
                         font-size: 34px;
                         font-weight: normal;
@@ -59,10 +90,18 @@ section#about{
                         left: -10px;
                         border: 3.5px solid black;
                         padding: 67px 17px;
+                        @media (max-width: 768px) {
+                            width: 52vw;
+                            max-width: 310px;
+                            padding: 13px 30px;
+                            text-align: center;
+                            left: -3vw;
+                            top: -10px;
+                        }
                     }
                 }
                 #about-text2{
-                    margin-top: 572px;
+                    margin-top: 679px;
                     .col-gold-left {
                         width: 61.8%;
                         z-index: 50;
@@ -70,9 +109,21 @@ section#about{
                         text-align: end;
                         line-height: 25px;
                         position: relative;
+                        @media (max-width: 768px) {
+                            position: absolute;
+                            right: calc(50vw - 175px);
+                            top: -28vh;
+                        }
+                        @media (max-width: 375px) {
+                            right: calc(50vw - 140px);
+                            padding: 0 10px;
+                        }
                         .aboutText2G{
                             position: absolute;
                             right: 305px;
+                            @media (max-width: 768px) {
+                                right: 255px;
+                            }
                             .aboutText2GColor{
                                 width: 25px;
                                 height: 177px;
@@ -81,11 +132,18 @@ section#about{
                                 left: 10px;
                                 top: 36px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    left: 5px;
+                                    height: 150px;
+                                }
                             }
                         }
                         .aboutText2F{
                             position: absolute;
                             right: 255px;
+                            @media (max-width: 768px) {
+                                right: 215px;
+                            }
                             .aboutText2FColor{
                                 width: 22px;
                                 height: 196px;
@@ -94,11 +152,19 @@ section#about{
                                 left: 10px;
                                 top: -25px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    height: 188px;
+                                    left: 7px;
+                                    top: -15px
+                                }
                             }
                         }
                         .aboutText2E{
                             position: absolute;
                             right: 205px;
+                            @media (max-width: 768px) {
+                                right: 175px;
+                            }
                             .aboutText2EColor{
                                 width: 25px;
                                 height: 72px;
@@ -107,6 +173,9 @@ section#about{
                                 left: 10px;
                                 top: 144px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    left: 5px;
+                                }
                             }
                             .aboutText2ELine{
                                 width: 100px;
@@ -115,11 +184,17 @@ section#about{
                                 left: 17px;
                                 top: 155px;
                                 border-left: 1px solid #AF000D;
+                                @media (max-width: 768px) {
+                                    left: 10px;
+                                }
                             }
                         }
                         .aboutText2D{
                             position: absolute;
                             right: 155px;
+                            @media (max-width: 768px) {
+                                right: 135px;
+                            }
                             .aboutText2DColor{
                                 width: 25px;
                                 height: 180px;
@@ -128,6 +203,9 @@ section#about{
                                 left: 10px;
                                 top: 75px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    left: 5px;
+                                }
                             }
                             .aboutText2DLine{
                                 width: 100px;
@@ -136,11 +214,17 @@ section#about{
                                 left: 17px;
                                 top: 130px;
                                 border-left: 1px solid #AF000D;
+                                @media (max-width: 768px) {
+                                    left: 10px;
+                                }
                             }
                         }
                         .aboutText2C{
                             position: absolute;
                             right: 105px;
+                            @media (max-width: 768px) {
+                                right: 95px;
+                            }
                             .aboutText2CColor{
                                 width: 25px;
                                 height: 260px;
@@ -149,6 +233,11 @@ section#about{
                                 left: 10px;
                                 top: 25px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    top: 85px;
+                                    left: 4px;
+                                    height: 220px;
+                                }
                             }
                         }
                         .aboutText2B{
@@ -162,14 +251,20 @@ section#about{
                                 left: 10px;
                                 top: 60px;
                                 z-index: -1;
+                                @media (max-width: 768px) {
+                                    left: 2px;
+                                }
                             }
                         }
                         .aboutText2A{
                             position: absolute;
-                            right: -10px;
+                            right: 0;
                             // ↑ 文字的黃金比例對齊太嚴謹
                             top: 24px;
                             font-weight: bolder;
+                            @media (max-width: 768px) {
+                                right: -12px;
+                            }
                             .aboutText2ALine{
                                 width: 100px;
                                 height: 115px;
@@ -177,6 +272,10 @@ section#about{
                                 left: -10px;
                                 top: 5px;
                                 border-left: 1px solid #AF000D;
+                                @media (max-width: 768px) {
+                                    display: inline-block;
+                                    max-width: 10px;
+                                }
                             }
                         }
                     }
@@ -190,6 +289,9 @@ section#about{
     .about-second{
         margin-top: 540px; 
         width: 100%;
+        @media (max-width: 768px) {
+            margin-top: 240px;
+        }
         .row{
             width: 100%;
             .col-gold-left{
@@ -207,24 +309,26 @@ section#about{
                 width: 38.2%;
                 position: relative;
                 .about-secondA{
-                    width: 295px;
-                    height: 357px;
+                    max-width: 295px;
+                    width: 21.6vw;
+                    height: 377px;
                     background-color: rgba(255,255,255,0.9);
                     position: absolute;
-                    top: -153px;
+                    top: -176px;
                     left: -30px;
-                    padding: 30px 14px;
+                    padding: 45px 10px;
                     z-index: 50;
                     img{
                         width: 100%;
                     }
                 }
                 .about-secondB{
-                    width: 501px;
+                    max-width: 501px;
+                    width: 35.5vw;
                     height: 207px;
                     background-color: #DCBFA8;
                     position: absolute;
-                    bottom: 25px;
+                    bottom: 30px;
                     left: -63px;
                     padding: 10.5px 12px;
                     z-index: 50;
@@ -243,8 +347,40 @@ section#about{
                 top: -33px;
                 // 調最右邊色塊高度
                 z-index: -2;
-                max-height: 1356px;
+                max-height: 1456px;
+                @media (max-width: 768px) {
+                    height: 1150px;
+                }
             }
+        // ↓ 手機版瓦庫精神
+            .about-text3-mobile{
+                width: 100vw;
+                height: 10vh;
+                background-color: #D6B9A2;
+                position: relative;
+                z-index: 0;
+                p{
+                    width: auto;
+                    position: absolute;
+                    top: 40px;
+                    right: calc(50vw - 138px);
+                    border: 2px solid black;
+                    padding: 0.5vh 8vw;
+                    font-size: 34px;
+                    letter-spacing: 4px;
+                }
+                .about-text3-color-mobile{
+                    max-width: 270px;
+                    width: 38vw;
+                    height: 65px;
+                    background-color: rgba(255,255,255,0.8);
+                    position: absolute;
+                    left: 29vw;
+                    top: 30px;
+                    z-index: -1;
+                }
+            }
+        // ↑ 手機版瓦庫精神
             .container{
                 .about-text3-colorA{
                     width: 70px;
@@ -285,8 +421,17 @@ section#about{
                     letter-spacing: 4px;
                     position: relative;
                     z-index: 1;
+                    @media (max-width: 768px) {
+                        margin-left: 12vw;
+                        margin-top: 90px;
+                        text-align: left;
+                        max-width: 100vw;
+                        p{
+                            display: inline-block;
+                        }
+                    }
                     .about-text4-color{
-                        width: 360px;
+                        width: 368px;
                         height: 72px;
                         background-color: rgba(255,255,255,0.9);
                         position: absolute;
@@ -294,6 +439,10 @@ section#about{
                         left: 28px;
                         z-index: -1;
                         clip-path: polygon(0% 0%, 0% 30%, 14.5% 30%, 14.5% 100%, 100% 100%, 100% 30%, 81% 30%, 81% 0%);
+                        @media (max-width: 768px) {
+                            max-width: 368px;
+                            width: 30vw;
+                        }
                     }
                 }
             }
@@ -302,12 +451,18 @@ section#about{
     .about-third{
         width: 100%;
         height: 100vh;
+        background-image: url("/img/about-Img6.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 190px;
         position: relative;
         z-index: -1;
+        @media (max-width: 768px) {
+            width: 100vw;
+            background-size: contain;
+            margin-top: 160px;
+        }
         .container{
             .about-third-text{
                 position: absolute;
@@ -319,14 +474,26 @@ section#about{
                 font-weight: normal;
                 line-height: 19px;
                 letter-spacing: 4px;
+                @media (max-width: 768px) {
+                    position: unset;
+                    margin-left: 10.5vw;
+                    margin-top: -100px;
+                    text-align: left;
+                    max-width: 100vw;
+                    display: inline-block;
+                }
                 .about-thirdText-color{
-                    width: 470px;
+                    max-width: 683px;
+                    width: 31.1vw;
                     height: 175px;
                     position: absolute;
                     background-color: rgba(255,255,255,0.9);
                     z-index: -1;
                     top: 42px;
                     left: -30px;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
             }
             
@@ -353,16 +520,56 @@ section#about{
                 padding: 60px 17px 60px 17px;
             }
         }
+    // ↓ 手機版麻辣故事 992以下
+        .about-forthText-colorA-mobile{
+            width: 290px;
+            height: 630px;
+            // 利用這色塊高度來調整最後一段文字容納空間
+            background-color: none;
+            position: relative;
+            margin-top: -25px;
+            margin-left: 18vw;
+            z-index: 50;
+            letter-spacing: 5px;
+            text-align: center;
+            @media (max-width: 430px) {
+                height: 120vh;
+                // 利用這色塊高度來調整最後一段文字容納空間
+            }
+            .about-forth-textA-mobile{
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 40px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                border: 2px solid black;
+                padding: 15px 60px;
+                @media (max-width: 430px) {
+                    max-width: 280px;
+                    width: 30vw;
+                }
+            }
+        }
+    // ↑ 手機版麻辣故事
         img{
             width: 50vw;
             margin-top: 200px;
             margin-bottom: 87px;
             z-index: -2;
         }
+    // ↓ 手機版
+        @media (max-width: 768px) {
+            #img-mobile{
+                width: 100vw;
+                margin-top: 0;
+                position: absolute;
+                left: 0;
+            }
+        }
         .about-forth-textB{
             position: relative;
-            width: auto;
-            display: inline-block;
+            width: 50vw;
             // ↑ 不然會有捲軸
             left: 47.8%;
             top: -615px;
@@ -371,20 +578,37 @@ section#about{
             font-weight: normal;
             line-height: 19px;
             letter-spacing: 4px;
+            @media (max-width: 768px) {
+                top: -75vh;
+                // 調手機版最後一段文字高度
+                left: 5vw;
+                display: inline-block;
+                width: 100%;
+                padding: 0 50px;
+            }
+            @media (max-width: 430px) {
+                top: -97vh;
+            }
             .about-forthText-colorB{
-                width: 470px;
+                width: 50vw;
                 height: 320px;
                 position: absolute;
                 background-color: rgba(255,255,255,0.9);
                 z-index: -1;
                 top: 50px;
                 left: -30px;
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
         }
         .grain3{
             width: 100%;
             height: 175px;
             margin-top: -540px;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 }

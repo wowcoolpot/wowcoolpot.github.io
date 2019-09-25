@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>05-瓦庫好料</title>
+    <title>關於瓦庫</title>
     <!-- ↓ 匯入boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -17,66 +17,76 @@
     <!-- ------------------------------ -->
     <!-- ↓ 匯入 Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <!-- ↓ 匯入05-瓦庫好料css(sass)) -->
+    <!-- ↓ 匯入02-關於瓦庫css(sass)) -->
     <link rel="stylesheet" href="css/about.css">
-    
+    <!-- ↓ 匯入AOS套件css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
             <!-- ↓ 手機版顯示的menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars d-block d-lg-none"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <!-- ml-auto讓選單靠右 ↑ -->
-                    <li class="nav-item ml-3">
+                    <li class="nav-item ml-lg-3 ml-0">
                         <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww" href="#">關於瓦庫</a>
+                        <a class="nav-link maxwww font-weight-bold" href="#">關於瓦庫</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">最新消息</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">鮮來開鍋</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">瓦庫好料</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫好料</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">瓦庫在哪</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="#">瓦庫在哪</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link maxwww" href="#">常見問題</a>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="#">常見問題</a>
                     </li>
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww" href="#">線上訂位</a>
+                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+        
+        <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
     </nav>
 
     <section id="about" class="about">
         <div class="about-grain1">
             <img src="./img/about-grain1.jpg" alt="">
             <div class="container">
-                <img src="./img/about-bannerImg.jpg" alt="">
+                <img src="./img/about-bannerImg.jpg" alt="" class="d-none d-md-block">
+                <img src="./img/about-bannerImg-mobile.jpg" alt="d-block d-md-none">
                 <div class="about-banner">
-                    <div class="about-banner-color1">
-                        <div class="about-banner-text1">
+                    <div class="about-banner-color1" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                    data-aos-easing="ease-in-sine">
+                        <div class="about-banner-text1 d-none d-md-block">
                             瓦<br>庫<br>故<br>事
+                        </div>
+                        <div class="about-banner-text1 d-block d-md-none">
+                            瓦庫故事
                         </div>
                     </div>
                     <div id="about-text2" class="row">
                         <div class="col-gold-left">
-                            <div class="row">
+                            <div class="row" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine">
                                 <div class="col-1 aboutText2G">
                                     沉穩寧靜之美
                                     。
@@ -122,7 +132,7 @@
         </div>
 
         <div class="about-second">
-            <div class="row">
+            <div class="row d-none d-md-flex">
                 <div class="col-gold-left">
                     <img src="./img/about-Img2.jpg" alt="">
                 </div>
@@ -135,16 +145,27 @@
                     </div>
                 </div>
             </div>
+            <!-- ↓ 手機版 -->
+            <div class="about-second d-block d-md-none">
+                    <img src="./img/about-Img2.jpg" class="w-100 mb-3" alt="">
+                    <img src="./img/about-Img5.jpg" class="w-100" alt="">
+            </div>
             <div class="about-grain2">
                 <img src="./img/about-grain2.jpg" alt="">
+                <div class="about-text3-mobile d-block d-md-none">
+                    <p>瓦庫精神</p>
+                    <div class="about-text3-color-mobile"></div>
+                </div>
                 <div class="container">
-                    <div class="about-text3-colorA">
+                    <div class="about-text3-colorA d-none d-md-block" data-aos="fade-right" data-aos-offset="200" data-aos-duration="700"
+                    data-aos-easing="ease-in-sine">
                         <div class="about-text3">
                             瓦<br>庫<br>精<br>神
                         </div>
                         <div class="about-text3-colorB"></div>
                     </div>
-                    <div class="about-text4">
+                    <div class="about-text4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="700"
+                    data-aos-easing="ease-in-sine" data-aos-delay="300">
                         <p>瓦庫廚師親赴成都、重慶拜師學藝，</p>
                         <p>精選上等辣椒、花椒空運來台，</p>
                         <p>將道地巴蜀牛油火鍋具備的麻辣鮮香、</p>
@@ -156,9 +177,10 @@
             </div>
         </div>
 
-        <div class="about-third" style="background-image: url('./img/about-Img6.jpg')">
+        <div class="about-third">
             <div class="container">
-                <div class="about-third-text">
+                <div class="about-third-text" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <p>湯頭以天然食材(老母雞)24小時熬煮。</p>
                     <p>手工製作滑類、餃類與特色小點心，</p>
                     <p>即便耗時、食材成本高，</p>
@@ -172,13 +194,24 @@
 
         <div class="about-forth">
             <div class="container">
-                <div class="about-forthText-colorA">
+                <div class="about-forthText-colorA d-none d-md-block" data-aos="fade-up" data-aos-offset="200" data-aos-duration="700"
+                data-aos-easing="ease-in-sine">
                     <div class="about-forth-textA">
                         麻<br>辣<br>故<br>事
                     </div>
                 </div>
-                <img src="./img/about-Img7.jpg" alt="">
-                <div class="about-forth-textB">
+                <!-- ↓ 手機版 -->
+                <div class="about-forthText-colorA-mobile d-block d-md-none">
+                    <div class="about-forth-textA-mobile">
+                        麻辣故事
+                    </div>
+                </div>
+
+                <img src="./img/about-Img7.jpg" class="d-none d-md-block" alt="">
+                <!-- ↓ 手機版 -->
+                <img id="img-mobile" src="./img/about-Img7.jpg" class="d-block d-md-none" alt="">
+                <div class="about-forth-textB" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                data-aos-easing="ease-in-sine">
                     <p class="mb-4"><B>四川人為什麼喜歡吃辣？</B></p>
                     <p>俗話說：「四川地無三里平，天無三日晴，人無三分銀。」</p>
                     <p>反映出四川盆地多雨且潮濕的氣候。</p>
@@ -241,6 +274,11 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- ↑ 匯入AOS套件JS -->
     <!-- --------------------------------- -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
