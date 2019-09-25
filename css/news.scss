@@ -153,7 +153,6 @@ body {
         margin-top: 0;
         .news_text {
             top: calc(50% - 146.5px);
-
         }
     }
 
@@ -173,7 +172,7 @@ body {
         max-width: 100%;
         height: 40vh;
         margin-top: 0;
-        background-image: url("/img/03-mobile-banner.jpg");
+        background-image: url("../img/03-mobile-banner.jpg");
 
         .news_text {
             font-size: $titletext;
@@ -270,15 +269,6 @@ body {
     }
 }
 
-@media (min-width:1920px) {
-    .banner {
-        max-width: 1800px;
-    }
-}
-
-
-
-
 @media (min-width: 768px) {
     #news {
         #collapseNews {
@@ -320,6 +310,12 @@ body {
 }
 
 @media (min-width:1800px) {
+    .banner {
+        max-width: 1800px;
+    }
+}
+
+@media (min-width:1920px) {
     .banner {
         max-width: 1800px;
     }
