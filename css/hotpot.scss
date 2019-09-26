@@ -219,8 +219,17 @@ body {
         width: 80px;
         position: absolute;
         cursor: pointer;
+        //放圖hover動畫效果，待商討
+        // &.soup_hover:hover{
+        //     opacity: 1;
+            
+        // }
     }
 
+    // .soup_hover{
+    //     opacity: 0;
+    //     transition: opacity 0.4s ease-out;
+    // }
     .soups.soup1,
     .soup3,
     .soup5 {
@@ -333,7 +342,7 @@ body {
 
                 @media (max-width:400px) {
                     top: 620px;
-                    left: 10%
+                    left: 13%
                 }
 
                 // transform: (translateX(- 50%));
@@ -445,7 +454,7 @@ body {
 
         .flow_p {
             width: 250px;
-            position: absolute;
+            position: absolute;         
         }
 
         .flow1,
@@ -647,7 +656,6 @@ body {
             font-weight: bold;
             display: inline-block;
             width: 1em;
-            ;
         }
 
         .cost ul:last-child {
@@ -707,22 +715,7 @@ body {
                 padding: 67px 20px;
             }
 
-            ul,
-            li {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                font-size: 20px;
-            }
 
-            li:before {
-                content: "\2022";
-                color: #b89161;
-                font-weight: bold;
-                display: inline-block;
-                width: 1em;
-                ;
-            }
 
             h4 {
                 margin: 30px;
