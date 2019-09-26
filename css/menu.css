@@ -358,7 +358,7 @@ section#menu .menu-bannerLeftText-mobile {
 
 @media (max-width: 768px) {
   section#menu .menu-bannerLeftText-mobile {
-    top: 70vw;
+    top: calc(40vh + 40vw);
   }
 }
 
@@ -578,13 +578,13 @@ section#menu .container .swiper-container .swiper-wrapper #slideC .menuC-topText
 
 section#menu .container .swiper-button-next {
   right: calc(50vw - 470px);
-  top: 88.3%;
+  top: 668px;
   background-image: none;
 }
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-next {
-    top: 160%;
+    top: 1200px;
     right: 10vw;
   }
 }
@@ -603,13 +603,13 @@ section#menu .container .swiper-button-next i {
 
 section#menu .container .swiper-button-prev {
   left: calc(50vw - 470px);
-  top: 88.3%;
+  top: 668px;
   background-image: none;
 }
 
 @media (max-width: 992px) {
   section#menu .container .swiper-button-prev {
-    top: 160%;
+    top: 1200px;
     left: 10vw;
   }
 }
