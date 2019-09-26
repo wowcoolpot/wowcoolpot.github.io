@@ -153,6 +153,7 @@ body {
         margin-top: 0;
         .news_text {
             top: calc(50% - 146.5px);
+
         }
     }
 
@@ -269,6 +270,15 @@ body {
     }
 }
 
+@media (min-width:1920px) {
+    .banner {
+        max-width: 1800px;
+    }
+}
+
+
+
+
 @media (min-width: 768px) {
     #news {
         #collapseNews {
@@ -310,12 +320,6 @@ body {
 }
 
 @media (min-width:1800px) {
-    .banner {
-        max-width: 1800px;
-    }
-}
-
-@media (min-width:1920px) {
     .banner {
         max-width: 1800px;
     }
