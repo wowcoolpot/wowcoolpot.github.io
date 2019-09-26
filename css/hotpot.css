@@ -468,7 +468,7 @@ nav .booking-icon a {
 @media (max-width: 576px) and (max-width: 400px) {
   #soup .soup_bg .soup_texts {
     top: 620px;
-    left: 10%;
+    left: 13%;
   }
 }
 
@@ -811,20 +811,6 @@ nav .booking-icon a {
     border: 3.5px solid black;
     line-height: 38px;
     padding: 67px 20px;
-  }
-  #notice .notice ul,
-  #notice .notice li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-  }
-  #notice .notice li:before {
-    content: "\2022";
-    color: #b89161;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
   }
   #notice .notice h4 {
     margin: 30px;

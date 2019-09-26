@@ -457,6 +457,12 @@ footer .footer-copyright {
   }
 }
 
+@media (min-width: 1920px) {
+  .banner {
+    max-width: 1800px;
+  }
+}
+
 @media (min-width: 768px) {
   #news #collapseNews {
     display: none;
@@ -482,12 +488,6 @@ footer .footer-copyright {
 }
 
 @media (min-width: 1800px) {
-  .banner {
-    max-width: 1800px;
-  }
-}
-
-@media (min-width: 1920px) {
   .banner {
     max-width: 1800px;
   }
