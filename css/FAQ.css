@@ -234,6 +234,14 @@ section#FAQQ .container #FAQ #FAQ-R {
   font-size: 18px;
 }
 
+section#FAQQ .container #FAQ #FAQ-R a {
+  color: unset;
+}
+
+section#FAQQ .container #FAQ #FAQ-R a:hover {
+  text-decoration: none;
+}
+
 section#FAQQ .container #FAQ #FAQ-R .p-FAQR {
   padding: 20px 0;
   border-bottom: 1px solid black;

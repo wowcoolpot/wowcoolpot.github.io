@@ -79,6 +79,12 @@ section#FAQQ{
             }
             #FAQ-R {
                 font-size: 18px;
+                a{
+                    color: unset;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
                 .p-FAQR {
                     padding: 20px 0;
                     border-bottom: 1px solid black;
