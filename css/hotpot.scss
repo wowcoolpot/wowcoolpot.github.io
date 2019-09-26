@@ -205,11 +205,11 @@ body {
                 top: 500px;
                 left: 80px;
                 z-index: 5;
-                transform: rotate(-5deg);
-                filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
 
                 img {
                     width: 95%;
+                    transform: rotate(-5deg);
+                    filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
                 }
             }
         }
@@ -290,6 +290,7 @@ body {
                     padding: 0 60px;
                 }
             }
+
         }
 
         .soups.soup1,
@@ -312,32 +313,9 @@ body {
     #soup {
         .soup_bg {
             height: 1300px;
-            @media (max-width:450px){
-                height:1200px;
-            }
-            
 
-            .soup_ps {
-                .soup_de_bg {
-                    width: 95%;
-                    position: absolute;
-                    top: 350px;
-                    z-index: 4;
-                }
-
-                .soup_p {
-                    display: inline-block;
-                    position: absolute;
-                    top: 370px;
-                    left: 60px;
-                    z-index: 5;
-                    transform: rotate(-5deg);
-                    filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
-
-                    img {
-                        width: 90%;
-                    }
-                }
+            @media (max-width:450px) {
+                height: 1200px;
             }
 
             .soup_texts {
@@ -347,14 +325,17 @@ body {
                 font-size: 20px;
                 z-index: 3;
                 left: 22%;
-                @media (max-width:450px){
-                    left:15%;
-                    top:640px;
+
+                @media (max-width:450px) {
+                    left: 15%;
+                    top: 640px;
                 }
-                @media (max-width:400px){
-                    top:620px;
-                    left:10%
+
+                @media (max-width:400px) {
+                    top: 620px;
+                    left: 10%
                 }
+
                 // transform: (translateX(- 50%));
 
                 .soup_text {
@@ -363,10 +344,35 @@ body {
                     padding: 0 30px;
                 }
             }
+
+            .soup_ps {
+                .soup_de_bg {
+                    width: 90%;
+                    position: absolute;
+                    top: 340px;
+                    z-index: 4;
+                }
+
+                .soup_p {
+                    width: 85%;
+                    position: absolute;
+                    top: 350px;
+                    left: 40px;
+                    z-index: 5;
+
+                    img {
+                        width: 95%;
+                    }
+                }
+            }
+
         }
 
         .soups {
             width: 60px;
+            @media (max-width:400px){
+                width:55px;
+            }
         }
     }
 }
@@ -552,7 +558,7 @@ body {
     }
 }
 
-@media (max-width:576px){
+@media (max-width:576px) {
     #flow {
         margin-top: 0;
 
@@ -591,7 +597,7 @@ body {
             }
 
             .flow1 {
-                top:-280px;
+                top: -280px;
             }
 
             .flow2 {
@@ -688,7 +694,7 @@ body {
 
 @media (max-width:767px) {
     #notice {
-        margin: 20px 0 30px 0 ;
+        margin: 20px 0 30px 0;
         list-style: none;
         position: relative;
 
@@ -717,7 +723,8 @@ body {
                 width: 1em;
                 ;
             }
-            h4{
+
+            h4 {
                 margin: 30px;
             }
 
