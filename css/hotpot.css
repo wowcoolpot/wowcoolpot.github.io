@@ -173,14 +173,26 @@ nav .booking-icon a {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    background-image: url("../img/04-mobile-banner.jpg");
+    max-width: 100%;
+  }
+}
+
 .banner .hotpot_text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 3px;
+  text-indent: 3px;
   font-size: 34px;
   color: black;
   border: 3.5px solid black;
   line-height: 38px;
-  padding: 67px 20px;
+  padding: 67px 20px 67px 17px;
   position: absolute;
-  top: -60px;
+  top: -53px;
 }
 
 .banner .hotpot_text .titlebox {
@@ -197,6 +209,37 @@ nav .booking-icon a {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 0;
+  }
+  .banner .hotpot_text {
+    top: calc(50% - 146.5px);
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 40vh;
+    margin-top: 0;
+  }
+  .banner .hotpot_text {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    padding: 13px 76px;
+    text-align: center;
+    top: unset;
+    bottom: -40px;
+    left: calc(50% - 155px);
+  }
+  .banner .hotpot_text .titlebox {
+    width: 310px;
+    height: 80px;
+    bottom: -20px;
+  }
+}
+
 #soup .soup_bg {
   background-image: url("../img/soup_bg.jpg");
   max-width: 90vw;
@@ -204,9 +247,9 @@ nav .booking-icon a {
   background-position: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #soup .soup_bg {
-    height: 630px;
+    max-width: 100%;
   }
 }
 
@@ -338,14 +381,130 @@ nav .booking-icon a {
   top: 60px;
 }
 
-#flow {
-  margin-top: 340px;
+@media (max-width: 992px) {
+  #soup .soup_bg {
+    height: 630px;
+  }
+  #soup .soup_bg .soup_texts {
+    top: 520px;
+  }
 }
 
-@media (max-width: 992px) {
-  #flow {
-    margin-top: 220px;
+@media (max-width: 767px) {
+  #soup .soup_bg {
+    height: 1500px;
+    background-size: cover;
   }
+  #soup .soup_bg .soup_inf_texts {
+    position: unset;
+    margin-top: 80px;
+  }
+  #soup .soup_bg .soup_inf_texts .soup_inf_text {
+    margin: 0 auto;
+    line-height: 47px;
+    font-size: 20px;
+    background-color: unset;
+    padding: unset;
+  }
+  #soup .soup_bg .soup_inf_texts .soup_inf_text .soup_inf_text_b .line {
+    left: 24px;
+  }
+  #soup .soup_bg .soup_texts {
+    position: absolute;
+    top: 850px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 3;
+    left: 20%;
+  }
+  #soup .soup_bg .soup_texts .soup_text {
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    padding: 0 60px;
+  }
+  #soup .soups.soup1,
+  #soup .soup3,
+  #soup .soup5 {
+    top: 60px;
+  }
+  #soup .soups.soup2 {
+    top: 80px;
+  }
+  #soup .soups.soup4 {
+    top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #soup .soup_bg {
+    height: 1300px;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 450px) {
+  #soup .soup_bg {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 576px) {
+  #soup .soup_bg .soup_ps .soup_de_bg {
+    width: 95%;
+    position: absolute;
+    top: 350px;
+    z-index: 4;
+  }
+  #soup .soup_bg .soup_ps .soup_p {
+    display: inline-block;
+    position: absolute;
+    top: 370px;
+    left: 60px;
+    z-index: 5;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+  }
+  #soup .soup_bg .soup_ps .soup_p img {
+    width: 90%;
+  }
+  #soup .soup_bg .soup_texts {
+    position: absolute;
+    top: 700px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 3;
+    left: 22%;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 450px) {
+  #soup .soup_bg .soup_texts {
+    left: 15%;
+    top: 640px;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 400px) {
+  #soup .soup_bg .soup_texts {
+    top: 620px;
+    left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  #soup .soup_bg .soup_texts .soup_text {
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    padding: 0 30px;
+  }
+  #soup .soups {
+    width: 60px;
+  }
+}
+
+#flow {
+  margin-top: 340px;
 }
 
 #flow .flow {
@@ -355,12 +514,18 @@ nav .booking-icon a {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #flow .flow {
+    max-width: 100%;
+  }
+}
+
 #flow .flow .box {
   width: 70%;
-  height: 180px;
+  height: 150px;
   background-color: #D6B9A2;
   position: absolute;
-  top: -120px;
+  top: -80px;
   left: 80px;
 }
 
@@ -371,14 +536,23 @@ nav .booking-icon a {
   }
 }
 
+#flow .flow .flow_x {
+  position: relative;
+}
+
 #flow .flow .flow_text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 3px;
+  text-indent: 3px;
   font-size: 34px;
   color: black;
   border: 3.5px solid black;
   line-height: 38px;
-  padding: 67px 20px;
-  position: absolute;
-  top: -60px;
+  padding: 67px 20px 67px 17px;
+  position: relative;
+  top: -100px;
   z-index: 2;
 }
 
@@ -387,23 +561,23 @@ nav .booking-icon a {
   width: 80px;
   height: 280px;
   position: absolute;
-  top: -70px;
-  left: 0;
+  left: 0px;
+  top: -115px;
   z-index: 1;
 }
 
 #flow .flow .flow_p {
-  width: 80%;
+  width: 250px;
   position: absolute;
 }
 
 #flow .flow .flow1,
 #flow .flow .flow3 {
-  top: -80px;
+  bottom: 40px;
 }
 
 #flow .flow .flow2 {
-  top: -40px;
+  bottom: -20px;
 }
 
 #flow .flow .de1 {
@@ -414,9 +588,141 @@ nav .booking-icon a {
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  #flow .flow .de1 {
+    width: 150px;
+  }
+}
+
 @media (max-width: 1400px) {
   #flow .flow .de1 {
     left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  #flow {
+    margin-top: 220px;
+  }
+  #flow .flow .flow_p {
+    width: 200px;
+  }
+  #flow .flow .flow1 {
+    top: -350px;
+    bottom: unset;
+  }
+  #flow .flow .flow3 {
+    top: -350px;
+    bottom: unset;
+  }
+  #flow .flow .flow2 {
+    top: -300px;
+    bottom: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  #flow {
+    margin-top: 0;
+  }
+  #flow .flow {
+    background-image: url("../img/soup_bg.jpg");
+    max-width: 100%;
+    height: 800px;
+    position: relative;
+  }
+  #flow .flow .box {
+    width: 100%;
+    height: 400px;
+    background-color: #D6B9A2;
+    position: unset;
+  }
+  #flow .flow .flow_text {
+    position: absolute;
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    padding: 13px 76px;
+    top: -435px;
+    left: calc(50% - 155px);
+  }
+  #flow .flow .titleboxA {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    top: -450px;
+    left: 90px;
+    z-index: 1;
+  }
+  #flow .flow .flow_p {
+    width: 250px;
+  }
+  #flow .flow .flow2 {
+    right: 0;
+    top: -145px;
+  }
+  #flow .flow .flow3 {
+    top: 50px;
+  }
+  #flow .flow .de1 {
+    left: unset;
+    right: 20px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 576px) {
+  #flow {
+    margin-top: 0;
+  }
+  #flow .flow {
+    background-image: url("../img/soup_bg.jpg");
+    max-width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  #flow .flow .box {
+    width: 100%;
+    height: 350px;
+    background-color: #D6B9A2;
+    position: unset;
+  }
+  #flow .flow .flow_text {
+    position: absolute;
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    padding: 13px 76px;
+    top: -380px;
+    left: calc(50% - 155px);
+  }
+  #flow .flow .titleboxA {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    top: -395px;
+    left: 20px;
+    z-index: 1;
+  }
+  #flow .flow .flow_p {
+    width: 200px;
+  }
+  #flow .flow .flow1 {
+    top: -280px;
+  }
+  #flow .flow .flow2 {
+    right: 0;
+    top: -110px;
+  }
+  #flow .flow .flow3 {
+    top: 60px;
+  }
+  #flow .flow .de1 {
+    left: unset;
+    right: 20px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
   }
 }
 
@@ -468,19 +774,95 @@ nav .booking-icon a {
   display: block;
   border-bottom: 1px solid black;
   margin-top: 23px;
-  width: 520px;
 }
 
 #notice .de2 {
   position: absolute;
-  width: 300px;
-  right: 200px;
+  width: 250px;
+  right: 100px;
   top: 10px;
   z-index: 5;
 }
 
 @media (max-width: 1400px) {
   #notice .de2 {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #notice .de2 {
+    width: 200px;
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #notice {
+    margin: 20px 0 30px 0;
+    list-style: none;
+    position: relative;
+  }
+  #notice .notice .notice_text {
+    font-size: 34px;
+    color: black;
+    border: 3.5px solid black;
+    line-height: 38px;
+    padding: 67px 20px;
+  }
+  #notice .notice ul,
+  #notice .notice li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+  #notice .notice li:before {
+    content: "\2022";
+    color: #b89161;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+  }
+  #notice .notice h4 {
+    margin: 30px;
+  }
+  #notice .notice .cost ul:last-child {
+    margin: 20px 0 0 0;
+  }
+  #notice .notice .cost ul:last-child:before {
+    display: none;
+  }
+  #notice .notice .cost ul:last-child:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: 23px;
+  }
+  #notice .notice .act li:last-child::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: 23px;
+  }
+  #notice .de2 {
+    position: absolute;
+    width: 250px;
+    right: 100px;
+    top: 10px;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 1400px) {
+  #notice .de2 {
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 768px) {
+  #notice .de2 {
+    width: 200px;
     right: 0;
   }
 }
@@ -564,60 +946,6 @@ footer .footer-copyright {
   color: #414042;
 }
 
-@media (max-width: 992px) {
-  .banner {
-    margin-top: 0;
-  }
-  .banner .hotpot_text {
-    top: calc(50% - 146.5px);
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    max-width: 100%;
-    height: 40vh;
-    margin-top: 0;
-  }
-  #soup .soup_bg {
-    max-width: 100%;
-  }
-  #flow {
-    margin-top: 300px;
-  }
-  #flow .flow {
-    background-image: url("../img/soup_bg.jpg");
-    max-width: 100%;
-  }
-  #flow .flow .box {
-    width: 70%;
-    height: 160px;
-    background-color: #D6B9A2;
-    position: absolute;
-    top: -100px;
-    left: 80px;
-  }
-  #flow .flow .flow_text {
-    font-size: 34px;
-    color: black;
-    border: 3.5px solid black;
-    line-height: 38px;
-    padding: 67px 20px;
-    position: absolute;
-    top: -60px;
-    z-index: 2;
-  }
-  #flow .flow .titleboxA {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 80px;
-    height: 280px;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    z-index: 1;
-  }
-}
-
 @media (min-width: 1800px) {
   .banner {
     max-width: 1800px;
@@ -628,26 +956,6 @@ footer .footer-copyright {
   #flow .flow {
     background-image: url("../img/soup_bg.jpg");
     max-width: 1800px;
-    position: relative;
-  }
-  #flow .flow .flow_text {
-    font-size: 34px;
-    color: black;
-    border: 3.5px solid black;
-    line-height: 38px;
-    padding: 67px 20px;
-    position: absolute;
-    top: -60px;
-    z-index: 2;
-  }
-  #flow .flow .titleboxA {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 80px;
-    height: 280px;
-    position: absolute;
-    top: -70px;
-    left: 0;
-    z-index: 1;
   }
 }
 

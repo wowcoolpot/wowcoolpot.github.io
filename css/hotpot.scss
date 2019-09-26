@@ -34,14 +34,22 @@ body {
     position: relative;
     z-index: 1;
 
+    @media (max-width:768px) {
+        background-image: url("../img/04-mobile-banner.jpg");
+        max-width: 100%;
+    }
+
     .hotpot_text {
+        writing-mode: vertical-lr;
+        letter-spacing: 3px;
+        text-indent: 3px;
         font-size: 34px;
         color: black;
         border: 3.5px solid black;
         line-height: 38px;
-        padding: 67px 20px;
+        padding: 67px 20px 67px 17px;
         position: absolute;
-        top: -60px;
+        top: -53px;
 
         .titlebox {
             background-color: rgba(255, 255, 255, 0.9);
@@ -59,6 +67,39 @@ body {
     }
 }
 
+@media (max-width:992px) {
+    .banner {
+        margin-top: 0;
+
+        .hotpot_text {
+            top: calc(50% - 146.5px);
+
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .banner {
+        height: 40vh;
+        margin-top: 0;
+
+        .hotpot_text {
+            writing-mode: unset;
+            padding: 13px 76px;
+            text-align: center;
+            top: unset;
+            bottom: -40px;
+            left: calc(50% - 155px);
+
+            .titlebox {
+                width: 310px;
+                height: 80px;
+                bottom: -20px;
+            }
+        }
+    }
+}
+
 #soup {
     .soup_bg {
         background-image: url("../img/soup_bg.jpg");
@@ -66,8 +107,8 @@ body {
         height: 700px;
         background-position: center;
 
-        @media (max-width:992px) {
-            height: 630px;
+        @media (max-width:768px) {
+            max-width: 100%;
         }
 
         .soup_inf_texts {
@@ -193,14 +234,145 @@ body {
     .soups.soup4 {
         top: 60px;
     }
+
+}
+
+@media (max-width:992px) {
+    #soup {
+        .soup_bg {
+            height: 630px;
+
+            .soup_texts {
+                top: 520px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    #soup {
+        .soup_bg {
+            height: 1500px;
+            background-size: cover;
+
+            .soup_inf_texts {
+                position: unset;
+                margin-top: 80px;
+
+                .soup_inf_text {
+                    margin: 0 auto;
+                    line-height: 47px;
+                    font-size: 20px;
+                    background-color: unset;
+                    padding: unset;
+
+                    .soup_inf_text_b {
+
+                        .line {
+                            left: 24px;
+                        }
+                    }
+                }
+            }
+
+            .soup_texts {
+                position: absolute;
+                top: 850px;
+                text-align: center;
+                font-size: 20px;
+                z-index: 3;
+                left: 20%;
+                // transform: (translateX(- 50%));
+
+                .soup_text {
+                    border-left: 1.5px solid black;
+                    border-right: 1.5px solid black;
+                    padding: 0 60px;
+                }
+            }
+        }
+
+        .soups.soup1,
+        .soup3,
+        .soup5 {
+            top: 60px;
+        }
+
+        .soups.soup2 {
+            top: 80px;
+        }
+
+        .soups.soup4 {
+            top: 40px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    #soup {
+        .soup_bg {
+            height: 1300px;
+            @media (max-width:450px){
+                height:1200px;
+            }
+            
+
+            .soup_ps {
+                .soup_de_bg {
+                    width: 95%;
+                    position: absolute;
+                    top: 350px;
+                    z-index: 4;
+                }
+
+                .soup_p {
+                    display: inline-block;
+                    position: absolute;
+                    top: 370px;
+                    left: 60px;
+                    z-index: 5;
+                    transform: rotate(-5deg);
+                    filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.5));
+
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .soup_texts {
+                position: absolute;
+                top: 700px;
+                text-align: center;
+                font-size: 20px;
+                z-index: 3;
+                left: 22%;
+                @media (max-width:450px){
+                    left:15%;
+                    top:640px;
+                }
+                @media (max-width:400px){
+                    top:620px;
+                    left:10%
+                }
+                // transform: (translateX(- 50%));
+
+                .soup_text {
+                    border-left: 1.5px solid black;
+                    border-right: 1.5px solid black;
+                    padding: 0 30px;
+                }
+            }
+        }
+
+        .soups {
+            width: 60px;
+        }
+    }
 }
 
 #flow {
     margin-top: 340px;
-
-    @media (max-width:992px) {
-        margin-top: 220px;
-    }
 
     .flow {
         background-image: url("../img/soup_bg.jpg");
@@ -208,12 +380,16 @@ body {
         height: 300px;
         position: relative;
 
+        @media (max-width:768px) {
+            max-width: 100%;
+        }
+
         .box {
             width: 70%;
-            height: 180px;
+            height: 150px;
             background-color: #D6B9A2;
             position: absolute;
-            top: -120px;
+            top: -80px;
             left: 80px;
 
             @media (max-width:1400px) {
@@ -223,14 +399,31 @@ body {
         }
 
 
+        // writing-mode: vertical-lr;
+        // letter-spacing: 3px;
+        // text-indent: 3px;
+        // font-size: 34px;
+        // color: black;
+        // border: 3.5px solid black;
+        // line-height: 38px;
+        // padding: 67px 20px 67px 17px;
+        // position: absolute;
+        // top: -53px;
+        .flow_x {
+            position: relative;
+        }
+
         .flow_text {
+            writing-mode: vertical-lr;
+            letter-spacing: 3px;
+            text-indent: 3px;
             font-size: 34px;
             color: black;
             border: 3.5px solid black;
             line-height: 38px;
-            padding: 67px 20px;
-            position: absolute;
-            top: -60px;
+            padding: 67px 20px 67px 17px;
+            position: relative;
+            top: -100px;
             z-index: 2;
         }
 
@@ -239,23 +432,23 @@ body {
             width: 80px;
             height: 280px;
             position: absolute;
-            top: -70px;
-            left: 0;
+            left: 0px;
+            top: -115px;
             z-index: 1;
         }
 
         .flow_p {
-            width: 80%;
+            width: 250px;
             position: absolute;
         }
 
         .flow1,
         .flow3 {
-            top: -80px;
+            bottom: 40px;
         }
 
         .flow2 {
-            top: -40px;
+            bottom: -20px;
         }
 
         .de1 {
@@ -265,12 +458,160 @@ body {
             left: 180px;
             z-index: 5;
 
+            @media(max-width:768px) {
+                width: 150px;
+            }
+
             @media (max-width: 1400px) {
                 left: 0;
             }
         }
     }
 }
+
+@media (max-width:992px) {
+    #flow {
+        margin-top: 220px;
+
+        .flow {
+            .flow_p {
+                width: 200px;
+            }
+
+            .flow1 {
+                top: -350px;
+                bottom: unset;
+            }
+
+            .flow3 {
+                top: -350px;
+                bottom: unset;
+            }
+
+            .flow2 {
+                top: -300px;
+                bottom: unset;
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    #flow {
+        margin-top: 0;
+
+        .flow {
+            background-image: url("../img/soup_bg.jpg");
+            max-width: 100%;
+            height: 800px;
+            position: relative;
+
+            .box {
+                width: 100%;
+                height: 400px;
+                background-color: #D6B9A2;
+                position: unset;
+            }
+
+            .flow_text {
+                position: absolute;
+                writing-mode: unset;
+                padding: 13px 76px;
+                top: -435px;
+                left: calc(50% - 155px);
+            }
+
+            .titleboxA {
+                position: absolute;
+                width: 300px;
+                height: 70px;
+                top: -450px;
+                left: 90px;
+                z-index: 1;
+            }
+
+            .flow_p {
+                width: 250px;
+            }
+
+            .flow2 {
+                right: 0;
+                top: -145px;
+            }
+
+            .flow3 {
+                top: 50px;
+            }
+
+            .de1 {
+                left: unset;
+                right: 20px;
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    #flow {
+        margin-top: 0;
+
+        .flow {
+            background-image: url("../img/soup_bg.jpg");
+            max-width: 100%;
+            height: 700px;
+            position: relative;
+
+            .box {
+                width: 100%;
+                height: 350px;
+                background-color: #D6B9A2;
+                position: unset;
+            }
+
+            .flow_text {
+                position: absolute;
+                writing-mode: unset;
+                padding: 13px 76px;
+                top: -380px;
+                left: calc(50% - 155px);
+            }
+
+            .titleboxA {
+                position: absolute;
+                width: 300px;
+                height: 70px;
+                top: -395px;
+                left: 20px;
+                z-index: 1;
+            }
+
+            .flow_p {
+                width: 200px;
+            }
+
+            .flow1 {
+                top:-280px;
+            }
+
+            .flow2 {
+                right: 0;
+                top: -110px;
+            }
+
+            .flow3 {
+                top: 60px;
+            }
+
+            .de1 {
+                left: unset;
+                right: 20px;
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
 
 #notice {
     margin: $mt-130 0;
@@ -321,94 +662,117 @@ body {
             display: block;
             border-bottom: 1px solid black;
             margin-top: 23px;
-            width: 520px;
+            // width: 520px;
         }
     }
 
     .de2 {
         position: absolute;
-        width: 300px;
-        right: 200px;
+        width: 250px;
+        right: 100px;
         top: 10px;
         z-index: 5;
 
+
         @media (max-width: 1400px) {
+            right: 0;
+        }
+
+        @media (max-width:768px) {
+            width: 200px;
             right: 0;
         }
     }
 
 }
 
+@media (max-width:767px) {
+    #notice {
+        margin: 20px 0 30px 0 ;
+        list-style: none;
+        position: relative;
 
-//匯入footer的css樣式
-@import "footer";
-
-@media (max-width:992px) {
-    .banner {
-        margin-top: 0;
-
-        .hotpot_text {
-            top: calc(50% - 146.5px);
-        }
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .banner {
-        max-width: 100%;
-        height: 40vh;
-        margin-top: 0;
-    }
-
-    #soup {
-        .soup_bg {
-            max-width: 100%;
-        }
-    }
-
-    #flow {
-        margin-top: 300px;
-
-        .flow {
-            background-image: url("../img/soup_bg.jpg");
-            max-width: 100%;
-
-
-            .box {
-                width: 70%;
-                height: 160px;
-                background-color: #D6B9A2;
-                position: absolute;
-                top: -100px;
-                left: 80px;
-            }
-
-            .flow_text {
+        .notice {
+            .notice_text {
                 font-size: 34px;
                 color: black;
                 border: 3.5px solid black;
                 line-height: 38px;
                 padding: 67px 20px;
-                position: absolute;
-                top: -60px;
-                z-index: 2;
             }
 
-            .titleboxA {
-                background-color: rgba(255, 255, 255, 0.9);
-                width: 80px;
-                height: 280px;
-                position: absolute;
-                top: -70px;
-                left: 0;
-                z-index: 1;
+            ul,
+            li {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                font-size: 20px;
             }
 
+            li:before {
+                content: "\2022";
+                color: #b89161;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                ;
+            }
+            h4{
+                margin: 30px;
+            }
+
+            .cost ul:last-child {
+                margin: 20px 0 0 0;
+
+                &:before {
+                    display: none;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border-bottom: 1px solid black;
+                    margin-top: 23px;
+                }
+            }
+
+            .act li:last-child::after {
+                content: "";
+                display: block;
+                border-bottom: 1px solid black;
+                margin-top: 23px;
+                // width: 520px;
+            }
         }
+
+        .de2 {
+            position: absolute;
+            width: 250px;
+            right: 100px;
+            top: 10px;
+            z-index: 5;
+
+
+            @media (max-width: 1400px) {
+                right: 0;
+            }
+
+            @media (max-width:768px) {
+                width: 200px;
+                right: 0;
+            }
+        }
+
     }
 }
+
+
+//匯入footer的css樣式
+@import "footer";
+
+
+
+@media (max-width: 768px) {}
 
 
 
@@ -433,29 +797,6 @@ body {
         .flow {
             background-image: url("../img/soup_bg.jpg");
             max-width: 1800px;
-            position: relative;
-
-
-            .flow_text {
-                font-size: 34px;
-                color: black;
-                border: 3.5px solid black;
-                line-height: 38px;
-                padding: 67px 20px;
-                position: absolute;
-                top: -60px;
-                z-index: 2;
-            }
-
-            .titleboxA {
-                background-color: rgba(255, 255, 255, 0.9);
-                width: 80px;
-                height: 280px;
-                position: absolute;
-                top: -70px;
-                left: 0;
-                z-index: 1;
-            }
 
         }
     }
