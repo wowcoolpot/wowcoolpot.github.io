@@ -201,37 +201,37 @@ section#about .about-grain1 .container {
   }
 }
 
-section#about .about-grain1 .container img {
-  width: 90vw;
-  height: 40vw;
-  margin: 200px auto 0 auto;
-  margin-left: -15px;
+section#about .about-grain1 .container .about-banner {
   z-index: 50;
+  position: relative;
+  background-image: url("/img/about-bannerImg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 557px;
+  max-width: 90vw;
+  margin-top: -663px;
 }
 
 @media (min-width: 1800px) {
-  section#about .about-grain1 .container img {
+  section#about .about-grain1 .container .about-banner {
     max-width: 1800px;
   }
 }
 
 @media (max-width: 992px) {
-  section#about .about-grain1 .container img {
-    margin-top: 0;
+  section#about .about-grain1 .container .about-banner {
+    margin-top: -780px;
   }
 }
 
 @media (max-width: 768px) {
-  section#about .about-grain1 .container img {
-    width: 100vw;
-    height: 52vh;
+  section#about .about-grain1 .container .about-banner {
     max-width: unset;
+    width: 100vw;
+    height: 40vh;
+    margin-left: -30px;
   }
-}
-
-section#about .about-grain1 .container .about-banner {
-  z-index: 50;
-  position: relative;
 }
 
 section#about .about-grain1 .container .about-banner .about-banner-color1 {
@@ -239,8 +239,14 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
   height: 280px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  right: 140px;
-  top: -750px;
+  right: 70px;
+  top: -50px;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner .about-banner-color1 {
+    top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -249,7 +255,7 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
     width: 50vw;
     max-width: 300px;
     height: 70px;
-    margin-left: 28vw;
+    margin-left: 30vw;
     right: unset;
     margin-top: 270px;
   }
@@ -277,6 +283,13 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 .about
   }
 }
 
+@media (max-width: 392px) {
+  section#about .about-grain1 .container .about-banner .about-banner-color1 .about-banner-text1 {
+    left: -10vw;
+    width: unset;
+  }
+}
+
 section#about .about-grain1 .container .about-banner #about-text2 {
   margin-top: 779px;
 }
@@ -287,18 +300,27 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   font-size: 20px;
   text-align: end;
   line-height: 25px;
-  position: relative;
+  position: absolute;
+  top: 660px;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
+    position: absolute;
+    right: calc(50vw - 175px);
+    top: 600px;
+  }
 }
 
 @media (max-width: 768px) {
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
     position: absolute;
-    right: calc(50vw - 175px);
-    top: -350px;
+    right: calc(50vw - 145px);
+    top: 450px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 392px) {
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
     right: calc(50vw - 140px);
     padding: 0 10px;
@@ -530,13 +552,13 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-righ
 }
 
 section#about .about-second {
-  margin-top: 540px;
+  margin-top: 640px;
   width: 100%;
 }
 
 @media (max-width: 768px) {
   section#about .about-second {
-    margin-top: 140px;
+    margin-top: 710px;
   }
 }
 
@@ -624,7 +646,7 @@ section#about .about-second .about-grain2 .about-text3-mobile p {
   width: auto;
   position: absolute;
   top: 40px;
-  right: calc(50vw - 138px);
+  left: calc(50vw - 120px);
   border: 2px solid black;
   padding: 0.5vh 8vw;
   font-size: 34px;
@@ -632,12 +654,13 @@ section#about .about-second .about-grain2 .about-text3-mobile p {
 }
 
 section#about .about-second .about-grain2 .about-text3-mobile .about-text3-color-mobile {
-  max-width: 270px;
-  width: 38vw;
+  min-width: 220px;
+  max-width: 278px;
+  width: 50vw;
   height: 65px;
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
-  left: 29vw;
+  left: calc(50vw - 110px);
   top: 30px;
   z-index: -1;
 }
@@ -748,7 +771,7 @@ section#about .about-third .container .about-third-text {
 @media (max-width: 768px) {
   section#about .about-third .container .about-third-text {
     position: absolute;
-    margin-left: -175px;
+    margin-left: -35vw;
     margin-top: -165px;
     text-align: left;
     max-width: 100vw;
@@ -810,9 +833,22 @@ section#about .about-forth .about-forthText-colorA-mobile {
   text-align: center;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 992px) {
   section#about .about-forth .about-forthText-colorA-mobile {
-    height: 120vh;
+    height: 115vh;
+  }
+}
+
+@media (max-width: 768px) {
+  section#about .about-forth .about-forthText-colorA-mobile {
+    margin-top: -220px;
+    margin-left: calc(50vw -140px);
+  }
+}
+
+@media (max-width: 519px) {
+  section#about .about-forth .about-forthText-colorA-mobile {
+    height: 100vh;
   }
 }
 
@@ -836,6 +872,7 @@ section#about .about-forth .about-forthText-colorA-mobile .about-forth-textA-mob
 
 section#about .about-forth img {
   width: 50vw;
+  height: 60vh;
   margin-top: 200px;
   margin-bottom: 87px;
   z-index: -2;
