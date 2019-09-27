@@ -181,10 +181,6 @@ nav .navbar-nav {
   font-size: 15px;
 }
 
-section#menu {
-  min-height: 2000px;
-}
-
 section#menu .menu-banner-img {
   width: calc(100% - 64px);
   height: 665.59px;
@@ -197,6 +193,12 @@ section#menu .menu-banner-img {
   z-index: 2;
 }
 
+@media (min-width: 1800px) {
+  section#menu .menu-banner-img {
+    max-width: 1800px;
+  }
+}
+
 @media (max-width: 992px) {
   section#menu .menu-banner-img {
     width: 100vw;
@@ -207,7 +209,7 @@ section#menu .menu-banner-img {
 @media (max-width: 768px) {
   section#menu .menu-banner-img {
     width: 100vw;
-    height: 56.25vw;
+    height: 40vh;
   }
 }
 
@@ -247,7 +249,7 @@ section#menu .menu-banner-img .menu-banner-textColorB {
 section#menu .menu-banner-img .menu-banner-textR-mobile {
   position: absolute;
   left: calc(50vw - 170px);
-  top: 700px;
+  top: 600px;
   font-size: 28px;
   letter-spacing: 10px;
   border: 4px solid black;
@@ -257,7 +259,7 @@ section#menu .menu-banner-img .menu-banner-textR-mobile {
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textR-mobile {
-    top: 51vw;
+    top: 35vh;
   }
 }
 
@@ -267,19 +269,19 @@ section#menu .menu-banner-img .menu-banner-textColorA-mobile {
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: calc(50vw - 185px);
-  top: 615px;
+  top: 715px;
   z-index: 49;
 }
 
 @media (max-width: 992px) {
   section#menu .menu-banner-img .menu-banner-textColorA-mobile {
-    top: 685px;
+    top: 585px;
   }
 }
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorA-mobile {
-    top: 49vw;
+    top: 33vh;
   }
 }
 
@@ -297,13 +299,13 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
 
 @media (max-width: 992px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 740px;
+    top: 640px;
   }
 }
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 56.2vw;
+    top: 41vh;
   }
 }
 
@@ -315,6 +317,12 @@ section#menu .menu-bannerBigColor {
   z-index: 1;
   top: 110px;
   right: 8.8%;
+}
+
+@media (min-width: 1800px) {
+  section#menu .menu-bannerBigColor {
+    max-width: 1800px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -362,7 +370,7 @@ section#menu .menu-bannerLeftText .menu-sloganLineB {
 
 section#menu .menu-bannerLeftText-mobile {
   position: absolute;
-  top: 820px;
+  top: 750px;
   left: calc(50vw - 85px);
   font-size: 20px;
   z-index: 50;
@@ -373,7 +381,7 @@ section#menu .menu-bannerLeftText-mobile {
 
 @media (max-width: 768px) {
   section#menu .menu-bannerLeftText-mobile {
-    top: calc(40vh + 40vw);
+    top: 58vh;
   }
 }
 
@@ -425,7 +433,7 @@ section#menu .container .swiper-container {
 @media (max-width: 768px) {
   section#menu .container .swiper-container {
     width: 300px;
-    margin-top: 35vw;
+    margin-top: 20vh;
   }
 }
 
@@ -645,6 +653,8 @@ section#menu .menu-bottom {
   padding: 140px 0;
   width: 100%;
   position: relative;
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 section#menu .menu-bottom .menu-bottomL-text {

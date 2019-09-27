@@ -21,52 +21,54 @@
     <link rel="stylesheet" href="css/about.css">
     <!-- ↓ 匯入AOS套件css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
         <div class="container">
-            <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
-            <!-- ↓ 手機版顯示的menu -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars d-block d-lg-none"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <!-- ml-auto讓選單靠右 ↑ -->
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
-                    </li>
-                    <li id="book-border" class="nav-item ml-5">
-                        <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block"
-                                href="#">線上訂位</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+      
+          <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <!-- ml-auto讓選單靠右 ↑ -->
+              <li class="nav-item ml-lg-3 ml-0">
+                <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+                <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
+              </li>
+              <li class="nav-item ml-lg-3 ml-0">
+                <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
+              </li>
+              <li class="nav-item ml-lg-3 ml-0">
+                <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
+              </li>
+              <li class="nav-item ml-lg-3 ml-0">
+                <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
+              </li>
+              <li class="nav-item ml-lg-3 ml-0">
+                <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
+              </li>
+              <li class="nav-item ml-lg-3 ml-0">
+                <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
+              </li>
+              <li id="book-border" class="nav-item ml-5">
+                <div class="book-side">
+                  <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
+    
         <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
-    </nav>
+      </nav>
 
     <section id="about" class="about">
         <div class="about-grain1">
@@ -273,6 +275,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function (e) {
+          $hamburger.toggleClass("is-active");
+          // Do something else, like open/close menu
+        });
+      </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
