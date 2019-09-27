@@ -7,8 +7,15 @@
   }
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 992px) {
@@ -20,6 +27,10 @@ nav {
 nav .container {
   max-width: 90vw;
   padding: 0;
+}
+
+nav .container button {
+  outline: none;
 }
 
 @media (min-width: 1800px) {
@@ -63,19 +74,23 @@ nav .container .navbar-brand #nav-logo-img {
   }
 }
 
+nav .container .hamburger .hamburger-inner, nav .container .hamburger .hamburger-inner:after, nav .container .hamburger .hamburger-inner::before {
+  background-color: white;
+  width: 30px;
+}
+
+@media (min-width: 993px) {
+  nav .container .hamburger {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
-  nav .container .navbar-toggler {
+  nav .container .hamburger {
     position: fixed;
     left: 15px;
-    top: 20px;
+    top: 12px;
     border: none;
-  }
-  nav .container .navbar-toggler .navbar-toggler-icon {
-    background-image: none;
-  }
-  nav .container .navbar-toggler .navbar-toggler-icon i {
-    font-size: 30px;
-    color: white;
   }
 }
 

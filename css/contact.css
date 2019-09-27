@@ -33,8 +33,15 @@ body {
   }
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 992px) {
@@ -46,6 +53,10 @@ nav {
 nav .container {
   max-width: 90vw;
   padding: 0;
+}
+
+nav .container button {
+  outline: none;
 }
 
 @media (min-width: 1800px) {
@@ -89,19 +100,23 @@ nav .container .navbar-brand #nav-logo-img {
   }
 }
 
+nav .container .hamburger .hamburger-inner, nav .container .hamburger .hamburger-inner:after, nav .container .hamburger .hamburger-inner::before {
+  background-color: white;
+  width: 30px;
+}
+
+@media (min-width: 993px) {
+  nav .container .hamburger {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
-  nav .container .navbar-toggler {
+  nav .container .hamburger {
     position: fixed;
     left: 15px;
-    top: 20px;
+    top: 12px;
     border: none;
-  }
-  nav .container .navbar-toggler .navbar-toggler-icon {
-    background-image: none;
-  }
-  nav .container .navbar-toggler .navbar-toggler-icon i {
-    font-size: 30px;
-    color: white;
   }
 }
 
@@ -168,7 +183,7 @@ nav .booking-icon a {
   background-size: cover;
   max-width: 90vw;
   height: 557px;
-  margin-top: 130px;
+  margin-top: 200px;
   position: relative;
   z-index: 1;
 }
@@ -221,6 +236,13 @@ nav .booking-icon a {
   border: 0;
   padding: 2px;
   display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#form #form_body .form_btn:hover {
+  color: #c39c61;
+  background-color: black;
 }
 
 #form #form_body .form_btn .form_btn_text {
@@ -229,6 +251,10 @@ nav .booking-icon a {
   letter-spacing: 10px;
   text-indent: 10px;
   padding: 0 10px;
+}
+
+#form #form_body .form_btn .form_btn_text:hover {
+  border: 2px solid #c39c61;
 }
 
 #form #form_body #inf {
@@ -414,9 +440,13 @@ footer .footer-copyright {
   }
   #form {
     margin-top: 30px;
+    position: relative;
   }
   #form #form_title {
     display: none;
+  }
+  #form #form_body {
+    margin-top: 50px;
   }
   #form #form_body .form_btn {
     margin: 0 auto;
@@ -427,31 +457,36 @@ footer .footer-copyright {
   }
   #form .form_text {
     font-size: 34px;
+    letter-spacing: 3px;
+    text-indent: 3px;
     color: black;
-    border: 3.5px solid black;
-    letter-spacing: 10px;
-    text-indent: 10px;
     text-align: center;
-    padding: 10px 60px;
-    position: relative;
-  }
-  #form .form_text .titlebox {
-    background-color: #e5e6e7;
-    width: 230px;
-    height: 80px;
+    padding: 13px 76px;
     position: absolute;
-    z-index: -100;
-    bottom: -15px;
-    right: -15px;
+    left: calc(50% - 155px);
+    top: -70px;
+    z-index: 1;
   }
-  #form .form_text .titlebox2 {
-    background-color: #D7C4A8;
-    width: 250px;
-    height: 75px;
+  #form .form_text::after {
+    content: "";
+    border: 3.5px solid black;
+    display: block;
+    width: 310px;
+    height: 84px;
     position: absolute;
-    z-index: -101;
-    top: -15px;
-    left: -15px;
+    left: 0;
+    top: -5px;
+  }
+  #form .form_text::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 310px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    z-index: -1;
   }
   #form .form_text.mob {
     display: block;
@@ -460,15 +495,15 @@ footer .footer-copyright {
     font-size: 34px;
     color: black;
     border: 3.5px solid black;
-    letter-spacing: 10px;
-    text-indent: 10px;
+    letter-spacing: 3px;
+    text-indent: 3px;
     text-align: center;
-    padding: 10px 60px;
+    padding: 13px 76px;
     position: relative;
   }
   #location .loc_text .titlebox {
     background-color: #e5e6e7;
-    width: 330px;
+    width: 300px;
     height: 80px;
     position: absolute;
     z-index: -100;

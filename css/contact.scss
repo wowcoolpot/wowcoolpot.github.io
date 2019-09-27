@@ -30,7 +30,7 @@ body {
     background-size: cover;
     max-width: 90vw;
     height: 557px;
-    margin-top: $mt-130;
+    margin-top: 200px;
     position: relative;
     z-index: 1;
 }
@@ -84,6 +84,12 @@ body {
             border: 0;
             padding: 2px;
             display: block;
+            transition: 0.4s;
+
+            &:hover {
+                color: $mainbg;
+                background-color: black;
+            }
 
             .form_btn_text {
                 border: 2px solid white;
@@ -91,6 +97,10 @@ body {
                 letter-spacing: 10px;
                 text-indent: 10px;
                 padding: 0 10px;
+
+                &:hover {
+                    border: 2px solid $mainbg;
+                }
             }
         }
 
@@ -203,7 +213,7 @@ body {
 @import "footer";
 
 @media (max-width:992px) {
-    .banner{
+    .banner {
         margin-top: 0;
     }
 }
@@ -219,12 +229,14 @@ body {
 
     #form {
         margin-top: 30px;
+        position: relative;
 
         #form_title {
             display: none;
         }
 
         #form_body {
+            margin-top: 50px;
             .form_btn {
                 margin: 0 auto;
             }
@@ -233,39 +245,55 @@ body {
                 text-align: center;
                 margin-top: 50px;
             }
+            
         }
 
         .form_text {
             font-size: 34px;
+            letter-spacing: 3px;
+            text-indent: 3px;
             color: black;
-            border: 3.5px solid black;
-            letter-spacing: 10px;
-            //消除最後一字的字距
-            text-indent: 10px;
+            // border: 3.5px solid black;
             text-align: center;
-            padding: 10px 60px;
-            position: relative;
+            padding: 13px 76px;
+            position: absolute;
+            left: calc(50% - 155px);
+            top: -70px;
+            z-index: 1;
 
-            .titlebox {
-                background-color: $footerbg;
-                width: 230px;
-                height: 80px;
+            &::after {
+                content: "";
+                border: 3.5px solid black;
+                display: block;
+                width: 310px;
+                height: 84px;
                 position: absolute;
-                z-index: -100;
-                bottom: -15px;
-                right: -15px;
+                left: 0;
+                top: -5px;
             }
 
-            .titlebox2 {
-                background-color: $titlebg;
-                width: 250px;
-                height: 75px;
+            &::before {
+                content: "";
+                background-color: rgba(255, 255, 255, 0.9);
+                width: 310px;
+                height: 84px;
+                display: block;
                 position: absolute;
-                z-index: -101;
-                top: -15px;
-                left: -15px;
+                top: -10px;
+                left: 10px;
+                z-index: -1;
             }
         }
+
+        // .titlebox {
+        //     background-color: $footerbg;
+        //     width: 310px;
+        //     height: 80px;
+        //     position: relative;
+        //     z-index: 2;
+        //     top: -85px;
+        //     left: 125px;
+        // }
 
         .form_text.mob {
             display: block;
@@ -277,16 +305,16 @@ body {
             font-size: 34px;
             color: black;
             border: 3.5px solid black;
-            letter-spacing: 10px;
+            letter-spacing: 3px;
             //消除最後一字的字距
-            text-indent: 10px;
+            text-indent: 3px;
             text-align: center;
-            padding: 10px 60px;
+            padding: 13px 76px;
             position: relative;
 
             .titlebox {
                 background-color: $footerbg;
-                width: 330px;
+                width: 300px;
                 height: 80px;
                 position: absolute;
                 z-index: -100;
@@ -311,7 +339,8 @@ body {
 
         .loc_inf.mob {
             display: block;
-            padding:0 2%;
+            padding: 0 2%;
+
             #address,
             #tel,
             #time {

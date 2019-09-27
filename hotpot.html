@@ -17,6 +17,8 @@
   <!-- ↓ 匯入css -->
   <link rel="stylesheet" href="./css/hotpot.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <link rel="shortcut icon" href="/favicon.ico">
 
 </head>
 
@@ -24,10 +26,12 @@
   <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
     <div class="container">
       <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
-      <!-- ↓ 手機版顯示的menu -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+
+      <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars d-block d-lg-none"></i></span>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
@@ -40,7 +44,7 @@
             <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="#">鮮來開鍋</a>
+            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
             <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
@@ -83,26 +87,21 @@
           <div class="col-12 col-md-8 col-lg-9  ">
             <div class="row justify-content-between justify-content-md-end ">
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="0"
-                data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-                data-aos-once="false" data-aos-anchor-placement="top-center"><img class="soups soup1"
-                  src="./img/soup1.svg" alt="">
-                </div>
+                data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
+                data-aos-anchor-placement="top-center"><img class="soups soup1" src="./img/soup1.svg" alt="">
+              </div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="100"
-                data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-                data-aos-once="false" data-aos-anchor-placement="top-center"><img class="soups soup2"
-                  src="./img/soup2.svg" alt=""></div>
+                data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
+                data-aos-anchor-placement="top-center"><img class="soups soup2" src="./img/soup2.svg" alt=""></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="200"
-                data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-                data-aos-once="false" data-aos-anchor-placement="top-center"><img class="soups soup3"
-                  src="./img/soup3.svg" alt=""></div>
+                data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
+                data-aos-anchor-placement="top-center"><img class="soups soup3" src="./img/soup3.svg" alt=""></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
-                data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-                data-aos-once="false" data-aos-anchor-placement="top-center"><img class="soups soup4"
-                  src="./img/soup4.svg" alt=""></div>
+                data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
+                data-aos-anchor-placement="top-center"><img class="soups soup4" src="./img/soup4.svg" alt=""></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="400"
-                data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-                data-aos-once="false" data-aos-anchor-placement="top-center"><img class="soups soup5"
-                  src="./img/soup5.svg" alt=""></div>
+                data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
+                data-aos-anchor-placement="top-center"><img class="soups soup5" src="./img/soup5.svg" alt=""></div>
             </div>
           </div>
         </div>
@@ -142,9 +141,8 @@
 
           </div>
           <div class="col-12 col-md-6 col-lg-7">
-            <div class="soup_ps" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
-            data-aos-duration="1000" data-aos-easing="ease-in-out-quart"
-            data-aos-once="false" data-aos-anchor-placement="top-center">
+            <div class="soup_ps" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-easing="ease-in-out-quart" data-aos-once="false" data-aos-anchor-placement="top-center">
               <img class="soup_de_bg" src="./img/soup_de_bg.png" alt="">
               <div class="soup_p">
                 <img src="./img/soup_p1.png" alt="">
@@ -326,6 +324,13 @@
     //   var ho_index = $('.soups').index(this)+1;
     //   $(this).attr(`"src","./img/soup${ho_index}.png"`)
     // });
+  </script>
+  <script>
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function (e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
   </script>
   <script>
     AOS.init();
