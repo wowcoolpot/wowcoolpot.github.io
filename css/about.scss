@@ -307,7 +307,7 @@ section#about{
         margin-top: 640px;
         width: 100%;
         @media (max-width: 768px) {
-            margin-top: 710px;
+            margin-top: 675px;
         }
         .row{
             width: 100%;
@@ -489,7 +489,7 @@ section#about{
                 letter-spacing: 4px;
                 @media (max-width: 768px) {
                     position: absolute;
-                    margin-left: -35vw;
+                    margin-left: -170px;
                     margin-top: -165px;
                     text-align: left;
                     max-width: 100vw;
@@ -546,16 +546,16 @@ section#about{
             letter-spacing: 5px;
             text-align: center;
             @media (max-width: 992px) {
-                height: 115vh;
+                height: 105vh;
                 // 利用這色塊高度來調整最後一段文字容納空間
             }
             @media (max-width: 768px) {
-                margin-top: -220px;
-                margin-left: calc(50vw -140px)
+                margin-top: -160px;
+                margin-left: calc(50vw -140px);
             }
-            @media (max-width: 519px) {
-                height: 100vh;
-                // 利用這色塊高度來調整最後一段文字容納空間
+            @media (max-width: 430px) {
+                margin-top: -250px;
+                height: 120vh;
             }
             .about-forth-textA-mobile{
                 font-size: 34px;
@@ -568,7 +568,8 @@ section#about{
                 padding: 15px 60px;
                 @media (max-width: 430px) {
                     max-width: 280px;
-                    width: 30vw;
+                    padding: 15px;
+                    left: 5vw;
                 }
             }
         }
@@ -601,7 +602,7 @@ section#about{
             line-height: 19px;
             letter-spacing: 4px;
             @media (max-width: 768px) {
-                top: -75vh;
+                top: -80vh;
                 // 調手機版最後一段文字高度
                 left: 5vw;
                 display: inline-block;

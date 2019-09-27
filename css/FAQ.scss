@@ -19,6 +19,7 @@ section#FAQQ{
                 margin: 130px auto 0 auto;
                 @media (max-width: 992px) {
                     margin-top: 0;
+                    height: 40vh;
                 }
                 @media (max-width: 768px) {
                     width: 100vw;
@@ -35,7 +36,7 @@ section#FAQQ{
             left: calc(50vw - 138px);
             letter-spacing: 10px;
             padding: 10px 30px;
-            top: 30vw;
+            top: 210px;
             .FAQ-L-mobileColor{
                 width: 270px;
                 height: 100px;
