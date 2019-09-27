@@ -1,0 +1,142 @@
+// navbar
+@media (max-width: 992px) {
+    .navbar {
+        width: 100vw;
+        position: fixed !important;
+        z-index: 51;
+    }
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    @media (max-width: 992px) {
+        background-color: rgba(35, 31, 32, 0.7);
+    }
+    
+
+    .container {
+        max-width: 90vw;
+        padding: 0;
+
+        button{
+            outline:none;
+        }
+
+        @media (min-width: 1800px) {
+            max-width: 1800px;
+        }
+
+        @media (max-width: 992px) {
+            max-width: unset;
+        }
+
+        .navbar-brand {
+            padding: 0;
+            height: 60px;
+            margin-bottom: 8px;
+            @media (max-width: 992px) {
+                margin-left: calc(50% - 120px);
+                // 因為原本container就奪走了10vw
+            }
+
+            @media (max-width:450px) {
+                margin-left: calc(50% - 90px);
+            }
+
+            #nav-logo-img {
+                width: 200px;
+
+                @media (max-width: 450px) {
+                    width: 150px;
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        .hamburger{
+            .hamburger-inner,.hamburger-inner:after,.hamburger-inner::before{
+                background-color: white;
+                width: 30px;
+            }
+            @media (min-width:993px){
+                display: none;
+            }
+            @media (max-width: 992px) {
+                position: fixed;
+                left: 15px;
+                top: 12px;
+                // 手機版漢堡條改位置
+                border: none;
+
+                
+            }
+        }
+
+        .maxwww {
+            min-width: 85px;
+            /* 版面縮減才不會變形 */
+        }
+
+        #navbarNavDropdown {
+            @media (max-width: 992px) {
+                a {
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
+                    width: 100vw;
+                }
+            }
+
+            #book-border {
+                margin: auto 0;
+                border-top: 4px solid black;
+                border-bottom: 4px solid black;
+                padding: 2px 0;
+
+                @media (max-width: 992px) {
+                    display: none;
+                }
+
+                .book-side {
+                    border-left: 2px solid black;
+                    border-right: 2px solid black;
+                    padding: 0 3px;
+
+                    #book-text {
+                        background-color: black;
+                        padding: 1px 8px;
+                        color: $mainbg;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        #navbarNavDropdown li:active {
+            @media (max-width: 992px) {
+                background-color: $mainbg;
+                // 調手機版選單點擊顏色
+            }
+        }
+    }
+
+    .booking-icon {
+        font-size: 30px;
+        position: absolute;
+        right: 40px;
+        top: 15px;
+
+        a {
+            color: white;
+        }
+    }
+}
