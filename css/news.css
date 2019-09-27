@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Merriweather", "Noto Serif TC", serif;
   /* 聽老師說的，先中文，再英文，最後通用(補) */
@@ -223,6 +227,11 @@ nav .booking-icon a {
   top: -60px;
 }
 
+.banner .news_text h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
 .banner .news_text .titlebox {
   background-color: rgba(255, 255, 255, 0.9);
   width: 80px;
@@ -248,6 +257,11 @@ nav .booking-icon a {
   display: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+#news .newsbtn_group .newsbtn h2 {
+  font-size: 20px;
+  margin: 0;
 }
 
 #news .newsbtn_group .newsbtn.enable {
@@ -417,7 +431,7 @@ footer .footer-copyright {
     background-image: url("../img/03-mobile-banner.jpg");
   }
   .banner .news_text {
-    font-size: 28px;
+    font-size: 34px;
     background-color: white;
     color: black;
     -webkit-writing-mode: unset;
@@ -430,9 +444,13 @@ footer .footer-copyright {
     padding: 10px;
     position: absolute;
     top: unset;
-    bottom: -36px;
-    left: calc(50% - 153.25px);
+    bottom: -31px;
+    left: calc(50% - 167.875px);
     display: none;
+  }
+  .banner .news_text h1 {
+    font-size: 34px;
+    margin-top: 0;
   }
   .banner .news_text.mob {
     display: block;
@@ -491,6 +509,10 @@ footer .footer-copyright {
     padding: 10px 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+  }
+  #news .mobile_Type h2 {
+    font-size: 28px;
+    margin-top: 20px;
   }
   #news .mobile_Type.enable {
     background-color: #c39c61;

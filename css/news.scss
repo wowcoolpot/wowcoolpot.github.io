@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Merriweather", "Noto Serif TC", serif;
     /* 聽老師說的，先中文，再英文，最後通用(補) */
@@ -43,6 +47,11 @@ body {
         position: absolute;
         top: -60px;
 
+        & h1 {
+            font-size: 34px;
+            margin: 0;
+        }
+
         .titlebox {
             background-color: rgba(255, 255, 255, 0.9);
             width: 80px;
@@ -71,6 +80,11 @@ body {
             cursor: pointer;
             display: none;
             transition: 0.4s;
+
+            h2 {
+                font-size: $titletext2;
+                margin: 0;
+            }
         }
 
         .newsbtn.enable {
@@ -151,6 +165,7 @@ body {
 @media (max-width:992px) {
     .banner {
         margin-top: 0;
+
         .news_text {
             top: calc(50% - 146.5px);
         }
@@ -175,7 +190,7 @@ body {
         background-image: url("../img/03-mobile-banner.jpg");
 
         .news_text {
-            font-size: $titletext;
+            font-size: 34px;
             background-color: white;
             color: black;
             writing-mode: unset;
@@ -187,9 +202,14 @@ body {
             padding: 10px;
             position: absolute;
             top: unset;
-            bottom: -36px;
-            left: calc(50% - 153.25px);
+            bottom: -31px;
+            left: calc(50% - 167.875px);
             display: none;
+
+            h1 {
+                font-size: 34px;
+                margin-top: 0;
+            }
         }
 
         .news_text.mob {
@@ -261,6 +281,12 @@ body {
             color: white;
             padding: 10px 0;
             transition: 0.4s;
+
+            h2 {
+                font-size: 28px;
+                margin-top: 20px;
+            }
+
         }
 
         .mobile_Type.enable {
