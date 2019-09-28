@@ -46,13 +46,16 @@ footer {
     .footer-icon-group {
         position: absolute;
         left: calc(50% - 97.5px);
-        bottom: 25%;
+        bottom: 27.5%;
         background-color: $footerbg;
         text-align: center;
         z-index: 999;
         /* ↑ 讓icon群浮上來蓋過線 */
         /* ↓ 讓線別貼邊 */
         padding: 0 10px;
+        @media (max-width: 590px) {
+            bottom: 31%;
+        }
 
         i {
             font-size: 35px;
