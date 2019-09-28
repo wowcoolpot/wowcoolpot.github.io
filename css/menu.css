@@ -176,6 +176,10 @@ nav .booking-icon a {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Merriweather", "Noto Serif TC", serif;
 }
@@ -240,13 +244,16 @@ section#menu .menu-banner-img {
 
 section#menu .menu-banner-img .menu-banner-textR {
   position: absolute;
-  right: 196px;
+  right: 176px;
   top: 125px;
-  font-size: 28px;
   border: 4px solid black;
-  padding: 68px 18px;
+  padding: 66px 16px;
   z-index: 50;
   line-height: 40px;
+}
+
+section#menu .menu-banner-img .menu-banner-textR h1 {
+  font-size: 34px;
 }
 
 section#menu .menu-banner-img .menu-banner-textColorA {
@@ -254,7 +261,7 @@ section#menu .menu-banner-img .menu-banner-textColorA {
   height: 300px;
   background-color: white;
   position: absolute;
-  right: 210px;
+  right: 190px;
   top: 140px;
   z-index: 49;
 }
@@ -266,7 +273,7 @@ section#menu .menu-banner-img .menu-banner-textColorB {
           clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
   background-color: #E2CFB3;
   position: absolute;
-  right: 182px;
+  right: 162px;
   top: 110px;
   z-index: 49;
 }
@@ -275,10 +282,9 @@ section#menu .menu-banner-img .menu-banner-textR-mobile {
   position: absolute;
   left: calc(50vw - 170px);
   top: 600px;
-  font-size: 28px;
   letter-spacing: 10px;
   border: 4px solid black;
-  padding: 15px 90px;
+  padding: 14px 82px;
   z-index: 50;
 }
 
@@ -286,6 +292,10 @@ section#menu .menu-banner-img .menu-banner-textR-mobile {
   section#menu .menu-banner-img .menu-banner-textR-mobile {
     top: 35vh;
   }
+}
+
+section#menu .menu-banner-img .menu-banner-textR-mobile h1 {
+  font-size: 32px;
 }
 
 section#menu .menu-banner-img .menu-banner-textColorA-mobile {
@@ -331,6 +341,12 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
     top: 41vh;
+  }
+}
+
+@media (max-width: 375px) {
+  section#menu .menu-banner-img .menu-banner-textColorB-mobile {
+    top: 40vh;
   }
 }
 
@@ -410,6 +426,12 @@ section#menu .menu-bannerLeftText-mobile {
   }
 }
 
+@media (max-width: 375px) {
+  section#menu .menu-bannerLeftText-mobile {
+    top: 52vh;
+  }
+}
+
 section#menu .menu-bannerLeftText-mobile .menu-slogan1-mobile {
   margin-left: -30px;
 }
@@ -442,8 +464,8 @@ section#menu .container .swiper-container {
   padding-top: 350px;
   padding-bottom: 50px;
   z-index: 50;
-  -webkit-clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
-          clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
+  -webkit-clip-path: inset(343px 0 0 0 round 18.8% 17.9% 0 0);
+          clip-path: inset(343px 0 0 0 round 18.8% 17.9% 0 0);
 }
 
 @media (max-width: 992px) {
@@ -462,6 +484,13 @@ section#menu .container .swiper-container {
   }
 }
 
+@media (max-width: 375px) {
+  section#menu .container .swiper-container {
+    width: 76.5%;
+    min-width: 260px;
+  }
+}
+
 section#menu .container .swiper-container .swiper-wrapper .swiper-slide {
   background-position: center;
   background-size: cover;
@@ -477,6 +506,13 @@ section#menu .container .swiper-container .swiper-wrapper .swiper-slide {
   font-weight: bold;
 }
 
+@media (max-width: 375px) {
+  section#menu .container .swiper-container .swiper-wrapper .swiper-slide {
+    width: 70vw;
+    min-width: 260px;
+  }
+}
+
 section#menu .container .swiper-container .swiper-wrapper #slideA {
   -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
           box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
@@ -488,7 +524,7 @@ section#menu .container .swiper-container .swiper-wrapper #slideA .menuA-topText
   margin-top: -38px;
   font-style: italic;
   font-weight: bold;
-  color: #C09B7F;
+  color: #C39C61;
 }
 
 section#menu .container .swiper-container .swiper-wrapper #slideA .menuA-topText2 {
@@ -537,7 +573,7 @@ section#menu .container .swiper-container .swiper-wrapper #slideB .menuB-topText
   margin-top: -38px;
   font-style: italic;
   font-weight: bold;
-  color: #C09B7F;
+  color: #C39C61;
 }
 
 section#menu .container .swiper-container .swiper-wrapper #slideB .menuB-topText2 {
@@ -644,6 +680,12 @@ section#menu .container .swiper-button-next {
   }
 }
 
+@media (max-width: 375px) {
+  section#menu .container .swiper-button-next {
+    top: 100%;
+  }
+}
+
 section#menu .container .swiper-button-next i {
   font-size: 40px;
   color: #A9000D;
@@ -669,6 +711,12 @@ section#menu .container .swiper-button-prev {
   }
 }
 
+@media (max-width: 375px) {
+  section#menu .container .swiper-button-prev {
+    top: 100%;
+  }
+}
+
 section#menu .container .swiper-button-prev i {
   font-size: 40px;
   color: #A9000D;
@@ -683,12 +731,15 @@ section#menu .menu-bottom {
 }
 
 section#menu .menu-bottom .menu-bottomL-text {
-  font-size: 28px;
-  line-height: 60px;
   position: absolute;
   left: 101px;
   border: 4px solid black;
   padding: 50px 18px;
+}
+
+section#menu .menu-bottom .menu-bottomL-text h1 {
+  font-size: 34px;
+  line-height: 58px;
 }
 
 section#menu .menu-bottom .menu-bottomL-text .menu-bottomL-color2 {
@@ -704,13 +755,16 @@ section#menu .menu-bottom .menu-bottomL-text .menu-bottomL-color2 {
 }
 
 section#menu .menu-bottom .menu-bottomL-text-mobile {
-  font-size: 28px;
   position: absolute;
   left: calc(50% - 125px);
   top: 120px;
   border: 2px solid black;
-  padding: 10px 50px 10px 70px;
+  padding: 15px 40px 5px 70px;
   letter-spacing: 35px;
+}
+
+section#menu .menu-bottom .menu-bottomL-text-mobile h1 {
+  font-size: 34px;
 }
 
 section#menu .menu-bottom .menu-bottomL-text-mobile .menu-bottomL-color1-mobile {

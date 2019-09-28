@@ -6,6 +6,9 @@ body{
     overflow-x: hidden;
     // ↑ 關鍵關鍵關鍵
 }
+html{
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
@@ -36,8 +39,6 @@ section#about{
                 height: 920px;
             }
         }
-        
-        
         .container{
             max-width: 90vw;
             @media (min-width: 1800px) {
@@ -55,7 +56,7 @@ section#about{
                 width: 100%;
                 height: 557px;
                 max-width: 90vw;
-                margin-top: -663px;
+                margin-top: -563px;
                 @media (min-width: 1800px) {
                     max-width: 1800px;
                 }
@@ -66,15 +67,15 @@ section#about{
                     max-width: unset;
                     width: 100vw;
                     height: 40vh;
-                    margin-left: -30px;
+                    margin-left: -15px;
                 }
                 .about-banner-color1{
-                    width: 70px;
-                    height: 280px;
+                    width: 80px;
+                    height: 300px;
                     background-color: rgba(255,255,255,0.9);
                     position: absolute;
                     right: 70px;
-                    top: -50px;
+                    top: -60px;
                     @media (max-width: 992px) {
                         top: 0;
                     }
@@ -82,13 +83,18 @@ section#about{
                         background-color: rgba(255,255,255,0.8);
                         width: 50vw;
                         max-width: 300px;
-                        height: 70px;
+                        height: 80px;
                         margin-left: 30vw;
                         right: unset;
-                        margin-top: 270px;
+                        margin-top: 230px;
+                    }
+                    @media (max-width: 375px) {
+                        margin-top: 300px;
                     }
                     .about-banner-text1{
-                        font-size: 34px;
+                        h1{
+                            font-size: 34px;
+                        }
                         font-weight: normal;
                         line-height: 38px;
                         position: absolute;
@@ -107,7 +113,6 @@ section#about{
                         @media (max-width: 392px) {
                             left: -10vw;
                             width: unset;
-                            
                         }
                     }
                 }
@@ -328,13 +333,18 @@ section#about{
                 .about-secondA{
                     max-width: 295px;
                     width: 21.6vw;
-                    height: 377px;
+                    height: 27.5vw;
                     background-color: rgba(255,255,255,0.9);
                     position: absolute;
                     top: -176px;
                     left: -30px;
                     padding: 45px 10px;
                     z-index: 50;
+                    @media (max-width: 992px) {
+                        top: -15vw;
+                        padding: 1vw;
+                        height: 25vw;
+                    }
                     img{
                         width: 100%;
                     }
@@ -359,12 +369,12 @@ section#about{
             width: 100%;
             position: relative;
             img{
-                z-index: -2;
+                z-index: -5;
                 width: 100%;
                 position: absolute;
                 top: -33px;
                 // 調最右邊色塊高度
-                max-height: 1456px;
+                height: 1366px;
                 @media (max-width: 768px) {
                     height: 1150px;
                 }
@@ -376,20 +386,20 @@ section#about{
                 background-color: #D6B9A2;
                 position: relative;
                 z-index: 0;
-                p{
+                h1{
                     width: auto;
                     position: absolute;
                     top: 40px;
                     left: calc(50vw - 120px);
                     border: 2px solid black;
-                    padding: 0.5vh 8vw;
+                    padding: 8px 8vw;
                     font-size: 34px;
                     letter-spacing: 4px;
                 }
                 .about-text3-color-mobile{
-                    min-width: 220px;
-                    max-width: 278px;
-                    width: 50vw;
+                    min-width: 214px;
+                    max-width: 260px;
+                    width: 45vw;
                     height: 65px;
                     background-color: rgba(255,255,255,0.8);
                     position: absolute;
@@ -467,7 +477,7 @@ section#about{
         }
     }
     .about-third{
-        margin-top: 190px;
+        margin-top: 150px;
         width: 100%;
         height: 100vh;
         position: relative;
@@ -489,8 +499,9 @@ section#about{
                 letter-spacing: 4px;
                 @media (max-width: 768px) {
                     position: absolute;
-                    margin-left: -170px;
+                    left: unset;
                     margin-top: -165px;
+                    margin-left: 11vw;
                     text-align: left;
                     max-width: 100vw;
                     display: inline-block;
@@ -514,126 +525,153 @@ section#about{
     }
     .about-forth{
         width: 100%;
-        .about-forthText-colorA{
-            width: 70px;
-            height: 255px;
-            background-color: rgba(255,255,255,0.9);
-            position: relative;
-            margin-top: -75px;
-            margin-left: 47.8%;
-            z-index: 50;
-            .about-forth-textA{
-                font-size: 34px;
-                font-weight: 500;
-                line-height: 40px;
-                position: absolute;
-                top: -20px;
-                left: -13px;
-                border: 3.5px solid black;
-                padding: 60px 17px 60px 17px;
-            }
-        }
-    // ↓ 手機版麻辣故事 992以下
-        .about-forthText-colorA-mobile{
-            width: 290px;
-            height: 630px;
-            // 利用這色塊高度來調整最後一段文字容納空間
-            background-color: rgba(255,255,255,0.8);
-            position: relative;
-            margin-top: -170px;
-            margin-left: 18vw;
-            z-index: 50;
-            letter-spacing: 5px;
-            text-align: center;
-            @media (max-width: 992px) {
-                height: 105vh;
-                // 利用這色塊高度來調整最後一段文字容納空間
-            }
-            @media (max-width: 768px) {
-                margin-top: -160px;
-                margin-left: calc(50vw -140px);
-            }
-            @media (max-width: 430px) {
-                margin-top: -250px;
-                height: 120vh;
-            }
-            .about-forth-textA-mobile{
-                font-size: 34px;
-                font-weight: 500;
-                line-height: 40px;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                border: 2px solid black;
-                padding: 15px 60px;
-                @media (max-width: 430px) {
-                    max-width: 280px;
-                    padding: 15px;
-                    left: 5vw;
-                }
-            }
-        }
-    // ↑ 手機版麻辣故事
-        img{
-            width: 50vw;
-            height: 60vh;
-            margin-top: 200px;
-            margin-bottom: 87px;
-            z-index: -2;
-        }
-    // ↓ 手機版
+        height: 150vh;
         @media (max-width: 768px) {
-            #img-mobile{
-                width: 100vw;
-                margin-top: 0;
-                position: absolute;
-                left: 0;
-            }
+            height: unset;
         }
-        .about-forth-textB{
-            position: relative;
-            width: 50vw;
-            // ↑ 不然會有捲軸
-            left: 47.8%;
-            top: -615px;
-            z-index: 50;
-            font-size: 19px;
-            font-weight: normal;
-            line-height: 19px;
-            letter-spacing: 4px;
+        .container{
             @media (max-width: 768px) {
-                top: -80vh;
-                // 調手機版最後一段文字高度
-                left: 5vw;
-                display: inline-block;
-                width: 100%;
-                padding: 0 50px;
+                max-width: unset;
+                height: 1100px;
             }
-            @media (max-width: 430px) {
-                top: -97vh;
-            }
-            .about-forthText-colorB{
-                width: 50vw;
-                height: 320px;
-                position: absolute;
+            .about-forthText-colorA{
+                width: 70px;
+                height: 255px;
                 background-color: rgba(255,255,255,0.9);
-                z-index: -1;
-                top: 50px;
-                left: -30px;
-                @media (max-width: 768px) {
-                    display: none;
+                position: relative;
+                margin-top: -25px;
+                margin-left: 47.8%;
+                z-index: 50;
+                .about-forth-textA{
+                    font-size: 34px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    position: absolute;
+                    top: -20px;
+                    left: -13px;
+                    border: 3.5px solid black;
+                    padding: 60px 17px 60px 17px;
                 }
+            }
+        // ↓ 手機版麻辣故事 768以下
+            .about-forthText-colorA-mobile{
+                width: 290px;
+                height: 630px;
+                // 利用這色塊高度來調整最後一段文字容納空間
+                background-color: rgba(255,255,255,0.8);
+                position: relative;
+                margin-top: -50vh;
+                margin-left: calc(50vw - 145px);
+                z-index: -5;
+                letter-spacing: 5px;
+                text-align: center;
+                @media (max-width: 730px) {
+                    margin-top: -200px;
+                    height: 700px;
+                }
+                @media (max-width: 514px) {
+                    margin-top: -180px;
+                }
+                @media (max-width: 452px) {
+                    margin-top: -150px;
+                }
+                @media (max-width: 430px) {
+                    width: 230px;
+                }
+                @media (max-width: 375px) {
+                    margin-top: -460px;
+                    margin-left: calc(50vw - 140px);
+                    max-width: 220px;
+                }
+                .about-forth-textA-mobile{
+                    font-size: 34px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    border: 2px solid black;
+                    padding: 15px 60px;
+                    @media (max-width: 430px) {
+                        max-width: 280px;
+                        padding: 15px;
+                        left: 5vw;
+                        top: 0;
+                    }
+                    @media (max-width: 375px) {
+                        padding: 15px 20px;
+                        max-width: unset;
+                        top: 15px;
+                        right: -20px;
+                    }
+                }
+            }
+        // ↑ 手機版麻辣故事
+            .about-Img7{
+                width: 50vw;
+                margin-top: 260px;
+                z-index: -2;
+                @media (max-width: 768px) {
+                    width: 100vw;
+                    margin-top: -54px;
+                    margin-left: -15px;
+                    max-width: unset;
+                }
+                @media (max-width: 430px) {
+                    margin-top: 0;
+                }
+            }
+            .about-forth-textB{
+                position: relative;
+                width: 50vw;
+                // ↑ 不然會有捲軸
+                left: 47.8%;
+                top: -515px;
+                z-index: 50;
+                font-size: 19px;
+                font-weight: normal;
+                line-height: 19px;
+                letter-spacing: 4px;
+                @media (max-width: 768px) {
+                    top: -880px;
+                    // 調手機版最後一段文字高度
+                    left: unset;
+                    left: 15vw;
+                    display: inline-block;
+                    width: 70vw;
+                }
+                @media (max-width: 514px) {
+                    top: -780px;
+                }
+                @media (max-width: 430px) {
+                    top: -800px;
+                }
+                .about-forthText-colorB{
+                    width: 50vw;
+                    height: 320px;
+                    position: absolute;
+                    background-color: rgba(255,255,255,0.9);
+                    z-index: -1;
+                    top: 50px;
+                    left: -30px;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                
             }
         }
         .grain3{
-            width: 100%;
+            z-index: -2;
+            position: absolute;
             height: 175px;
-            margin-top: -540px;
-            @media (max-width: 768px) {
+            top: 3900px;
+            @media (max-width: 992px) {
                 display: none;
             }
         }
     }
+    
 }
 
 @import "footer";

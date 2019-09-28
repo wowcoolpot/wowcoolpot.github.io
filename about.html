@@ -28,60 +28,66 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
         <div class="container">
-          <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
-      
-          <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <!-- ml-auto讓選單靠右 ↑ -->
-              <li class="nav-item ml-lg-3 ml-0">
-                <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
-              </li>
-              <li class="nav-item ml-lg-3 ml-0">
-                <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
-              </li>
-              <li class="nav-item ml-lg-3 ml-0">
-                <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
-              </li>
-              <li class="nav-item ml-lg-3 ml-0">
-                <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
-              </li>
-              <li class="nav-item ml-lg-3 ml-0">
-                <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
-              </li>
-              <li class="nav-item ml-lg-3 ml-0">
-                <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
-              </li>
-              <li id="book-border" class="nav-item ml-5">
-                <div class="book-side">
-                  <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋"></a>
+
+            <button class="hamburger hamburger--slider" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!-- ml-auto讓選單靠右 ↑ -->
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+                        <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 ml-0">
+                        <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
+                    </li>
+                    <li id="book-border" class="nav-item ml-5">
+                        <div class="book-side">
+                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block"
+                                href="#">線上訂位</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    
+
         <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
-      </nav>
+    </nav>
 
     <section id="about" class="about">
         <div class="about-grain1">
-            <img src="./img/about-grain1.jpg" alt="">
+            <img src="./img/about-grain1.jpg" alt="瓦庫麻辣鍋">
             <div class="container">
-                <div class="about-banner">
+                <div class="about-banner" data-aos="flip-up" data-aos-duration="1000" data-aos-easing="sine">
                     <div class="about-banner-color1" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
                         data-aos-easing="ease-in-sine">
                         <div class="about-banner-text1 d-none d-md-block">
-                            瓦<br>庫<br>故<br>事
+                            <h1>
+                                瓦<br>庫<br>故<br>事
+                            </h1>
                         </div>
                         <div class="about-banner-text1 d-block d-md-none">
-                            瓦庫故事
+                            <h1>
+                                瓦庫故事
+                            </h1>
                         </div>
                     </div>
                     <div id="about-text2" class="row">
@@ -134,27 +140,30 @@
 
         <div class="about-second">
             <div class="row d-none d-md-flex">
-                <div class="col-gold-left">
-                    <img src="./img/about-Img2.jpg" alt="">
+                <div class="col-gold-left" data-aos="fade-right" data-aos-offset="200" data-aos-duration="700"
+                    data-aos-easing="ease-in-sine" data-aos-delay="300">
+                    <img src="./img/about-Img2.jpg" alt="瓦庫麻辣鍋">
                 </div>
                 <div class="col-gold-right">
-                    <div class="about-secondA">
-                        <img src="./img/about-Img4.jpg" alt="">
+                    <div class="about-secondA" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                        data-aos-easing="ease-in-sine">
+                        <img src="./img/about-Img4.jpg" alt="瓦庫麻辣鍋">
                     </div>
-                    <div class="about-secondB">
-                        <img src="./img/about-Img5.jpg" alt="">
+                    <div class="about-secondB" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                        data-aos-easing="ease-in-sine" data-aos-delay="300">
+                        <img src="./img/about-Img5.jpg" alt="瓦庫麻辣鍋">
                     </div>
                 </div>
             </div>
             <!-- ↓ 手機版 -->
             <div class="about-second d-block d-md-none">
-                <img src="./img/about-Img2.jpg" class="w-100 mb-3" alt="">
-                <img src="./img/about-Img5.jpg" class="w-100" alt="">
+                <img src="./img/about-Img2.jpg" class="w-100 mb-3" alt="瓦庫麻辣鍋">
+                <img src="./img/about-Img5.jpg" class="w-100" alt="瓦庫麻辣鍋">
             </div>
             <div class="about-grain2">
-                <img src="./img/about-grain2.jpg" alt="">
+                <img src="./img/about-grain2.jpg" alt="瓦庫麻辣鍋">
                 <div class="about-text3-mobile d-block d-md-none">
-                    <p>瓦庫精神</p>
+                    <h1>瓦庫精神</h1>
                     <div class="about-text3-color-mobile"></div>
                 </div>
                 <div class="container">
@@ -179,9 +188,10 @@
         </div>
 
         <div class="about-third">
-            <img src="./img/about-Img6.jpg" class="w-100" alt="">
+            <img src="./img/about-Img6.jpg" class="w-100" alt="瓦庫麻辣鍋" data-aos="zoom-in" data-aos-offset="200"
+                data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
             <div class="container">
-                <div class="about-third-text" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
+                <div class="about-third-text px-2" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
                     data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <p>湯頭以天然食材(老母雞)24小時熬煮。</p>
                     <p>手工製作滑類、餃類與特色小點心，</p>
@@ -208,12 +218,10 @@
                         麻辣故事
                     </div>
                 </div>
-
-                <img src="./img/about-Img7.jpg" class="d-none d-md-block" alt="">
-                <!-- ↓ 手機版 -->
-                <img id="img-mobile" src="./img/about-Img7.jpg" class="d-block d-md-none" alt="">
+                <img class="about-Img7" src="./img/about-Img7.jpg" alt="瓦庫麻辣鍋" data-aos="fade-right"
+                    data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <div class="about-forth-textB" data-aos="fade-left" data-aos-offset="200" data-aos-duration="700"
-                    data-aos-easing="ease-in-sine">
+                    data-aos-easing="ease-in-sine" data-aos-delay="700">
                     <p class="mb-4"><B>四川人為什麼喜歡吃辣？</B></p>
                     <p>俗話說：「四川地無三里平，天無三日晴，人無三分銀。」</p>
                     <p>反映出四川盆地多雨且潮濕的氣候。</p>
@@ -227,8 +235,10 @@
                     <div class="about-forthText-colorB"></div>
                 </div>
             </div>
-            <div class="grain3" style="background-image: url('./img/about-grain3.jpg')"></div>
+            <img class="grain3 w-100" src="./img/about-grain3.jpg" alt="瓦庫麻辣鍋">
         </div>
+
+
     </section>
 
     <footer>
@@ -269,19 +279,13 @@
                 </a>
             </div>
 
-            <div class="footer-copyright">
+            <div class="footer-copyright ">
                 <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
-                    Design by 腳麻吃麻辣鍋</p>
+                    Design by 腳麻吃麻辣鍋<br>僅供學習用途，如有侵權請來信告知。</p>
             </div>
         </div>
     </footer>
-    <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function (e) {
-          $hamburger.toggleClass("is-active");
-          // Do something else, like open/close menu
-        });
-      </script>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -291,12 +295,19 @@
     <!-- --------------------------------- -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script>
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function (e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+        });
     </script>
 </body>
 

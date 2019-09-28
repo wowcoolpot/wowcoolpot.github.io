@@ -181,6 +181,10 @@ nav .booking-icon a {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Merriweather','Noto Serif TC', serif;
   /* 聽老師說的，先中文，再英文，最後通用(補) */
@@ -198,7 +202,7 @@ section#FAQQ .row .FAQ-banner {
 
 section#FAQQ .row .FAQ-banner img {
   width: 90vw;
-  margin: 130px auto 0 auto;
+  margin: 200px auto 0 auto;
 }
 
 @media (max-width: 992px) {
@@ -216,13 +220,23 @@ section#FAQQ .row .FAQ-banner img {
 }
 
 section#FAQQ .container #FAQ-L-mobile {
-  font-size: 32px;
   border: 3px solid black;
   position: absolute;
   left: calc(50vw - 138px);
   letter-spacing: 10px;
   padding: 10px 30px;
   top: 210px;
+}
+
+section#FAQQ .container #FAQ-L-mobile h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  section#FAQQ .container #FAQ-L-mobile {
+    top: 290px;
+  }
 }
 
 section#FAQQ .container #FAQ-L-mobile .FAQ-L-mobileColor {
@@ -235,13 +249,18 @@ section#FAQQ .container #FAQ-L-mobile .FAQ-L-mobileColor {
   z-index: -1;
 }
 
+@media (max-width: 375px) {
+  section#FAQQ .container #FAQ-L-mobile .FAQ-L-mobileColor {
+    width: 280px;
+  }
+}
+
 section#FAQQ .container #FAQ {
   padding: 130px 0;
 }
 
 section#FAQQ .container #FAQ #FAQ-L {
   text-align: center;
-  font-size: 32px;
   margin-left: 10vw;
   padding: 50px 0;
   border: 4px solid black;
@@ -249,6 +268,10 @@ section#FAQQ .container #FAQ #FAQ-L {
   max-height: 340px;
   max-width: 80px;
   /* ↑ 防止左邊跟著縮放 */
+}
+
+section#FAQQ .container #FAQ #FAQ-L h1 {
+  font-size: 34px;
 }
 
 section#FAQQ .container #FAQ #FAQ-L .bg-colorA {

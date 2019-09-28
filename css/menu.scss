@@ -1,5 +1,8 @@
 @import "var";
 @import "nav";
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Merriweather", "Noto Serif TC", serif;
 }
@@ -53,20 +56,22 @@ section#menu{
         }
         .menu-banner-textR{
             position: absolute;
-            right: 196px;
+            right: 176px;
             top: 125px;
-            font-size: 28px;
             border: 4px solid black;
-            padding: 68px 18px;
+            padding: 66px 16px;
             z-index: 50;
             line-height: 40px;
+            h1{
+                font-size: 34px;
+            }
         }
         .menu-banner-textColorA{
             width: 69px;
             height: 300px;
             background-color: white;
             position: absolute;
-            right: 210px;
+            right: 190px;
             top: 140px;
             z-index: 49;
         }
@@ -76,22 +81,24 @@ section#menu{
             clip-path: polygon(0% 0%, 0% 13%, 70% 13%, 70% 100%, 100% 100%, 100% 0%);
             background-color: #E2CFB3;
             position: absolute;
-            right: 182px;
+            right: 162px;
             top: 110px;
             z-index: 49;
         }
-        // ↓ 手機版""精選餐點""文字設定
+        // ↓ 手機版""精選餐點""文字設定992
         .menu-banner-textR-mobile{
             position: absolute;
             left: calc(50vw - 170px);
             top: 600px;
-            font-size: 28px;
             letter-spacing: 10px;
             border: 4px solid black;
-            padding: 15px 90px;
+            padding: 14px 82px;
             z-index: 50;
             @media (max-width: 768px) {
                 top: 35vh;
+            }
+            h1{
+                font-size: 32px;
             }
         }
         .menu-banner-textColorA-mobile{
@@ -123,6 +130,9 @@ section#menu{
             }
             @media (max-width: 768px) {
                 top: 41vh;
+            }
+            @media (max-width: 375px) {
+                top: 40vh;
             }
         }
         // ↑ 手機版""精選餐點""文字設定
@@ -187,6 +197,9 @@ section#menu{
         @media (max-width: 768px) {
             top: 58vh;
         }
+        @media (max-width: 375px) {
+            top: 52vh;
+        }
         .menu-slogan1-mobile{
             margin-left: -30px;
         }
@@ -219,7 +232,7 @@ section#menu{
             padding-top: 350px;
             padding-bottom: 50px;
             z-index: 50;
-            clip-path: inset(344px 0 0 0 round 18.8% 17.9% 0 0);
+            clip-path: inset(343px 0 0 0 round 18.8% 17.9% 0 0);
             @media (max-width: 992px) {
                 margin-top: 550px;
                 width: 43.4%;
@@ -228,6 +241,10 @@ section#menu{
             @media (max-width: 768px) {
                 width: 300px;
                 margin-top: 20vh;
+            }
+            @media (max-width: 375px) {
+                width: 76.5%;
+                min-width: 260px;
             }
             .swiper-wrapper {
                 .swiper-slide {
@@ -243,6 +260,10 @@ section#menu{
                     background-color: #B4000D;
                     color: white;
                     font-weight: bold;
+                    @media (max-width: 375px) {
+                        width: 70vw;
+                        min-width: 260px;
+                    }
                 }
                 #slideA {
                     // ↓ 加陰影 右 下
@@ -254,7 +275,7 @@ section#menu{
                             margin-top: -38px;
                             font-style: italic;
                             font-weight: bold;
-                            color: #C09B7F;
+                            color: #C39C61;
                         }
                     }
                     .menuA-topText2{
@@ -274,7 +295,6 @@ section#menu{
                         width: 380px;
                         transform: rotate(-6deg);
                         margin-left: -25px;
-                        // box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
                     }
                     .menuA-topText3{
                         margin-top: -35px;
@@ -298,7 +318,7 @@ section#menu{
                             margin-top: -38px;
                             font-style: italic;
                             font-weight: bold;
-                            color: #C09B7F;
+                            color: #C39C61;
                         }
                     }
                     .menuB-topText2{
@@ -390,6 +410,9 @@ section#menu{
                 right: 10px;
                 top: 130%;
             }
+            @media (max-width: 375px) {
+                top: 100%;
+            }
             i{
                 font-size: 40px;
                 color: #A9000D;
@@ -407,6 +430,9 @@ section#menu{
                 left: 10px;
                 top: 130%;
             }
+            @media (max-width: 375px) {
+                top: 100%;
+            }
             i{
                 font-size: 40px;
                 color: #A9000D;
@@ -420,12 +446,14 @@ section#menu{
         max-width: 1260px;
         margin: 0 auto;
         .menu-bottomL-text{
-            font-size: 28px;
-            line-height: 60px;
             position: absolute;
             left: 101px;
             border: 4px solid black;
             padding: 50px 18px;
+            h1{
+                font-size: 34px;
+                line-height: 58px;
+            }
             .menu-bottomL-color2{
                 width: 60px;
                 height: 75px;
@@ -439,13 +467,15 @@ section#menu{
         }
         // 手機版菜單標題 1200以下
         .menu-bottomL-text-mobile{
-            font-size: 28px;
             position: absolute;
             left: calc(50% - 125px);
             top: 120px;
             border: 2px solid black;
-            padding: 10px 50px 10px 70px;
+            padding: 15px 40px 5px 70px;
             letter-spacing: 35px;
+            h1{
+                font-size: 34px;
+            }
             .menu-bottomL-color1-mobile{
                 width: 220px;
                 height: 70px;
