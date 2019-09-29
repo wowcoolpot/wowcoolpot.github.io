@@ -329,7 +329,7 @@ section#FAQQ .container #FAQ #FAQ-R .bg-expand-color {
   width: 105%;
   margin-left: -15px;
   /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
-  padding: 10px;
+  line-height: 35px;
   margin-top: 8px;
 }
 
@@ -389,13 +389,19 @@ footer .container .footer-information-mobile {
 footer .footer-icon-group {
   position: absolute;
   left: calc(50% - 97.5px);
-  bottom: 25%;
+  bottom: 27.5%;
   background-color: #e5e6e7;
   text-align: center;
   z-index: 999;
   /* ↑ 讓icon群浮上來蓋過線 */
   /* ↓ 讓線別貼邊 */
   padding: 0 10px;
+}
+
+@media (max-width: 590px) {
+  footer .footer-icon-group {
+    bottom: 31%;
+  }
 }
 
 footer .footer-icon-group i {

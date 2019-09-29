@@ -119,7 +119,8 @@ section#FAQQ{
                     width: 105%;
                     margin-left: -15px;
                     /* ↑ 關鍵關鍵關鍵關鍵關鍵關鍵關鍵 */
-                    padding: 10px;
+                    // 給padding會卡，只好用line-height撐高度
+                    line-height: 35px;
                     margin-top: 8px;
                     .Q5-padding{
                         padding-left: 27px;
