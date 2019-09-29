@@ -26,6 +26,17 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="loadicon">
+      <img class="loadimg" src="./img/Logo2.svg" alt="">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+  </div>
   <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
   <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
     <div class="container">
@@ -507,6 +518,13 @@
           $('#gotop').fadeOut("slow");
         }
       });
+    });
+  </script>
+  <script>
+    $(window).on("load", function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+      // $("#status").fadeOut();
+      // $("#loading_txt").fadeOut();
+      $(".preloader").delay(350).fadeOut("slow");
     });
   </script>
 
