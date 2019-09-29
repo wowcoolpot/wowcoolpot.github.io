@@ -141,6 +141,9 @@ section#about{
                         .aboutText2G{
                             position: absolute;
                             right: 305px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             @media (max-width: 768px) {
                                 right: 255px;
                             }
@@ -161,6 +164,9 @@ section#about{
                         .aboutText2F{
                             position: absolute;
                             right: 255px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             @media (max-width: 768px) {
                                 right: 215px;
                             }
@@ -182,6 +188,9 @@ section#about{
                         .aboutText2E{
                             position: absolute;
                             right: 205px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             @media (max-width: 768px) {
                                 right: 175px;
                             }
@@ -212,6 +221,9 @@ section#about{
                         .aboutText2D{
                             position: absolute;
                             right: 155px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             @media (max-width: 768px) {
                                 right: 135px;
                             }
@@ -242,6 +254,9 @@ section#about{
                         .aboutText2C{
                             position: absolute;
                             right: 105px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             @media (max-width: 768px) {
                                 right: 95px;
                             }
@@ -263,6 +278,9 @@ section#about{
                         .aboutText2B{
                             position: absolute;
                             right: 55px;
+                            @media (min-width: 1544px) {
+                                max-width: 60px;
+                            }
                             .aboutText2BColor{
                                 width: 25px;
                                 height: 150px;

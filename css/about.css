@@ -416,6 +416,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   right: 305px;
 }
 
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2G {
+    max-width: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2G {
     right: 255px;
@@ -442,6 +448,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
 section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2F {
   position: absolute;
   right: 255px;
+}
+
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2F {
+    max-width: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -471,6 +483,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
 section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2E {
   position: absolute;
   right: 205px;
+}
+
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2E {
+    max-width: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -515,6 +533,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   right: 155px;
 }
 
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2D {
+    max-width: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2D {
     right: 135px;
@@ -557,6 +581,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   right: 105px;
 }
 
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2C {
+    max-width: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2C {
     right: 95px;
@@ -584,6 +614,12 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
 section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2B {
   position: absolute;
   right: 55px;
+}
+
+@media (min-width: 1544px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2B {
+    max-width: 60px;
+  }
 }
 
 section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2B .aboutText2BColor {
