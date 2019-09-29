@@ -381,6 +381,9 @@ section#about{
                     left: -30px;
                     padding: 45px 10px;
                     z-index: 50;
+                    @media (min-width: 1358px) {
+                        height: 375px;
+                    }
                     @media (max-width: 992px) {
                         top: -15vw;
                         padding: 1vw;
@@ -405,7 +408,7 @@ section#about{
                         height: 21vw;
                     }
                     img{
-                        width: 102%;
+                        width: 100%;
                     }
                 }
             }

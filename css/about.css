@@ -764,6 +764,12 @@ section#about .about-second .row .col-gold-right .about-secondA {
   z-index: 50;
 }
 
+@media (min-width: 1358px) {
+  section#about .about-second .row .col-gold-right .about-secondA {
+    height: 375px;
+  }
+}
+
 @media (max-width: 992px) {
   section#about .about-second .row .col-gold-right .about-secondA {
     top: -15vw;
@@ -796,7 +802,7 @@ section#about .about-second .row .col-gold-right .about-secondB {
 }
 
 section#about .about-second .row .col-gold-right .about-secondB img {
-  width: 102%;
+  width: 100%;
 }
 
 section#about .about-second .about-grain2 {
