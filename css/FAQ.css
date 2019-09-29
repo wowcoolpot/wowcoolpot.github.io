@@ -406,6 +406,10 @@ footer .footer-icon-group {
   }
 }
 
+footer .footer-icon-group a:hover {
+  text-decoration: none;
+}
+
 footer .footer-icon-group i {
   font-size: 35px;
   margin: 0 12px;

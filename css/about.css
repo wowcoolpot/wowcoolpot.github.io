@@ -301,13 +301,7 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
     height: 80px;
     margin-left: 30vw;
     right: unset;
-    margin-top: 230px;
-  }
-}
-
-@media (max-width: 375px) {
-  section#about .about-grain1 .container .about-banner .about-banner-color1 {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 }
 
@@ -369,7 +363,7 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
     position: absolute;
     right: calc(50vw - 145px);
-    top: 450px;
+    top: 350px;
   }
 }
 
@@ -708,6 +702,24 @@ section#about .about-second .about-grain2 img {
   }
 }
 
+@media (max-width: 515px) {
+  section#about .about-second .about-grain2 img {
+    height: 1300px;
+  }
+}
+
+@media (max-width: 478px) {
+  section#about .about-second .about-grain2 img {
+    height: 1320px;
+  }
+}
+
+@media (max-width: 375px) {
+  section#about .about-second .about-grain2 img {
+    height: 1360px;
+  }
+}
+
 section#about .about-second .about-grain2 .about-text3-mobile {
   width: 100vw;
   height: 10vh;
@@ -717,7 +729,6 @@ section#about .about-second .about-grain2 .about-text3-mobile {
 }
 
 section#about .about-second .about-grain2 .about-text3-mobile h1 {
-  width: auto;
   position: absolute;
   top: 40px;
   left: calc(50vw - 120px);
@@ -727,16 +738,29 @@ section#about .about-second .about-grain2 .about-text3-mobile h1 {
   letter-spacing: 4px;
 }
 
+@media (max-width: 375px) {
+  section#about .about-second .about-grain2 .about-text3-mobile h1 {
+    left: calc(50vw - 100px);
+  }
+}
+
 section#about .about-second .about-grain2 .about-text3-mobile .about-text3-color-mobile {
   min-width: 214px;
   max-width: 260px;
   width: 45vw;
-  height: 65px;
+  max-width: 270px;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
-  left: calc(50vw - 110px);
+  left: calc(50vw - 130px);
   top: 30px;
   z-index: -1;
+}
+
+@media (max-width: 375px) {
+  section#about .about-second .about-grain2 .about-text3-mobile .about-text3-color-mobile {
+    left: calc(50vw - 110px);
+  }
 }
 
 section#about .about-second .about-grain2 .container .about-text3-colorA {
@@ -812,6 +836,38 @@ section#about .about-second .about-grain2 .container .about-text4 .about-text4-c
   section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
     max-width: 368px;
     width: 30vw;
+    min-width: 352px;
+  }
+}
+
+@media (max-width: 478px) {
+  section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
+    min-width: 312px;
+  }
+}
+
+@media (max-width: 426px) {
+  section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
+    min-width: 292px;
+  }
+}
+
+@media (max-width: 399px) {
+  section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
+    min-width: 270px;
+    top: 54px;
+  }
+}
+
+@media (max-width: 373px) {
+  section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
+    min-width: 245px;
+  }
+}
+
+@media (max-width: 347px) {
+  section#about .about-second .about-grain2 .container .about-text4 .about-text4-color {
+    min-width: 225px;
   }
 }
 
@@ -950,10 +1006,16 @@ section#about .about-forth .container .about-forthText-colorA-mobile {
   }
 }
 
+@media (max-width: 430px) {
+  section#about .about-forth .container .about-forthText-colorA-mobile {
+    width: 270px;
+  }
+}
+
 @media (max-width: 375px) {
   section#about .about-forth .container .about-forthText-colorA-mobile {
     margin-left: calc(50vw - 140px);
-    max-width: 220px;
+    max-width: 250px;
   }
 }
 
@@ -970,18 +1032,18 @@ section#about .about-forth .container .about-forthText-colorA-mobile .about-fort
 
 @media (max-width: 430px) {
   section#about .about-forth .container .about-forthText-colorA-mobile .about-forth-textA-mobile {
-    max-width: 280px;
-    padding: 15px;
-    left: 12vw;
+    padding: 15px 40px;
+    left: 5vw;
+    min-width: 260px;
   }
 }
 
 @media (max-width: 375px) {
   section#about .about-forth .container .about-forthText-colorA-mobile .about-forth-textA-mobile {
     padding: 15px 20px;
-    width: 300px;
+    min-width: 250px;
     top: 15px;
-    left: -3vw;
+    left: 4vw;
   }
 }
 
@@ -991,9 +1053,21 @@ section#about .about-forth .container .about-Img7 {
   z-index: -2;
 }
 
+@media (max-width: 1150px) {
+  section#about .about-forth .container .about-Img7 {
+    margin-top: 300px;
+  }
+}
+
 @media (max-width: 992px) {
   section#about .about-forth .container .about-Img7 {
     margin-top: 250px;
+  }
+}
+
+@media (max-width: 920px) {
+  section#about .about-forth .container .about-Img7 {
+    margin-top: 310px;
   }
 }
 
@@ -1060,6 +1134,12 @@ section#about .about-forth .container .about-forth-textB .about-forthText-colorB
   z-index: -1;
   top: 50px;
   left: -30px;
+}
+
+@media (max-width: 1150px) {
+  section#about .about-forth .container .about-forth-textB .about-forthText-colorB {
+    height: 360px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1148,6 +1228,10 @@ footer .footer-icon-group {
   footer .footer-icon-group {
     bottom: 31%;
   }
+}
+
+footer .footer-icon-group a:hover {
+  text-decoration: none;
 }
 
 footer .footer-icon-group i {
