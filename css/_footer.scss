@@ -20,24 +20,28 @@ footer {
         }
     }
 
-    .container{
+    .container {
+
         // ↓ 手機版設定
-        .footer-information-com{
+        .footer-information-com {
             display: none;
         }
-        .footer-information-mobile{
+
+        .footer-information-mobile {
             display: flex;
             text-align: center;
             color: $footerIcon;
         }
+
         // ↓ 電腦版設定
         @media (min-width: 410px) {
-            .footer-information-com{
+            .footer-information-com {
                 display: block;
                 text-align: center;
                 color: $footerIcon;
             }
-            .footer-information-mobile{
+
+            .footer-information-mobile {
                 display: none;
             }
         }
@@ -53,8 +57,13 @@ footer {
         /* ↑ 讓icon群浮上來蓋過線 */
         /* ↓ 讓線別貼邊 */
         padding: 0 10px;
+
         @media (max-width: 590px) {
             bottom: 31%;
+        }
+
+        a:hover {
+            text-decoration: none;
         }
 
         i {
@@ -62,7 +71,8 @@ footer {
             margin: 0 12px;
             color: $footerIcon;
         }
-        i:hover{
+
+        i:hover {
             color: $mainbg;
         }
     }
