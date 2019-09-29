@@ -30,9 +30,11 @@
 </head>
 
 <body>
+    <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
     <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋" title="瓦庫麻辣鍋"></a>
+            <a class="navbar-brand" href="./index.html"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋"
+                    title="瓦庫麻辣鍋"></a>
 
             <button class="hamburger hamburger--slider" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -73,7 +75,8 @@
             </div>
         </div>
 
-        <div class="booking-icon d-lg-none d-block"><a href="./contact.html" title="線上訂位"><i class="far fa-calendar-alt"></i></a></div>
+        <div class="booking-icon d-lg-none d-block"><a href="./contact.html" title="線上訂位"><i
+                    class="far fa-calendar-alt"></i></a></div>
     </nav>
 
     <section id="menu" class="menu">
@@ -497,9 +500,7 @@
 
 
     <!-- --------------------------------- -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
         </script>
@@ -511,6 +512,19 @@
         $hamburger.on("click", function (e) {
             $hamburger.toggleClass("is-active");
             // Do something else, like open/close menu
+        });
+    </script>
+    <!-- gotop卷軸偵測jquery -->
+    <script>
+        $(function () {
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    $('#gotop').fadeIn("slow");
+                } else {
+                    $('#gotop').fadeOut("slow");
+                }
+            });
         });
     </script>
 </body>
