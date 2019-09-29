@@ -26,7 +26,7 @@ section#FAQQ{
             margin: 200px auto 0 auto;
             @media (max-width: 992px) {
                 margin-top: 0;
-                height: 40vh;
+                height: 50vh;
             }
             @media (max-width: 768px) {
                 width: 100vw;
@@ -41,13 +41,10 @@ section#FAQQ{
             left: calc(50vw - 138px);
             letter-spacing: 10px;
             padding: 10px 30px;
-            top: 210px;
+            top: 43vh;
             h1{
                 font-size: 34px;
                 font-weight: bold;
-            }
-            @media (max-width: 375px) {
-                top: 290px;
             }
             .FAQ-L-mobileColor{
                 width: 270px;
@@ -73,6 +70,9 @@ section#FAQQ{
                 max-height: 340px;
                 max-width: 80px;
                 /* ↑ 防止左邊跟著縮放 */
+                @media (max-width: 992px) {
+                    padding: 50px 20px;
+                }
                 h1{
                     font-size: 34px;
                 }
