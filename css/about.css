@@ -1221,6 +1221,20 @@ section#about .about-forth .container .about-forth-textB .about-forthText-colorB
   left: -30px;
 }
 
+@media (min-width: 1496px) {
+  section#about .about-forth .container .about-forth-textB .about-forthText-colorB {
+    height: 350px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 1590px) {
+  section#about .about-forth .container .about-forth-textB .about-forthText-colorB {
+    height: 380px;
+    top: -5px;
+  }
+}
+
 @media (max-width: 1150px) {
   section#about .about-forth .container .about-forth-textB .about-forthText-colorB {
     height: 360px;

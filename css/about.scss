@@ -732,11 +732,19 @@ section#about{
                     z-index: -1;
                     top: 50px;
                     left: -30px;
+                    @media (min-width: 1496px) {
+                        height: 350px;
+                        top: 20px;
+                    }
+                    @media (min-width: 1590px) {
+                        height: 380px;
+                        top: -5px;
+                    }
                     @media (max-width: 1150px) {
-                        height: 360px;;
+                        height: 360px;
                     }
                     @media (max-width: 992px) {
-                        height: 400px;;
+                        height: 400px;
                     }
                     @media (max-width: 768px) {
                         display: none;
