@@ -1,0 +1,32 @@
+/*gotop button-start*/
+#gotop {
+    position: fixed;
+    z-index: 90;
+    right: 30px;
+    bottom: 31px;
+    display:none;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: $mainbg;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    @media (max-width:576px) {
+        right: 10px;
+        bottom:10px;
+    }
+
+    i {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &:hover {
+        background: $footerIcon;
+        color: mainbg;
+    }
+}
+/*gotop button-end*/
