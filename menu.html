@@ -30,6 +30,17 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loadicon">
+            <img class="loadimg" src="./img/Logo2.svg" alt="">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </div>
+    </div>
     <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
     <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
         <div class="container">
@@ -48,7 +59,7 @@
                     <!-- ml-auto讓選單靠右 ↑ -->
                     <li class="nav-item ml-lg-3 ml-0">
                         <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
+                        <a class="nav-link maxwww font-weight-bold" href="./index.html">關於瓦庫</a>
                     </li>
                     <li class="nav-item ml-lg-3 ml-0">
                         <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
@@ -68,16 +79,15 @@
                     <li id="book-border" class="nav-item ml-5">
                         <div class="book-side">
                             <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block"
-                                href="./contact.html"
-                                >線上訂位</a>
+                                href="./contact.html">線上訂位</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="booking-icon d-lg-none d-block"><a href="./contact.html"><i
-                    class="far fa-calendar-alt"></i></a></div>
+        <div class="booking-icon d-lg-none d-block"><a href="./contact.html"><i class="far fa-calendar-alt"></i></a>
+        </div>
     </nav>
 
     <section id="menu" class="menu">
@@ -504,10 +514,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-        </script>
+    </script>
     <script>
         var $hamburger = $(".hamburger");
         $hamburger.on("click", function (e) {
@@ -526,6 +536,13 @@
                     $('#gotop').fadeOut("slow");
                 }
             });
+        });
+    </script>
+    <script>
+        $(window).on("load", function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+            // $("#status").fadeOut();
+            // $("#loading_txt").fadeOut();
+            $(".preloader").delay(350).fadeOut("slow");
         });
     </script>
 </body>
