@@ -25,7 +25,7 @@ body {
     margin-bottom: 80px;
 }
 
-
+@import "topbtn";
 //匯入nav的css樣式
 @import "nav";
 
@@ -55,6 +55,10 @@ body {
         padding: 67px 20px 67px 17px;
         position: absolute;
         top: -53px;
+        h1{
+            font-size: 34px;
+            margin:0;
+        }
 
         .titlebox {
             background-color: rgba(255, 255, 255, 0.9);
@@ -445,6 +449,10 @@ body {
             position: relative;
             top: -100px;
             z-index: 2;
+            h1{
+                font-size: 34px;
+                margin:0;
+            }
         }
 
         .titleboxA {
@@ -592,18 +600,26 @@ body {
             .flow_text {
                 position: absolute;
                 writing-mode: unset;
-                padding: 13px 76px;
+                padding: 16.5px 79.5px;
+                border: 0;
+                outline: 3.5px solid black;
                 top: -380px;
                 left: calc(50% - 155px);
+                &::before{
+                    content: "";
+                    display: block;
+                    background-color: rgba(255, 255, 255, 0.9);
+                    width: 310px;
+                    height: 80px;
+                    position: absolute;
+                    z-index: -1;
+                    left: -10px;
+                    top:-20px;
+                }
             }
 
             .titleboxA {
-                position: absolute;
-                width: 300px;
-                height: 70px;
-                top: -395px;
-                left: 20px;
-                z-index: 1;
+                display: none;
             }
 
             .flow_p {
@@ -640,11 +656,18 @@ body {
 
     .notice {
         .notice_text {
+            writing-mode: vertical-lr;
+            letter-spacing: 3px;
+            text-indent: 3px;
             font-size: 34px;
             color: black;
             border: 3.5px solid black;
             line-height: 38px;
-            padding: 67px 20px;
+            padding: 67px 20px 67px 17px;
+            h1{
+                font-size: 34px;
+                margin: 0;
+            }
         }
 
         ul,
@@ -692,6 +715,9 @@ body {
         top: 10px;
         z-index: 5;
 
+        @media (min-width:1800px){
+            right: 350px;
+        }
 
         @media (max-width: 1400px) {
             right: 0;

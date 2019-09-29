@@ -14,7 +14,6 @@ body {
     /* 聽老師說的，先中文，再英文，最後通用(補) */
 }
 
-
 .center {
     display: flex;
     justify-content: center;
@@ -25,7 +24,7 @@ body {
     margin-bottom: 80px;
 }
 
-
+@import "topbtn";
 //匯入nav的css樣式
 @import "nav";
 
@@ -38,6 +37,9 @@ body {
     margin-top: 200px;
     position: relative;
     z-index: 1;
+    @media (min-width:1800px){
+        max-width: 1800px;
+    }
 }
 
 #form {
@@ -55,6 +57,10 @@ body {
             text-align: center;
             padding: 73px 20px;
             position: relative;
+            h1{
+                font-size: 34px;
+                margin: 0;
+            }
 
             .titlebox {
                 background-color: $footerbg;
@@ -90,6 +96,7 @@ body {
             padding: 2px;
             display: block;
             transition: 0.4s;
+            cursor: pointer;
 
             &:hover {
                 color: $mainbg;
@@ -151,6 +158,10 @@ body {
             text-align: center;
             padding: 73px 20px;
             position: relative;
+            h1{
+                font-size: 34px;
+                margin: 0;
+            }
         }
 
         .titlebox {
@@ -242,6 +253,7 @@ body {
 
         #form_body {
             margin-top: 50px;
+
             .form_btn {
                 margin: 0 auto;
             }
@@ -250,7 +262,7 @@ body {
                 text-align: center;
                 margin-top: 50px;
             }
-            
+
         }
 
         .form_text {
@@ -265,6 +277,10 @@ body {
             left: calc(50% - 155px);
             top: -70px;
             z-index: 1;
+            h1{
+                font-size: 34px;
+                margin: 0;
+            }
 
             &::after {
                 content: "";
@@ -316,6 +332,10 @@ body {
             text-align: center;
             padding: 13px 76px;
             position: relative;
+            h1{
+                font-size: 34px;
+                margin: 0;
+            }
 
             .titlebox {
                 background-color: $footerbg;

@@ -29,6 +29,43 @@ body {
   margin-bottom: 80px;
 }
 
+/*gotop button-start*/
+#gotop {
+  position: fixed;
+  z-index: 90;
+  right: 30px;
+  bottom: 31px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background: #c39c61;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 576px) {
+  #gotop {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+#gotop i {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+#gotop:hover {
+  background: #414042;
+  color: mainbg;
+}
+
+/*gotop button-end*/
 @media (max-width: 992px) {
   .navbar {
     width: 100vw;
@@ -55,7 +92,7 @@ nav {
   nav .nav-link:after {
     position: absolute;
     bottom: 0;
-    left: -10px;
+    left: -5px;
     right: 0;
     margin: auto;
     width: 0%;
@@ -67,7 +104,7 @@ nav {
     transition: all 1s;
   }
   nav .nav-link:hover::after {
-    width: 100%;
+    width: 76%;
   }
 }
 
@@ -379,13 +416,23 @@ footer .container .footer-information-mobile {
 footer .footer-icon-group {
   position: absolute;
   left: calc(50% - 97.5px);
-  bottom: 25%;
+  bottom: 27.5%;
   background-color: #e5e6e7;
   text-align: center;
   z-index: 999;
   /* ↑ 讓icon群浮上來蓋過線 */
   /* ↓ 讓線別貼邊 */
   padding: 0 10px;
+}
+
+@media (max-width: 590px) {
+  footer .footer-icon-group {
+    bottom: 31%;
+  }
+}
+
+footer .footer-icon-group a:hover {
+  text-decoration: none;
 }
 
 footer .footer-icon-group i {

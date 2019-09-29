@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>04-HOTPOT</title>
+  <title>鮮來開鍋</title>
   <!-- ↓ 匯入boostrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -23,9 +23,10 @@
 </head>
 
 <body>
+  <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
   <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
     <div class="container">
-      <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+      <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋" title="瓦庫麻辣鍋"></a>
 
       <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,26 +39,27 @@
           <!-- ml-auto讓選單靠右 ↑ -->
           <li class="nav-item ml-lg-3 ml-0">
             <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-            <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
+            <a class="nav-link maxwww font-weight-bold" href="./about.html" title="關於瓦庫">關於瓦庫</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
+            <a class="nav-link maxwww font-weight-bold" href="./news.html" title="最新消息">最新消息</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
+            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html" title="鮮來開鍋">鮮來開鍋</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
+            <a class="nav-link maxwww font-weight-bold" href="./menu.html" title="瓦庫好料">瓦庫好料</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
+            <a class="nav-link maxwww font-weight-bold" href="./contact.html" title="瓦庫在哪">瓦庫在哪</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
+            <a class="nav-link maxwww font-weight-bold" href="./FAQ.html" title="常見問題">常見問題</a>
           </li>
           <li id="book-border" class="nav-item ml-5">
             <div class="book-side">
-              <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
+              <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="./contact.html"
+                title="線上訂位">線上訂位</a>
             </div>
           </li>
         </ul>
@@ -68,7 +70,9 @@
   </nav>
   <div class="banner mx-auto">
     <div class="container d-flex justify-content-md-end">
-      <div class="hotpot_text">選擇湯底<div class="titlebox"></div>
+      <div class="hotpot_text">
+        <h1>選擇湯底</h1>
+        <div class="titlebox"></div>
       </div>
     </div>
   </div>
@@ -88,20 +92,20 @@
             <div class="row justify-content-between justify-content-md-end ">
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="0"
                 data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
-                data-aos-anchor-placement="top-center"><img class="soups soup1" src="./img/soup1.svg" alt="">
+                data-aos-anchor-placement="top-center"><img class="soups soup1" src="./img/soup1.svg" alt="川味麻辣">
               </div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="100"
                 data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
-                data-aos-anchor-placement="top-center"><img class="soups soup2" src="./img/soup2.svg" alt=""></div>
+                data-aos-anchor-placement="top-center"><img class="soups soup2" src="./img/soup2.svg" alt="老火燉雞"></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="200"
                 data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
-                data-aos-anchor-placement="top-center"><img class="soups soup3" src="./img/soup3.svg" alt=""></div>
+                data-aos-anchor-placement="top-center"><img class="soups soup3" src="./img/soup3.svg" alt="野椒酸菜"></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
                 data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
-                data-aos-anchor-placement="top-center"><img class="soups soup4" src="./img/soup4.svg" alt=""></div>
+                data-aos-anchor-placement="top-center"><img class="soups soup4" src="./img/soup4.svg" alt="上湯番茄"></div>
               <div class="col col-md-2" data-aos="fade-left" data-aos-offset="0" data-aos-delay="400"
                 data-aos-duration="1000" data-aos-easing="ease-in-out-quart" data-aos-once="false"
-                data-aos-anchor-placement="top-center"><img class="soups soup5" src="./img/soup5.svg" alt=""></div>
+                data-aos-anchor-placement="top-center"><img class="soups soup5" src="./img/soup5.svg" alt="蟲草菌菇"></div>
             </div>
           </div>
         </div>
@@ -158,7 +162,9 @@
       <div class="box"></div>
       <img class="de1" src="./img/de_1.png" alt="">
       <div class="container flow_x">
-        <div class="flow_text">開鍋流程</div>
+        <div class="flow_text">
+          <h1>開鍋流程</h1>
+        </div>
         <div class="titleboxA">
         </div>
         <div class="row">
@@ -214,7 +220,9 @@
           </div>
           <div class="col-md-2">
             <!-- 標題寬度要設inlineblock 不然預設block會跟著col寬度跑喔 -->
-            <div class="notice_text d-none d-md-inline-block">注<br>意<br>事<br>項</div>
+            <div class="notice_text d-none d-md-inline-block">
+              <h1>注意事項</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -225,7 +233,7 @@
   <footer>
     <div class="footer-box">
       <div class="footer-logo">
-        <img src="./img/footer-logo.png" alt="">
+        <img src="./img/footer-logo.png" alt="瓦庫麻辣鍋">
         <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
         <p>WOW COOL HOT POT</p>
       </div>
@@ -251,11 +259,11 @@
         </div>
       </div>
       <div class="footer-icon-group">
-        <a href=""><i class="fab fa-line"></i></a>
+        <a href="" title="瓦庫麻辣鍋LINE"><i class="fab fa-line"></i></a>
         <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
-          target="_blank"><i class="fab fa-facebook"></i>
+          target="_blank" title="瓦庫麻辣鍋FB"><i class="fab fa-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i
+        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank" title="瓦庫麻辣鍋IG"><i
             class="fab fa-instagram"></i>
         </a>
       </div>
@@ -334,6 +342,19 @@
   </script>
   <script>
     AOS.init();
+  </script>
+  <!-- gotop卷軸偵測jquery -->
+  <script>
+    $(function () {
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+          $('#gotop').fadeIn("slow");
+        } else {
+          $('#gotop').fadeOut("slow");
+        }
+      });
+    });
   </script>
 
 </body>

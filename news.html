@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>03-NEWS</title>
+  <title>最新消息</title>
   <!-- ↓ 匯入boostrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -23,9 +23,10 @@
 </head>
 
 <body>
+  <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
   <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
     <div class="container">
-      <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt=""></a>
+      <a class="navbar-brand" href="#"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋" title="瓦庫麻辣鍋"></a>
 
       <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,26 +39,27 @@
           <!-- ml-auto讓選單靠右 ↑ -->
           <li class="nav-item ml-lg-3 ml-0">
             <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-            <a class="nav-link maxwww font-weight-bold" href="./about.html">關於瓦庫</a>
+            <a class="nav-link maxwww font-weight-bold" href="./about.html" title="關於瓦庫">關於瓦庫</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
+            <a class="nav-link maxwww font-weight-bold" href="#" title="最新消息">最新消息</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
+            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html" title="鮮來開鍋">鮮來開鍋</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
+            <a class="nav-link maxwww font-weight-bold" href="./menu.html" title="瓦庫好料">瓦庫好料</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
+            <a class="nav-link maxwww font-weight-bold" href="./contact.html" title="瓦庫在哪">瓦庫在哪</a>
           </li>
           <li class="nav-item ml-lg-3 ml-0">
-            <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
+            <a class="nav-link maxwww font-weight-bold" href="./FAQ.html" title="常見問題">常見問題</a>
           </li>
           <li id="book-border" class="nav-item ml-5">
             <div class="book-side">
-              <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="#">線上訂位</a>
+              <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block" href="./contact.html"
+                title="線上訂位">線上訂位</a>
             </div>
           </li>
         </ul>
@@ -68,11 +70,15 @@
   </nav>
   <div class="banner mx-auto">
     <div class="container d-flex justify-content-end">
-      <div class="news_text"><h1>最<br>新<br>消<br>息</h1><div class="titlebox"></div>
+      <div class="news_text">
+        <h1>最<br>新<br>消<br>息</h1>
+        <div class="titlebox"></div>
       </div>
       <!-- mobile menu button start -->
       <div class="news_text mob" data-toggle="collapse" data-target="#collapseNews" aria-expanded="false"
-        aria-controls="collapseNews"><h1>最新消息<i class="fas fa-chevron-down"></i></h1></div>
+        aria-controls="collapseNews">
+        <h1>最新消息<i class="fas fa-chevron-down"></i></h1>
+      </div>
       <!-- mobile menu button end -->
     </div>
   </div>
@@ -80,13 +86,19 @@
     <!-- mobile collapse menu start-->
     <div class="collapse" id="collapseNews">
       <div class="mobile_Type  enable">
-        <p class="m-0 type_text"><h2>所有訊息</h2></p>
+        <p class="m-0 type_text">
+          <h2>所有訊息</h2>
+        </p>
       </div>
       <div class="mobile_Type">
-        <p class="m-0 type_text"><h2>活動情報</h2></p>
+        <p class="m-0 type_text">
+          <h2>活動情報</h2>
+        </p>
       </div>
       <div class="mobile_Type">
-        <p class="m-0 type_text"><h2>新品上市</h2></p>
+        <p class="m-0 type_text">
+          <h2>新品上市</h2>
+        </p>
       </div>
     </div>
     <!-- mobile collapse menu end -->
@@ -94,13 +106,19 @@
       <!-- for PC menu start -->
       <div class="newsbtn_group d-flex justify-content-center">
         <div class="newsbtn enable">
-          <div class="text"><h2>所有訊息</h2></div>
+          <div class="text">
+            <h2>所有訊息</h2>
+          </div>
         </div>
         <div class="newsbtn">
-          <div class="text"><h2>所有訊息</h2></div>
+          <div class="text">
+            <h2>所有訊息</h2>
+          </div>
         </div>
         <div class="newsbtn">
-          <div class="text"><h2>所有訊息</h2></div>
+          <div class="text">
+            <h2>所有訊息</h2>
+          </div>
         </div>
       </div>
       <!-- for PC menu end -->
@@ -575,7 +593,7 @@
   <footer>
     <div class="footer-box">
       <div class="footer-logo">
-        <img src="./img/footer-logo.png" alt="">
+        <img src="./img/footer-logo.png" alt="瓦庫麻辣鍋">
         <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
         <p>WOW COOL HOT POT</p>
       </div>
@@ -601,11 +619,11 @@
         </div>
       </div>
       <div class="footer-icon-group">
-        <a href=""><i class="fab fa-line"></i></a>
+        <a href="" title="瓦庫麻辣鍋LINE"><i class="fab fa-line"></i></a>
         <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
-          target="_blank"><i class="fab fa-facebook"></i>
+          target="_blank" title="瓦庫麻辣鍋FB"><i class="fab fa-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank"><i
+        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank" title="瓦庫麻辣鍋IG"><i
             class="fab fa-instagram"></i>
         </a>
       </div>
@@ -617,9 +635,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
   </script>
@@ -655,11 +671,24 @@
       $(`.newsbtn:nth-child(${btn_index})`).addClass('enable');
     })
   </script>
-   <script>
+  <script>
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function (e) {
       $hamburger.toggleClass("is-active");
       // Do something else, like open/close menu
+    });
+  </script>
+  <!-- gotop卷軸偵測jquery -->
+  <script>
+    $(function () {
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+          $('#gotop').fadeIn("slow");
+        } else {
+          $('#gotop').fadeOut("slow");
+        }
+      });
     });
   </script>
 </body>
