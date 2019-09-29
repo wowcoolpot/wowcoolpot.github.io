@@ -198,22 +198,24 @@ section#FAQQ .row .FAQ-banner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-section#FAQQ .row .FAQ-banner img {
+  background-image: url("../img/FAQ-bannerImg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 90vw;
+  height: 75vh;
   margin: 200px auto 0 auto;
 }
 
 @media (max-width: 992px) {
-  section#FAQQ .row .FAQ-banner img {
+  section#FAQQ .row .FAQ-banner {
     margin-top: 0;
     height: 40vh;
   }
 }
 
 @media (max-width: 768px) {
-  section#FAQQ .row .FAQ-banner img {
+  section#FAQQ .row .FAQ-banner {
     width: 100vw;
     z-index: -1;
   }
