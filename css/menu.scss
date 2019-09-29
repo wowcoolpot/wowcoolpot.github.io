@@ -52,7 +52,7 @@ section#menu{
         }
         @media (max-width: 768px) {
             width: 100vw;
-            height: 40vh;
+            height: 218.8px;
         }
         .menu-banner-textR{
             position: absolute;
@@ -89,13 +89,17 @@ section#menu{
         .menu-banner-textR-mobile{
             position: absolute;
             left: calc(50vw - 170px);
-            top: 600px;
+            top: 550px;
             letter-spacing: 10px;
             border: 4px solid black;
             padding: 14px 82px;
             z-index: 50;
             @media (max-width: 768px) {
                 top: 35vh;
+            }
+            @media (max-width: 400px) {
+                padding: 14px 40px;
+                left: calc(50vw - 130px);
             }
             h1{
                 font-size: 32px;
@@ -107,13 +111,14 @@ section#menu{
             background-color: rgba(255, 255, 255, 0.8);
             position: absolute;
             left: calc(50vw - 185px);
-            top: 715px;
+            top: 535px;
             z-index: 49;
-            @media (max-width: 992px) {
-                top: 585px;
-            }
             @media (max-width: 768px) {
                 top: 33vh;
+            }
+            @media (max-width: 400px) {
+                width: 256px;
+                left: calc(50vw - 145px);
             }
         }
         .menu-banner-textColorB-mobile{
@@ -123,16 +128,13 @@ section#menu{
             background-color: black;
             position: absolute;
             left: calc(50vw + 40px);
-            top: 670px;
+            top: 590px;
             z-index: 49;
-            @media (max-width: 992px) {
-                top: 640px;
-            }
             @media (max-width: 768px) {
-                top: 41vh;
+                top: 42vh;
             }
-            @media (max-width: 375px) {
-                top: 40vh;
+            @media (max-width: 400px) {
+                left: calc(50vw - 5px);
             }
         }
         // ↑ 手機版""精選餐點""文字設定
@@ -196,9 +198,6 @@ section#menu{
         line-height: 10px;
         @media (max-width: 768px) {
             top: 58vh;
-        }
-        @media (max-width: 375px) {
-            top: 52vh;
         }
         .menu-slogan1-mobile{
             margin-left: -30px;
@@ -410,9 +409,6 @@ section#menu{
                 right: 10px;
                 top: 130%;
             }
-            @media (max-width: 375px) {
-                top: 100%;
-            }
             i{
                 font-size: 40px;
                 color: #A9000D;
@@ -429,9 +425,6 @@ section#menu{
             @media (max-width: 768px) {
                 left: 10px;
                 top: 130%;
-            }
-            @media (max-width: 375px) {
-                top: 100%;
             }
             i{
                 font-size: 40px;

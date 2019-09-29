@@ -238,7 +238,7 @@ section#menu .menu-banner-img {
 @media (max-width: 768px) {
   section#menu .menu-banner-img {
     width: 100vw;
-    height: 40vh;
+    height: 218.8px;
   }
 }
 
@@ -281,7 +281,7 @@ section#menu .menu-banner-img .menu-banner-textColorB {
 section#menu .menu-banner-img .menu-banner-textR-mobile {
   position: absolute;
   left: calc(50vw - 170px);
-  top: 600px;
+  top: 550px;
   letter-spacing: 10px;
   border: 4px solid black;
   padding: 14px 82px;
@@ -291,6 +291,13 @@ section#menu .menu-banner-img .menu-banner-textR-mobile {
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textR-mobile {
     top: 35vh;
+  }
+}
+
+@media (max-width: 400px) {
+  section#menu .menu-banner-img .menu-banner-textR-mobile {
+    padding: 14px 40px;
+    left: calc(50vw - 130px);
   }
 }
 
@@ -304,19 +311,20 @@ section#menu .menu-banner-img .menu-banner-textColorA-mobile {
   background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: calc(50vw - 185px);
-  top: 715px;
+  top: 535px;
   z-index: 49;
-}
-
-@media (max-width: 992px) {
-  section#menu .menu-banner-img .menu-banner-textColorA-mobile {
-    top: 585px;
-  }
 }
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorA-mobile {
     top: 33vh;
+  }
+}
+
+@media (max-width: 400px) {
+  section#menu .menu-banner-img .menu-banner-textColorA-mobile {
+    width: 256px;
+    left: calc(50vw - 145px);
   }
 }
 
@@ -328,25 +336,19 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
   background-color: black;
   position: absolute;
   left: calc(50vw + 40px);
-  top: 670px;
+  top: 590px;
   z-index: 49;
-}
-
-@media (max-width: 992px) {
-  section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 640px;
-  }
 }
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 41vh;
+    top: 42vh;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 40vh;
+    left: calc(50vw - 5px);
   }
 }
 
@@ -423,12 +425,6 @@ section#menu .menu-bannerLeftText-mobile {
 @media (max-width: 768px) {
   section#menu .menu-bannerLeftText-mobile {
     top: 58vh;
-  }
-}
-
-@media (max-width: 375px) {
-  section#menu .menu-bannerLeftText-mobile {
-    top: 52vh;
   }
 }
 
@@ -680,12 +676,6 @@ section#menu .container .swiper-button-next {
   }
 }
 
-@media (max-width: 375px) {
-  section#menu .container .swiper-button-next {
-    top: 100%;
-  }
-}
-
 section#menu .container .swiper-button-next i {
   font-size: 40px;
   color: #A9000D;
@@ -708,12 +698,6 @@ section#menu .container .swiper-button-prev {
   section#menu .container .swiper-button-prev {
     left: 10px;
     top: 130%;
-  }
-}
-
-@media (max-width: 375px) {
-  section#menu .container .swiper-button-prev {
-    top: 100%;
   }
 }
 
@@ -1615,13 +1599,19 @@ footer .container .footer-information-mobile {
 footer .footer-icon-group {
   position: absolute;
   left: calc(50% - 97.5px);
-  bottom: 25%;
+  bottom: 27.5%;
   background-color: #e5e6e7;
   text-align: center;
   z-index: 999;
   /* ↑ 讓icon群浮上來蓋過線 */
   /* ↓ 讓線別貼邊 */
   padding: 0 10px;
+}
+
+@media (max-width: 590px) {
+  footer .footer-icon-group {
+    bottom: 31%;
+  }
 }
 
 footer .footer-icon-group i {
