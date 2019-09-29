@@ -28,7 +28,7 @@ nav {
             &:after {
                 position: absolute;
                 bottom: 0;
-                left: -10px;
+                left: -5px;
                 right: 0;
                 margin: auto;
                 width: 0%;
@@ -39,7 +39,7 @@ nav {
                 transition: all 1s;
             }
             &:hover::after{
-                width: 100%;
+                width: 76%;
             }
         }
     }
