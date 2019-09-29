@@ -434,9 +434,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 177px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 36px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2G .aboutText2GColor {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -468,9 +474,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 196px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: -25px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2F .aboutText2FColor {
+    left: 3px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -503,9 +515,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 72px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 144px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2E .aboutText2EColor {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -518,9 +536,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   width: 100px;
   height: 68px;
   position: absolute;
-  left: 17px;
+  left: 22px;
   top: 155px;
   border-left: 1px solid #AF000D;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2E .aboutText2ELine {
+    left: 6px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -551,9 +575,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 180px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 75px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2D .aboutText2DColor {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -566,9 +596,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   width: 100px;
   height: 92px;
   position: absolute;
-  left: 17px;
+  left: 22px;
   top: 130px;
   border-left: 1px solid #AF000D;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2D .aboutText2DLine {
+    left: 6px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -599,9 +635,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 260px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 25px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2C .aboutText2CColor {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -628,9 +670,15 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   height: 150px;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 60px;
   z-index: -1;
+}
+
+@media (max-width: 992px) {
+  section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left .aboutText2B .aboutText2BColor {
+    left: 0px;
+  }
 }
 
 @media (max-width: 768px) {

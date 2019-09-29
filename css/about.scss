@@ -153,9 +153,12 @@ section#about{
                                 height: 177px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: 36px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 0px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 5px;
                                     height: 150px;
@@ -176,9 +179,12 @@ section#about{
                                 height: 196px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: -25px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 3px;
+                                }
                                 @media (max-width: 768px) {
                                     height: 188px;
                                     left: 7px;
@@ -200,9 +206,12 @@ section#about{
                                 height: 72px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: 144px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 0px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 5px;
                                 }
@@ -211,9 +220,12 @@ section#about{
                                 width: 100px;
                                 height: 68px;
                                 position: absolute;
-                                left: 17px;
+                                left: 22px;
                                 top: 155px;
                                 border-left: 1px solid #AF000D;
+                                @media (max-width: 992px) {
+                                    left: 6px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 10px;
                                 }
@@ -233,9 +245,12 @@ section#about{
                                 height: 180px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: 75px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 0px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 5px;
                                 }
@@ -244,9 +259,12 @@ section#about{
                                 width: 100px;
                                 height: 92px;
                                 position: absolute;
-                                left: 17px;
+                                left: 22px;
                                 top: 130px;
                                 border-left: 1px solid #AF000D;
+                                @media (max-width: 992px) {
+                                    left: 6px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 10px;
                                 }
@@ -266,9 +284,12 @@ section#about{
                                 height: 260px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: 25px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 0px;
+                                }
                                 @media (max-width: 768px) {
                                     top: 85px;
                                     left: 4px;
@@ -287,9 +308,12 @@ section#about{
                                 height: 150px;
                                 background-color: rgba(255,255,255,0.9);
                                 position: absolute;
-                                left: 10px;
+                                left: 15px;
                                 top: 60px;
                                 z-index: -1;
+                                @media (max-width: 992px) {
+                                    left: 0px;
+                                }
                                 @media (max-width: 768px) {
                                     left: 2px;
                                 }
