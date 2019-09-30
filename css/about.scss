@@ -91,7 +91,7 @@ section#about{
                         right: unset;
                         margin-top: 240px;
                     }
-                    @media (min-height: 812px) {
+                    @media (max-width:375px) and (min-height: 812px) {
                         margin-top: 280px;
                     }
                     .about-banner-text1{
@@ -117,7 +117,7 @@ section#about{
                             width: unset;
                             padding: 13px 20px;
                         }
-                        @media (min-height: 812px) {
+                        @media (max-width: 375px) and (min-height: 812px) {
                             width: unset;
                             padding: 13px 20px;
                             top: -10px;

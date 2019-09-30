@@ -475,7 +475,7 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
   }
 }
 
-@media (min-height: 812px) {
+@media (max-width: 375px) and (min-height: 812px) {
   section#about .about-grain1 .container .about-banner .about-banner-color1 {
     margin-top: 280px;
   }
@@ -513,7 +513,7 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 .about
   }
 }
 
-@media (min-height: 812px) {
+@media (max-width: 375px) and (min-height: 812px) {
   section#about .about-grain1 .container .about-banner .about-banner-color1 .about-banner-text1 {
     width: unset;
     padding: 13px 20px;
