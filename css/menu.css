@@ -400,14 +400,14 @@ section#menu .menu-banner-img {
 @media (max-width: 992px) {
   section#menu .menu-banner-img {
     width: 100vw;
-    height: 102vh;
+    height: 90vh;
   }
 }
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img {
     width: 100vw;
-    height: 218.8px;
+    height: 40vh;
   }
 }
 
@@ -511,13 +511,19 @@ section#menu .menu-banner-img .menu-banner-textColorB-mobile {
 
 @media (max-width: 768px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
-    top: 42vh;
+    top: 41vh;
   }
 }
 
 @media (max-width: 400px) {
   section#menu .menu-banner-img .menu-banner-textColorB-mobile {
     left: calc(50vw - 5px);
+  }
+}
+
+@media (min-height: 812px) {
+  section#menu .menu-banner-img .menu-banner-textColorB-mobile {
+    top: 40vh;
   }
 }
 
@@ -594,6 +600,12 @@ section#menu .menu-bannerLeftText-mobile {
 @media (max-width: 768px) {
   section#menu .menu-bannerLeftText-mobile {
     top: 58vh;
+  }
+}
+
+@media (min-height: 812px) {
+  section#menu .menu-bannerLeftText-mobile {
+    top: 52vh;
   }
 }
 
@@ -841,7 +853,13 @@ section#menu .container .swiper-button-next {
 @media (max-width: 768px) {
   section#menu .container .swiper-button-next {
     right: 10px;
-    top: 130%;
+    top: 120%;
+  }
+}
+
+@media (min-height: 812px) {
+  section#menu .container .swiper-button-next {
+    top: 100%;
   }
 }
 
@@ -866,7 +884,13 @@ section#menu .container .swiper-button-prev {
 @media (max-width: 768px) {
   section#menu .container .swiper-button-prev {
     left: 10px;
-    top: 130%;
+    top: 120%;
+  }
+}
+
+@media (min-height: 812px) {
+  section#menu .container .swiper-button-prev {
+    top: 100%;
   }
 }
 

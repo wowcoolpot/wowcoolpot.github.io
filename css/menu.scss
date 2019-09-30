@@ -50,11 +50,11 @@ section#menu{
         }
         @media (max-width: 992px) {
             width: 100vw;
-            height: 102vh;
+            height: 90vh;
         }
         @media (max-width: 768px) {
             width: 100vw;
-            height: 218.8px;
+            height: 40vh;
         }
         .menu-banner-textR{
             position: absolute;
@@ -133,10 +133,13 @@ section#menu{
             top: 590px;
             z-index: 49;
             @media (max-width: 768px) {
-                top: 42vh;
+                top: 41vh;
             }
             @media (max-width: 400px) {
                 left: calc(50vw - 5px);
+            }
+            @media (min-height: 812px) {
+                top: 40vh;
             }
         }
         // ↑ 手機版""精選餐點""文字設定
@@ -200,6 +203,9 @@ section#menu{
         line-height: 10px;
         @media (max-width: 768px) {
             top: 58vh;
+        }
+        @media (min-height: 812px) {
+            top: 52vh;
         }
         .menu-slogan1-mobile{
             margin-left: -30px;
@@ -409,7 +415,10 @@ section#menu{
             }
             @media (max-width: 768px) {
                 right: 10px;
-                top: 130%;
+                top: 120%;
+            }
+            @media (min-height: 812px) {
+                top: 100%;
             }
             i{
                 font-size: 40px;
@@ -426,7 +435,10 @@ section#menu{
             }
             @media (max-width: 768px) {
                 left: 10px;
-                top: 130%;
+                top: 120%;
+            }
+            @media (min-height: 812px) {
+                top: 100%;
             }
             i{
                 font-size: 40px;

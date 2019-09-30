@@ -444,7 +444,7 @@ section#about .about-grain1 .container .about-banner {
     max-width: unset;
     width: 100vw;
     height: 40vh;
-    margin-left: -15px;
+    margin-left: 0px;
   }
 }
 
@@ -471,7 +471,13 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 {
     height: 80px;
     margin-left: 30vw;
     right: unset;
-    margin-top: 200px;
+    margin-top: 240px;
+  }
+}
+
+@media (min-height: 812px) {
+  section#about .about-grain1 .container .about-banner .about-banner-color1 {
+    margin-top: 280px;
   }
 }
 
@@ -502,8 +508,16 @@ section#about .about-grain1 .container .about-banner .about-banner-color1 .about
 
 @media (max-width: 392px) {
   section#about .about-grain1 .container .about-banner .about-banner-color1 .about-banner-text1 {
-    left: -10vw;
     width: unset;
+    padding: 13px 20px;
+  }
+}
+
+@media (min-height: 812px) {
+  section#about .about-grain1 .container .about-banner .about-banner-color1 .about-banner-text1 {
+    width: unset;
+    padding: 13px 20px;
+    top: -10px;
   }
 }
 
@@ -533,7 +547,7 @@ section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left
   section#about .about-grain1 .container .about-banner #about-text2 .col-gold-left {
     position: absolute;
     right: calc(50vw - 145px);
-    top: 350px;
+    top: 380px;
   }
 }
 
@@ -947,7 +961,7 @@ section#about .about-second .about-grain2 img {
   width: 100%;
   position: absolute;
   top: -33px;
-  height: 1366px;
+  height: 1466px;
 }
 
 @media (max-width: 992px) {
@@ -1253,17 +1267,11 @@ section#about .about-forth .container .about-forthText-colorA-mobile {
   height: 630px;
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
-  margin-top: 0;
+  margin-top: -30px;
   margin-left: calc(50vw - 145px);
-  z-index: -5;
+  z-index: -1;
   letter-spacing: 5px;
   text-align: center;
-}
-
-@media (max-width: 730px) {
-  section#about .about-forth .container .about-forthText-colorA-mobile {
-    margin-top: 30px;
-  }
 }
 
 @media (max-width: 430px) {
@@ -1309,7 +1317,7 @@ section#about .about-forth .container .about-forthText-colorA-mobile .about-fort
 
 section#about .about-forth .container .about-Img7 {
   width: 50vw;
-  margin-top: 180px;
+  margin-top: 280px;
   z-index: -2;
 }
 
@@ -1372,7 +1380,7 @@ section#about .about-forth .container .about-forth-textB {
 
 @media (max-width: 768px) {
   section#about .about-forth .container .about-forth-textB {
-    top: -880px;
+    top: -850px;
     left: unset;
     left: 15vw;
     display: inline-block;
@@ -1444,7 +1452,7 @@ section#about .about-forth .grain3 {
   z-index: -2;
   position: absolute;
   height: 175px;
-  top: 3800px;
+  top: 4058px;
 }
 
 @media (max-width: 992px) {

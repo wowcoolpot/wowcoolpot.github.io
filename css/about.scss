@@ -70,7 +70,7 @@ section#about{
                     max-width: unset;
                     width: 100vw;
                     height: 40vh;
-                    margin-left: -15px;
+                    margin-left: 0px;
                 }
                 .about-banner-color1{
                     width: 80px;
@@ -89,7 +89,10 @@ section#about{
                         height: 80px;
                         margin-left: 30vw;
                         right: unset;
-                        margin-top: 200px;
+                        margin-top: 240px;
+                    }
+                    @media (min-height: 812px) {
+                        margin-top: 280px;
                     }
                     .about-banner-text1{
                         h1{
@@ -111,8 +114,13 @@ section#about{
                             top: -10px;
                         }
                         @media (max-width: 392px) {
-                            left: -10vw;
                             width: unset;
+                            padding: 13px 20px;
+                        }
+                        @media (min-height: 812px) {
+                            width: unset;
+                            padding: 13px 20px;
+                            top: -10px;
                         }
                     }
                 }
@@ -134,7 +142,7 @@ section#about{
                         @media (max-width: 768px) {
                             position: absolute;
                             right: calc(50vw - 145px);
-                            top: 350px;
+                            top: 380px;
                         }
                         @media (max-width: 392px) {
                             right: calc(50vw - 140px);
@@ -423,7 +431,7 @@ section#about{
                 position: absolute;
                 top: -33px;
                 // 調最右邊色塊高度
-                height: 1366px;
+                height: 1466px;
                 @media (max-width: 992px) {
                     height: 1280px;
                 }
@@ -657,14 +665,11 @@ section#about{
                 // 利用這色塊高度來調整最後一段文字容納空間
                 background-color: rgba(255,255,255,0.8);
                 position: relative;
-                margin-top: 0;
+                margin-top: -30px;
                 margin-left: calc(50vw - 145px);
-                z-index: -5;
+                z-index: -1;
                 letter-spacing: 5px;
                 text-align: center;
-                @media (max-width: 730px) {
-                    margin-top: 30px;
-                }
                 @media (max-width: 430px) {
                     width: 270px;
                 }
@@ -697,7 +702,7 @@ section#about{
         // ↑ 手機版麻辣故事
             .about-Img7{
                 width: 50vw;
-                margin-top: 180px;
+                margin-top: 280px;
                 z-index: -2;
                 @media (max-width: 1150px) {
                     margin-top: 300px;
@@ -737,7 +742,7 @@ section#about{
                 line-height: 19px;
                 letter-spacing: 4px;
                 @media (max-width: 768px) {
-                    top: -880px;
+                    top: -850px;
                     // 調手機版最後一段文字高度
                     left: unset;
                     left: 15vw;
@@ -786,7 +791,7 @@ section#about{
             z-index: -2;
             position: absolute;
             height: 175px;
-            top: 3800px;
+            top: 4058px;
             @media (max-width: 992px) {
                 display: none;
             }

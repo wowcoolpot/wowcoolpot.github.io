@@ -46,7 +46,7 @@ section#FAQQ{
             left: calc(50vw - 138px);
             letter-spacing: 10px;
             padding: 10px 30px;
-            top: 43vh;
+            top: 45vh;
             h1{
                 font-size: 34px;
                 font-weight: bold;
@@ -56,7 +56,7 @@ section#FAQQ{
                 height: 100px;
                 background-color: rgba(255,255,255,0.8);
                 position: absolute;
-                top: -10px;
+                top: 0;
                 left: -10px;
                 z-index: -1;
                 @media (max-width: 375px) {
