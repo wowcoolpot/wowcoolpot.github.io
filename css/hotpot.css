@@ -792,17 +792,17 @@ nav .booking-icon a {
 }
 
 #flow .flow .flow_p {
-  width: 250px;
+  width: 215px;
   position: absolute;
 }
 
 #flow .flow .flow1,
 #flow .flow .flow3 {
-  bottom: 40px;
+  bottom: 80px;
 }
 
 #flow .flow .flow2 {
-  bottom: -20px;
+  bottom: 10px;
 }
 
 #flow .flow .de1 {
